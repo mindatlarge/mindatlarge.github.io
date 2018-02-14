@@ -23,10 +23,10 @@
 			</div>
 		</header>
 		<div id="mobile-nav">
-			<a href="#grid">Gallery</a>
-			<a href="#landing-bio">Biography</a>
-			<a href="#landing-critics">Critics</a>
-			<a href="#">Contact</a>
+			<a class="klik" href="#grid">Gallery</a>
+			<a class="klik" href="#landing-bio">Biography</a>
+			<a class="klik" href="#landing-critics">Critics</a>
+			<a class="klik" href="#">Contact</a>
 		</div>
 		<div id="landing">
 			<!--<p id="landing-text">I am fascinated by the presence of certain objects at certain times. The qualification “at certain times” is important since, in my experience, the same object will vary in the intensity of its appeal and in its significance to the spectator. To this extent it has a subjective life and an infinite variety of potential forms.</p>-->
@@ -425,7 +425,7 @@ $('#grid').magnificPopup({
 	(function() {
 
   var magnificPopup = $.magnificPopup.instance;
-  $("a.image-lightbox").click(function(e) {
+  $("a.image-lightbox").on('click touch', function() {
 
     setTimeout(function() {
         $(".mfp-container").swipe( {
@@ -453,7 +453,7 @@ $('#grid').magnificPopup({
 
 
 	<!-- NAV MENU  X ANIMATION -->
-	  $('#nav-780, a').on('click touch', function(){
+	  $('#nav-780, .klik').on('click touch', function(){
  if($('.gore').hasClass('gore-x'))
  {
     $('.gore').removeClass('gore-x');
@@ -465,7 +465,7 @@ $('#grid').magnificPopup({
      }
   });
 
-	  $('#nav-780, a').on('click touch', function(){
+	  $('#nav-780, .klik').on('click touch', function(){
  if($('.dole').hasClass('dole-x'))
  {
     $('.dole').removeClass('dole-x');
