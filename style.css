@@ -304,7 +304,7 @@ span {font-style: normal;}
 	#landing-bio {text-align: center;}
 	#landing-bio div {width: 60vw;}
 	.dropdown-text {width: 60vw;}
-	#landing {height: 100vh;}
+	#landing {height: 100vh; padding-top: 2.5rem;}
 }
 
 
