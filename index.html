@@ -14,8 +14,8 @@
 			<div id="nav">
 			<a href="#grid" id="galerija">Gallery</a>
 			<a href="#landing-bio" id="biografija">Biography</a>
-			<a href="#landing-critics" id="kritike">Critics</a>
-			<a href="#" id="kontakt">Contact</a>
+			<a href="#landing-critics" id="kritike">Texts</a>
+			<a href="#landing-contact" id="kontakt">Contact</a>
 			</div>
 			<div id="nav-780">
 				<div class="bar gore"></div>
@@ -25,8 +25,8 @@
 		<div id="mobile-nav">
 			<a class="klik" href="#grid">Gallery</a>
 			<a class="klik" href="#landing-bio">Biography</a>
-			<a class="klik" href="#landing-critics">Critics</a>
-			<a class="klik" href="#">Contact</a>
+			<a class="klik" href="#landing-critics">Texts</a>
+			<a class="klik" href="#landing-contact">Contact</a>
 		</div>
 		<div id="landing">
 			<!--<p id="landing-text">I am fascinated by the presence of certain objects at certain times. The qualification “at certain times” is important since, in my experience, the same object will vary in the intensity of its appeal and in its significance to the spectator. To this extent it has a subjective life and an infinite variety of potential forms.</p>-->
@@ -353,7 +353,10 @@
 			<div id="peti-par">&emsp;Always attracted to the vanitas theme in painting, he once exhibited at Anthony Reynolds Gallery a transcription of Hans Holbein’s Ambassadors. ‘My transcription’, he wrote, ‘is a declaration of faith; in the tradition of Art as tactile visual language, in a more holistic world view yet to come and, if we are lucky, in the power of imagination over death.’
 			</div></br></br>
 			</div>
-	</div>
+		</div>
+
+		<div id="break-1">
+		</div>
 
 		<div id="landing-critics">
 			<p id="naslov" class="dropdown-link">About Tony's work</p>
@@ -390,6 +393,14 @@
 				</div>
 		</div>
 
+		<div id="break-2">
+		</div>
+
+		<div id="landing-contact">
+			<p class="info">Tony Carter estate</p>
+			<p class="info">Email:</p>
+			<p class="info">wendy@wesmith.co.uk</p>
+		</div>
 
 	</div>
 
@@ -424,7 +435,7 @@ $('#grid').magnificPopup({
 	(function() {
 
   var magnificPopup = $.magnificPopup.instance;
-  $("a.image-lightbox").on('click touch', function() {
+  $("#grid").click(function(e) {
 
     setTimeout(function() {
         $(".mfp-container").swipe( {

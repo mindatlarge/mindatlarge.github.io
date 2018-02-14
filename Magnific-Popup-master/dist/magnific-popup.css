@@ -316,13 +316,13 @@ img.mfp-img {
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
   /**
-       * Remove all paddings around the image on small screen
-       */
+       * Remove all paddings around the image on small screen */
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0; }
   .mfp-img-mobile img.mfp-img {
-    padding: 0; }
+    padding: 0;
+  }
   .mfp-img-mobile .mfp-figure:after {
     top: 0;
     bottom: 0; }
@@ -355,7 +355,12 @@ img.mfp-img {
 
 
 @media screen and (max-width: 768px) {
-  .mfp-arrow:before, .mfp-arrow:after {display: none;}
+  .mfp-arrow::before, .mfp-arrow::after {display: none;}
+  .mfp-title {font-size: 14px; padding-left: 1rem; padding-top: -1rem;}
+  img.mfp-img {
+    margin-top: -10rem;
+  }
+
 }
 /*@media all and (max-width: 900px) {
   .mfp-arrow {

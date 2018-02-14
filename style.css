@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: Savoy Regular.ttf;
+	font-family: 'Savoy Regular.ttf';
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
@@ -113,23 +113,29 @@ span {font-style: normal;}
 #landing-bio {
 	min-height: 100vh;
 	height: auto;
-	padding: 8% calc(100% / 11) 0 0;
 	overflow: auto;
+	padding-top: 8%;
 }
 #bio-text {
-	float: right;
-	margin-right: 5%;
+	margin: 0 auto;
 }
 #landing-bio div {
-	width: 41vw;
+	width: 56vw;
 	text-align: justify;
-}
-#tony-bio {
-	width: 200px;
-	float: right;
-	margin-top: 5px;
+	color: rgba(0, 0, 0, 0.8);
 }
 
+		/* ----BREAK1----*/
+#break-1 {
+	width: 100%;
+	height: 100vh;
+	background-image: url(tony-break1.jpg);
+	background-size: contain;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: rgb(245, 245, 245);
+}
 		/*----CRITICS-----*/
 
 #landing-critics {
@@ -143,14 +149,38 @@ span {font-style: normal;}
 	margin-top: 0.8rem;}
 .dropdown-text {
 	width: 56vw;
-	margin-left: 15%;
 	margin-top: 1rem;
 	color: rgba(0, 0, 0, 0.8);
 	text-align: justify;
+	margin: 0 auto;
 }
 .dropdown p {display: inline-block; color: rgba(0, 0, 0, 0.8);}
-.dropdown p:hover {cursor: pointer; color: rgba(0, 0, 0, 0.5);}
 #naslov {color: rgba(0, 0, 0, 0.8);}
+
+/* ---- BREAK-2 -----*/
+
+#break-2 {
+	width: 100%;
+	height: 50vh;
+	background-color: rgb(246, 246, 246);
+	background-image: url('SLIKE SREDJENE/1978/1-78.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+/* --- CONTACT PAGE ------ */
+
+#landing-contact {
+	height: 100vh;
+	padding-top: 4.5rem;
+}
+.info {
+	color: rgba(0, 0, 0, 0.8);}
+.info:not(:last-child) {
+	margin-top: 1rem;}
 
 
 /* ----MENU FOR TOUCH DEVICES---- */
@@ -181,7 +211,6 @@ span {font-style: normal;}
 .gore-x {
 	transform:rotate(45deg);
 }
-
 @media screen and (max-width: 1440px) {
 	#container {
 		width: 100vw;}
@@ -194,9 +223,10 @@ span {font-style: normal;}
 @media screen and (min-width: 1428px) {
 	.text-r {margin-left: 5rem;}
 	.levo {margin-left: 0.5rem;}
-	.delete4, .delete5, .delete6 {display: none;}
 	#landing-critics {padding-left: 0;}
-
+}
+@media screen and (max-width: 1427px) {
+	.info {margin-left: 1rem;}
 }
 
 /* GALLERY-main- RESPONSIVE */
@@ -205,33 +235,42 @@ span {font-style: normal;}
 	.text-r {margin-left: 80px;}
 	#section-gallery {padding-left: 1rem; padding-right: 1rem;}
 	#landing-critics {padding-left: 0rem;}
-	.delete, .delete2, .delete1, .delete3 {display: block;}
 }
 @media screen and (min-width: 723px) and (max-width: 1427px) {
 	#grid {margin-left: -45px;}
 	.text-r, .text-r1 {margin-left: 80px;}
-	.delete3, .delete2, .delete1, .delete4, .delete5, .delete6 {display: none;}
 	#landing-bio div, .dropdown-text {font-size: 15px;}
 }
 @media screen and (min-width: 476px) and (max-width: 722px) {
 	#grid {margin-left: -45px;
 		justify-content: space-around;}
 	.text-r, .text-r1 {margin-left: 80px;}
-	.delete, .delete1, .delete2, .delete3, .delete4, .delete5, .delete6 {display: none;}
 	#landing-bio div, .dropdown-text {font-size: 12px;}
 	#landing-bio {margin-top: 4rem;}
 }
 @media screen and (max-width: 475px) {
-	#grid {margin-left: -35px;
-			justify-content: space-around;}
+	#grid {margin-left: -35px; justify-content: space-around;}
 	.text-r, .text-r1 {margin-left: 80px;}
-	.delete, .delete1, .delete2, .delete3, .delete4, .delete5, .delete6 {display: none;}
 	#landing-bio div, .dropdown-text {font-size: 12px; line-height: 120%;}
 	#landing-bio {margin-top: 4rem;}
 }
-@media screen and (min-width: 951px) and (max-width: 1189px) {
-	.delete, .delete1, .delete2, .delete3, .delete4, .delete5, .delete6 {display: none;}
+/* ZA BRISANJE */
+@media screen and (min-width: 1190px) and (max-width: 1412px) {
+	.delete, .delete1, .delete2, .delete3, .delete4 , .delete5 {display: none;}
 }
+@media screen and (min-width: 952px) and (max-width: 1189px) {
+	.delete, .delete1, .delete2, .delete3, .delete4 , .delete5, .delete6 {display: none;}
+}
+@media screen and (min-width: 714px) and (max-width: 951px) {
+	.delete, .delete1, .delete2, .delete3, .delete4 , .delete5 {display: none;}
+}
+@media screen and (max-width: 713px) {
+	.delete, .delete1, .delete2, .delete3, .delete4 , .delete5, .delete6 {display: none;}
+}
+@media screen and (min-width: 1412px) {
+	.delete, .delete1, .delete2 {display: none;}
+}
+
 /* RESPONSIVE NAV BAR */
 @media screen and (max-width: 768px) {
 	#nav {display: none;}
@@ -264,33 +303,24 @@ span {font-style: normal;}
 			transform: rotate(0deg) translate(0px, 27px);
 			transition: 0.5s;
 		}
-}
 /* RESPONSIVE BIO & CRITICS */
 
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {}
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-	#landing-bio div {width: 55vw;}
-	#landing-bio {margin-right: 2.3%;}
-	#tony-bio {width: 120px;}
-	.dropdown-text {width: 55vw;}
+	#landing-bio div {width: 67vw;}
+	.dropdown-text {width: 67vw;}
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-	#landing-bio div {width: 55vw;}
-	#tony-bio {width: 120px;}
-	#landing-bio {margin-right: 3.2%; padding-top: 5rem;}
-	.dropdown-text {width: 55vw; margin-left: 9%;}
-	header a, .dropdown-link, #naslov {font-size: 14px;}
+	#landing-bio {padding-top: 10%;}
+	#landing-bio div {width: 67vw;}
+	.dropdown-text {width: 67vw;}
+	header a, .dropdown-link, #naslov, .info {font-size: 14px;}
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1565px) {
-	#landing-bio div {width: 56vw;}
-}
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-	#landing-bio div {width: 56vw;}
-	#landing-bio {margin-right: 1%;}
-	.dropdown-text {width: 58vw;}
-	#tony-bio {width: 150px;}
+	#landing-bio div {width: 65vw;}
+	.dropdown-text {width: 65vw;}
 }
 
 @media screen and (max-width: 768px) {
@@ -298,15 +328,14 @@ span {font-style: normal;}
 }
 @media screen and (max-width: 480px) {
 	#landing-bio {padding-top: 4rem;}
-	#tony-bio {width: 110px;}
-	#bio-text {clear: both; margin: 1rem 0 0 18vw;}
-	#tony-bio, #bio-text {float: none;}
-	#landing-bio {text-align: center;}
-	#landing-bio div {width: 60vw;}
-	.dropdown-text {width: 60vw;}
+	#landing-bio div {width: 80vw;}
+	.dropdown-text {width: 80vw; margin-top: 1rem;}
 	#landing {height: 100vh; padding-top: 2.5rem;}
+	header a, .dropdown-link, #naslov, .info {font-size: 14px;}
 }
-
+@media screen and (min-width: 769px) {
+	.dropdown p:hover {cursor: pointer; color: rgba(0, 0, 0, 0.5);}
+}
 
 /* CSS POPUP */
 
@@ -324,5 +353,3 @@ span {font-style: normal;}
 	-webkit-font-smoothing: antialiased;
 	font-style: italic;
 }
-
-

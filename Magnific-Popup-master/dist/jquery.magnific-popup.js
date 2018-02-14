@@ -1858,3 +1858,21 @@ $.magnificPopup.registerModule(RETINA_NS, {
 
 /*>>retina*/
  _checkInstance(); }));
+
+  var magnificPopup = $.magnificPopup.instance;
+  $("a.image-lightbox").click(function(e) {
+
+    setTimeout(function() {
+        $(".mfp-container").swipe( {
+          swipeLeft:function(event, direction, distance, duration, fingerCount) {
+            console.log("swipe right");
+            magnificPopup.next();
+          },
+
+        swipeRight:function(event, direction, distance, duration, fingerCount) {
+          console.log("swipe left");
+          magnificPopup.prev();
+        },
+        });
+    }, 500);
+  });
