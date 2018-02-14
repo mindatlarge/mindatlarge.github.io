@@ -415,6 +415,14 @@ $('#grid').magnificPopup({
   gallery: {
   	enabled: true
   }
+      callbacks: {
+      beforeOpen: function() {
+        startWindowScroll = $(window).scrollTop();
+      },
+      close: function() {
+        $(window).scrollTop(startWindowScroll);
+      }
+    }
 });
 
     $(function() {

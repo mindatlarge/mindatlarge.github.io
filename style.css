@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+* {-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
 body {
 	font-family: 'Savoy Regular.ttf';
 	font-size: 16px;
@@ -332,6 +333,7 @@ span {font-style: normal;}
 	.dropdown-text {width: 80vw; margin-top: 1rem;}
 	#landing {height: 100vh; padding-top: 2.5rem;}
 	header a, .dropdown-link, #naslov, .info {font-size: 14px;}
+	#break-1 {background-image: url('tony-break1-mobile.jpg');}
 }
 @media screen and (min-width: 769px) {
 	.dropdown p:hover {cursor: pointer; color: rgba(0, 0, 0, 0.5);}
