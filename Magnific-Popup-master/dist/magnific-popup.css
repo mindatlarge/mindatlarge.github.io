@@ -358,7 +358,7 @@ img.mfp-img {
   .mfp-arrow::before, .mfp-arrow::after {display: none;}
   .mfp-title {font-size: 14px; padding-left: 1rem; padding-top: -1rem;}
   img.mfp-img {
-    margin-top: -10rem;
+    margin-top: -5rem;
   }
 
 }
@@ -443,5 +443,7 @@ img.mfp-img {
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
 }
-
-
+.mfp-wrap {
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0);
+}

@@ -1876,3 +1876,26 @@ $.magnificPopup.registerModule(RETINA_NS, {
         });
     }, 500);
   });
+
+  var startWindowScroll = 0;
+  $('.popup-with-zoom-anim').magnificPopup({
+    fixedContentPos: true,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    callbacks: {
+      beforeOpen: function() {
+        startWindowScroll = $(window).scrollTop();
+      },
+      open: function(){
+        if ( $('.mfp-content').height() < $(window).height() ){
+          $('body').on('touchmove', function (e) {
+              e.preventDefault();
+          });
+        }
+      },
+      close: function() {
+        $(window).scrollTop(startWindowScroll);
+        $('body').off('touchmove');
+      }
+    }
+  });
