@@ -1878,7 +1878,7 @@ $.magnificPopup.registerModule(RETINA_NS, {
   });
 
   var startWindowScroll = 0;
-  $('.popup-with-zoom-anim').magnificPopup({
+  $('#grid').magnificPopup({
     fixedContentPos: true,
     fixedBgPos: true,
     overflowY: 'auto',

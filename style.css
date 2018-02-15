@@ -324,16 +324,19 @@ span {font-style: normal;}
 	.dropdown-text {width: 65vw;}
 }
 
+/*
 @media screen and (max-width: 768px) {
 	.textcell p {visibility: visible !important;}
-}
+}*/
 @media screen and (max-width: 480px) {
 	#landing-bio {padding-top: 4rem;}
 	#landing-bio div {width: 80vw;}
-	.dropdown-text {width: 80vw; margin-top: 1rem;}
-	#landing {height: 100vh; padding-top: 2.5rem;}
+	.dropdown-text {width: 80vw; margin-top: 1rem; margin-right: 3rem;}
+	#landing {height: 100vh; padding-top: 3rem;}
 	header a, .dropdown-link, #naslov, .info {font-size: 14px;}
-	#break-1 {background-image: url('tony-break1-mobile.jpg');}
+	#break-1 {perspective-origin-x: 100%; transform-origin: 100%;}
+	.cell, .cellhor, .cellsq {width: 150px;}
+}
 }
 @media screen and (min-width: 769px) {
 	.dropdown p:hover {cursor: pointer; color: rgba(0, 0, 0, 0.5);}
