@@ -323,11 +323,9 @@ span {font-style: normal;}
 	#landing-bio div {width: 65vw;}
 	.dropdown-text {width: 65vw;}
 }
-
-/*
 @media screen and (max-width: 768px) {
 	.textcell p {visibility: visible !important;}
-}*/
+}
 @media screen and (max-width: 480px) {
 	#landing-bio {padding-top: 4rem;}
 	#landing-bio div {width: 80vw;}
@@ -341,9 +339,7 @@ span {font-style: normal;}
 @media screen and (min-width: 769px) {
 	.dropdown p:hover {cursor: pointer; color: rgba(0, 0, 0, 0.5);}
 }
-
 /* CSS POPUP */
-
 .mfp-container {
 	background: white;
 }
@@ -358,3 +354,20 @@ span {font-style: normal;}
 	-webkit-font-smoothing: antialiased;
 	font-style: italic;
 }
+
+@media screen and (min-width: 768px) {
+	#landing {
+		height: 100vh;
+		background-image: url('d42ded9e-2907-43b2-befc-30162dffd700.jpg');
+		background-position: top;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	#landing img {display: none;}
+
+}
+
+
+
+
