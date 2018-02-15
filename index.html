@@ -411,6 +411,7 @@
 $('#grid').magnificPopup({
   delegate: 'a',
   type: 'image',
+  fixedContentPos: true,
   gallery: {
   	enabled: true
   }
@@ -453,29 +454,6 @@ $('#grid').magnificPopup({
 
 }).call(this);
 
-
-	var startWindowScroll = 0;
-  $('#grid').magnificPopup({
-    fixedContentPos: true,
-    fixedBgPos: true,
-    overflowY: 'auto',
-    callbacks: {
-      beforeOpen: function() {
-        startWindowScroll = $(window).scrollTop();
-      },
-      open: function(){
-        if ( $('.mfp-content').height() < $(window).height() ){
-          $('body').on('touchmove', function (e) {
-              e.preventDefault();
-          });
-        }
-      },
-      close: function() {
-        $(window).scrollTop(startWindowScroll);
-        $('body').off('touchmove');
-      }
-    }
-  });
 
 	$('#nav-780').on('click touch', function(){    
 	    $('#mobile-nav').fadeToggle(300);

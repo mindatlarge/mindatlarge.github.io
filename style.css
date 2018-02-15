@@ -334,9 +334,9 @@ span {font-style: normal;}
 	.dropdown-text {width: 80vw; margin-top: 1rem; margin-right: 3rem;}
 	#landing {height: 100vh; padding-top: 3rem;}
 	header a, .dropdown-link, #naslov, .info {font-size: 14px;}
-	#break-1 {perspective-origin-x: 100%; transform-origin: 100%;}
-	.cell, .cellhor, .cellsq {width: 150px;}
-}
+	#break-1 {perspective-origin-x: 100%; transform-origin: 100%; z-index: -1;}
+	#break-2 {z-index: -1;}
+
 }
 @media screen and (min-width: 769px) {
 	.dropdown p:hover {cursor: pointer; color: rgba(0, 0, 0, 0.5);}

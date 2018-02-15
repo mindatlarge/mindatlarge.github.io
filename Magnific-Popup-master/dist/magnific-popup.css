@@ -443,7 +443,3 @@ img.mfp-img {
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
 }
-.mfp-wrap {
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translateZ(0);
-}
