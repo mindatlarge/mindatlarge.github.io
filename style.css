@@ -11,7 +11,7 @@ body {
 	overflow-x: hidden;
 }
 body::-webkit-scrollbar {
-	display: block;
+	display: none;
 }
 #container {
 	width: 1440px;
@@ -261,13 +261,6 @@ span {font-style: normal;}
 @media screen and (max-width: 1427px) {
 	.info {margin-left: 1rem;}
 }
-@media screen and (max-width: 1023px) {
-	#landing {
-		height: 100vh;
-	}
-	#l-t {display: none;}
-}
-
 /* GALLERY-main- RESPONSIVE */
 @media screen and (min-width: 1428px) and (max-width: 1440px){
 	.text-r1 {margin-left: 10px;}
@@ -293,6 +286,9 @@ span {font-style: normal;}
 	#landing-bio div, .dropdown-text {font-size: 12px; line-height: 120%;}
 	#landing-bio {margin-top: 4rem;}
 }
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+	#landing-m {display: none;}
+}
 /* ZA BRISANJE */
 @media screen and (min-width: 1190px) and (max-width: 1412px) {
 	.delete, .delete1, .delete2, .delete3, .delete4 , .delete5 {display: none;}
@@ -312,7 +308,6 @@ span {font-style: normal;}
 
 /* RESPONSIVE NAV BAR */
 @media screen and (max-width: 1023px) {
-	body {overflow-y: hidden;}
 	#landing {height: 100vh;}
 	#nav {display: none;}
 	#nav-780 {
@@ -344,6 +339,12 @@ span {font-style: normal;}
 			transform: rotate(0deg) translate(0px, 27px);
 			transition: 0.5s;
 		}
+		#landing {
+		height: 100vh;}
+		#landing-text, #l-t {display: none;}
+		#section-gallery, #landing-critics, #landing-contact {
+		animation: naslovna 0.8s ease-in 0s 1 forwards;}
+}
 /* RESPONSIVE BIO & CRITICS */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {}
 @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -356,28 +357,20 @@ span {font-style: normal;}
 	.dropdown-text {width: 67vw;}
 	header a, .dropdown-link, #naslov, .info {font-size: 14px;}
 }
-
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
 	#landing-bio div {width: 65vw;}
 	.dropdown-text {width: 65vw;}
 }
-
-@media screen and (max-width: 1023px) {
-	.textcell p {visibility: visible !important;}
-	#section-gallery, #landing-critics, #landing-contact {
-		animation: naslovna 0.8s ease-in 0s 1 forwards;}
-}
+/* -- MOBILE */
 @media screen and (max-width: 480px) {
-	#landing-bio {padding-top: 4rem;}
+	#landing-bio {padding-top: 1rem;}
 	#landing-bio div {width: 80vw;}
 	.dropdown-text {width: 80vw; margin-top: 1rem; margin-right: 3rem;}
 	#landing {height: 100vh; padding-top: 3rem;}
 	header a, .dropdown-link, #naslov, .info {font-size: 14px;}
-	#break-1 {perspective-origin-x: 100%; transform-origin: 100%; z-index: -1;}
-	#break-2 {z-index: -1;}
-
+	#landing-pc {display: none;}
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1024px) {
 	.dropdown p:hover {cursor: pointer; color: rgba(0, 0, 0, 0.5);}
 }
 /* CSS POPUP */
@@ -395,7 +388,9 @@ span {font-style: normal;}
 	-webkit-font-smoothing: antialiased;
 	font-style: italic;
 }
-
-
+@media screen and (max-width: 1023px) {
+	#fixed {display: none;}
+	.textcell p {visibility: visible !important;}
+}
 
 
