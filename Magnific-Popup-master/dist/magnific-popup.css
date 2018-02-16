@@ -362,6 +362,11 @@ img.mfp-img {
   img.mfp-img {
     margin-top: -5rem;
   }
+  @media screen and (max-width: 480px) {
+      img.mfp-img {
+    margin-top: -2rem;
+  }
+  }
 
 }
 /*@media all and (max-width: 900px) {
@@ -444,4 +449,13 @@ img.mfp-img {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
+}
+
+
+.mfp-bg,
+body.mfp-zoom-out-cur {
+overflow: hidden !important;
+margin: 0 !important;
+padding: 0 !important;
+height: 100% !important;
 }
