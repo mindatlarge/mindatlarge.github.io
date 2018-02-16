@@ -358,7 +358,7 @@ img.mfp-img {
 
 @media screen and (max-width: 768px) {
   .mfp-arrow::before, .mfp-arrow::after {display: none;}
-  .mfp-title {font-size: 14px; padding-left: 1rem; padding-top: -1rem;}
+  .mfp-title {font-size: 14px; padding-left: 1.3rem; padding-top: -1rem;}
   img.mfp-img {
     margin-top: -5rem;
   }

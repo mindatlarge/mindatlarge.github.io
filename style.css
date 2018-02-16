@@ -350,7 +350,7 @@ span {font-style: normal;}
 @media screen and (max-width: 480px) {
 	#landing-bio {padding-top: 1rem;}
 	#landing-bio div {width: 80vw;}
-	.dropdown-text {width: 80vw; margin-top: 1rem; margin-right: 1.7rem;}
+	.dropdown-text {width: 80vw; margin-top: 1rem; margin-right: 1.85rem;}
 	#landing {height: 100vh; padding-top: 3rem;}
 	header a, .dropdown-link, #naslov, .info {font-size: 14px;}
 	#landing-pc {display: none;}
