@@ -124,8 +124,8 @@ span {font-style: normal;}
 #break-1 {
 	width: 100%;
 	height: 80vh;
-	background-image: url(tony-break1-a.jpg);
-	background-size: contain;
+	background-image: url(tony-break1-b.jpg);
+	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
