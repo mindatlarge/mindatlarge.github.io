@@ -33,7 +33,7 @@
 			<img id="landing-m" src="landing-m.jpg">
 			<div id="landing-text">
 			<p id="l-t">
-					Born and raised in Barnsley, and in his youth an accomplished pianist, Tony Carter moved further north to begin his life as an artist: from 1962 to 1966 he was a student in fine art at the University of Newcastle upon Tyne. This was the period when Hamilton was helping make Newcastle one of the most exciting places to study art. Engrossed in his reconstruction of Marcel Duchamp’s Large Glass, Hamilton used it as a vehicle for his teaching, in effect generously privileging students with insights into the sensibilities and minds of two pivotal artists. For Carter the experience was revelatory, proving a lasting influence in the development of his thinking. Among the students who shared this experience and who became lifelong friends were Stephen Buckley and Tim.</p>
+					Born and raised in Barnsley, and in his youth an accomplished pianist, Tony Carter moved further north to begin his life as an artist: from 1962 to 1966 he was a student in fine art at the University of Newcastle upon Tyne. This was the period when Hamilton was helping make Newcastle one of the most exciting places to study art.</br></br>Engrossed in his reconstruction of Marcel Duchamp’s Large Glass, Hamilton used it as a vehicle for his teaching, in effect generously privileging students with insights into the sensibilities and minds of two pivotal artists. For Carter the experience was revelatory, proving a lasting influence in the development of his thinking. Among the students who shared this experience and who became lifelong friends were Stephen Buckley and Tim.</br></br>Establishing himself in London (his small flat in Finsbury Park is remembered by Head as being a sort of ‘temple’) he found exposure for his work through exhibitions such as Young Contemporaries and the Serpentine Summer Show 3, but it was Anthony Stokes – first at Garage, and then at his eponymous gallery in Langley Court in Covent Garden – who brought Carter to wider notice.</p>
 				</div>
 		</div>
 		<div id="fixed">
@@ -411,6 +411,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
 <script src="TouchSwipe-Jquery-Plugin-master/jquery.touchSwipe.min.js"></script>
+<script src="garand-sticky-73b0fbe/jquery.sticky.js"></script>
 <script>
 $('#grid').magnificPopup({
   delegate: 'a',
@@ -502,17 +503,15 @@ $('#grid').magnificPopup({
     	$('.dropdown-container3').fadeToggle(300);
 	});
 
-	$(window).scroll(function() {
+	$(document).ready(function(){
+    	$("#l-t").sticky({topSpacing:70});
+  	});
 
-    if ($(this).scrollTop() > 150)
-     {
-        $('#l-t').fadeIn(1000);
-     }
-    else
-     {
-      $('#l-t').fadeOut(1000);
-     }
- });
+	var divs = $('#l-t'); 
+		$(window).scroll(function(){
+    	var p = $(window).scrollTop()/ $(window).height();
+    	divs.stop().fadeTo("fast",p);
+});
 
 </script>
 </body>
