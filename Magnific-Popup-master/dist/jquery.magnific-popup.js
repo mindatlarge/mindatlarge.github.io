@@ -891,7 +891,7 @@ $.magnificPopup = {
 
 		fixedBgPos: 'auto',
 
-		overflowY: 'auto',
+		overflowY: 'hidden',
 
 		closeMarkup: '<button title="%title%" type="button" class="mfp-close">&#215;</button>',
 
