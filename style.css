@@ -44,9 +44,9 @@ body {font-family: applesans; font-size: 14px;}
 	color: rgba(0, 0, 0, 0.6);
 	text-decoration: none;
 	display: block;
-	padding-top: 0.4rem;
 	text-align: left;
 }
+#lista a:not(:first-child) {padding-top: 0.4rem;}
 .caption {
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.6);
