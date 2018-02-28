@@ -59,10 +59,10 @@ body {font-family: applesans; font-size: 14px;}
 /* ----CLOSE SIGN X---- */
 
 .close {
-	transform: scale(0.5);
+	transform: scale(0.45);
 	position: absolute;
 	top: 2rem;
-	right: 1rem;
+	right: 1.5rem;
 	z-index: 10000000;
 }
 .close:hover {
