@@ -51,7 +51,7 @@ body {font-family: applesans; font-size: 14px;}
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.6);
 	margin-top: 0.5rem;
-	margin-left: calc((100vw - 1024px) / 2);
+	margin-left: calc((100vw - 63vw) / 2);
 }
 #lista .dropdown-link {
 	color: black;
@@ -71,6 +71,11 @@ body {font-family: applesans; font-size: 14px;}
 
 @media screen and (width: 1440px) {
 	span {margin-left: 3.1rem;}
+}
+@media screen and (min-width: 1630px) {
+	.caption {
+		margin-left: calc((100vw - 1024px) / 2);
+	}
 }
 
 
