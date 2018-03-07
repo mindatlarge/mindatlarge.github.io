@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+	<meta name=”description” content=”Jelena Bulajic is a visual artist from Serbia.”>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<title>Jelena Bulajić</title>
@@ -13,21 +13,36 @@
 		<header>
 			<a id="jelena" class="l-o" href="drugi index.html">Jelena Bulajić</a>
 			<div id="nav">
-				<a class="n-1" href="#" style="opacity: 1;">Exhibitions</a>
-				<a class="n-2 l-o" href="#">Selected works</a>
-				<a class="n-3 l-o" href="#">About</a>
-				<a class="n-4 l-o" href="#">Contact</a>
+				<a class="n-1" href="Exhibitions.html" style="opacity: 1;">Exhibitions</a>
+				<a class="n-2 l-o" href="selected-works.html">Selected works</a>
+				<a class="n-4 l-o" href="Contact.html">Contact</a>
 			</div>
 
 			<div id="ex-nav" style="display: none;">
 				<a id="solo" class="open-list" data-target="#solo-list" href="#">Solo</a>
 				<a id="group" class="open-list" data-target="#group-list" href="#">Group</a>
 			</div>
+
+			<div id="nav-mobile-btn">
+				<div class="bar gore"></div>
+				<div class="bar dole"></div>
+			</div>
+			<div id="nav-mobile" style="display: none;">
+				<a href="index.html">Jelena Bulajić</a>
+				<a href="Exhibitions.html">Exhibitions</a>
+				<a href="selected-works.html">Selected works</a>
+				<a href="Contact.html">Contact</a>
+			</div>
+
 		</header>
 		<div id="solo-list" class="list" style="display: none;">
-			<a href="#"><span>2019</span> Jelena Bulajic, Museum of Contemporary Art of Vojvodina (MSUV),
+
+			<a href="#" class="godine">2019</a>
+			<a href="#" class="pomeriti-g"> (upcoming) Jelena Bulajic, Museum of Contemporary Art of Vojvodina (MSUV),
 			Novi Sad, Serbia</a>
-			<a href="#" class="ima otvori-cg"><span>2017</span> Jelena Bulajic, carlier | gebauer, Berlin, Germany</a>
+			<a href="#" class="godine">2017</a>
+			<a href="#cg-l" id="cg-l" class="ima otvori-cg pomeriti-g"> Jelena Bulajic, carlier | gebauer, Berlin, Germany</a><div class="close-btn" style="display: none"><img src="cancel.png"></div>
+
 			<div class="dropdown-container-cg" style="display: none;">
 				<div><img src="CGEBAUER-W/CGEBAUER-1.jpg">
 					<p class="caption">Exhibition view at carlier | gebauer, 2017. Courtesy of the artist and carlier | gebauer. Photo: Trevor Good.</p></div>
@@ -40,24 +55,31 @@
 				<div><img src="CGEBAUER-W/CGEBAUER-5.jpg">
 				<p class="caption">Exhibition view at carlier | gebauer, 2017. Courtesy of the artist and carlier | gebauer. Photo: Trevor Good.</p></div>
 			</div>
-			<a href="#"><span>2016</span> Collision, Unit 1 Gallery | Workshop, London, UK</a>
-			<a href="#"><span>2014</span> Museum Collection of Cultural Centre of Vrbas, Vrbas, Serbia</a>
-			<a href="#"><span>2013</span> Old Age, Art Gallery of Cultural Centre of Belgrade, Belgrade,
+
+			<a href="#" class="godine">2016</a>
+			<a href="#" class="pomeriti-g"> Collision, Unit 1 Gallery | Workshop, London, UK</a>
+			<a href="#" class="godine">2014</a>
+			<a href="#" class="pomeriti-g">Museum Collection of Cultural Centre of Vrbas, Vrbas, Serbia</a>
+			<a href="#" class="godine">2013</a>
+			<a href="#"" class="pomeriti-g">Old Age, Art Gallery of Cultural Centre of Belgrade, Belgrade,
 			Serbia. Travelled to Nadežda Petrović Gallery, Čačak and Likovni
 			Susret Gallery, Subotica, Serbia</a>
-			<a href="#"><span>2012</span> Gallery of Association of Visual Artists of Vojvodina, Novi Sad,
+			<a href="#" class="godine">2012</a>
+			<a href="#" class="pomeriti-g"> Gallery of Association of Visual Artists of Vojvodina, Novi Sad,
 			Serbia</a>
-			<a href="#"><span>2011</span> Platoneum Gallery, Branch of Serbian Academy of Sciences and
+			<a href="#" class="godine">2011</a>
+			<a href="#" class="pomeriti-g"> Platoneum Gallery, Branch of Serbian Academy of Sciences and
 			Arts, Novi Sad, Serbia</a>
 		</div>
 
 		<div id="group-list" class="list" style="display: none;">
-			<a href="#"><span>2016</span> Wasted Time, Ferenczy Museum Centre Art Mill, Szentendre,
+
+			<a href="#" class="godine">2016</a><a href="#" class="pomeriti-g"> Wasted Time, Ferenczy Museum Centre Art Mill, Szentendre,
 			Hungary</a>
-			<a class="pomeriti" href="#">I Prefer Life, The Weserburg, Bremen, Germany</a>
-			<a class="pomeriti ima otvori-saat" href="#">Champagne Life, The Saatchi Gallery, London, UK</a>
+			<a href="#" class="pomeriti" >I Prefer Life, The Weserburg, Bremen, Germany</a>
+			<a href="#saat-l" class="pomeriti ima otvori-saat" id="saat-l">Champagne Life, The Saatchi Gallery, London, UK</a><div class="close-btn" style="display: none"><img src="cancel.png"></div>
 			<div class="dropdown-container-saat" style="display: none;">
-				<div><img src="SATCHI-W/SATCHI-1">
+				<div><img src="SATCHI-W/SATCHI-1.jpg">
 				<p class="caption">Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.</p></div>
 				<div><img src="SATCHI-W/SATCHI-3.jpg">
 				<p class="caption">Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.</p></div>
@@ -67,46 +89,51 @@
 				<p class="caption">Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.</p></div>
 				<div><img src="SATCHI-W/SATCHI-6.jpg">
 				<p class="caption">Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.</p></div>
-				<div><img src="SATCHI-W/SATCHI-7.jpg">
-				<p class="caption">Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.</p></div>
-				<div><img src="SATCHI-W/SATCHI-8.jpg">
-				<p class="caption">Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.</p></div>
 			</div>
-			<a href="#"><span>2015</span> New London Figurative, Charlie Smith london, London, UK</a>
+			<!--2015-->
+			<a href="#" class="godine">2015</a>
+			<a href="#" class="pomeriti-g"> New London Figurative, Charlie Smith london, London, UK</a>
 			<a class="pomeriti" href="#">Summer Exhibition 2015, Royal Academy of Arts, London, UK</a>
-			<a href="#"><span>2014</span> Premonition, Blood, Hope: Art in Vojvodina and Serbia 1914 –
-			2014, Künstlerhaus, Vienna, Austria</a>
-			<a class="pomeriti" href="#">Saatchi’s New Sensations and The Future Can Wait, Victoria
+			<!--2014-->
+			<a href="#" class="godine">2014</a>
+			<a href="#" class="pomeriti-g">Premonition, Blood, Hope: Art in Vojvodina and Serbia 1914 – 2014, Künstlerhaus, Vienna, Austria</a>
+			<a href="#" class="pomeriti">Saatchi’s New Sensations and The Future Can Wait, Victoria
 			House, London, UK</a>
-			<a class="pomeriti" href="#">BP Portrait Award 2014, National Portrait Gallery, London, UK.
+			<a href="#" class="pomeriti" >BP Portrait Award 2014, National Portrait Gallery, London, UK.
 			Travelled to Sunderland Museum & Winter Gardens, Sunderland and
 			Scottish National Portrait Gallery, Edinburgh, UK</a>
-			<a class="pomeriti" href="#">The open west 2014, The Wilson Cheltenham Art Gallery & Museum,
+			<a href="#" class="pomeriti">The open west 2014, The Wilson Cheltenham Art Gallery & Museum,
 			Cheltenham, UK</a>
-			<a class="pomeriti" href="#">Culture Escape: Toward a Better World, Galerie Nest, Geneva,
+			<a href="#" class="pomeriti">Culture Escape: Toward a Better World, Galerie Nest, Geneva,
 			Switzerland</a>
-			<a class="pomeriti" href="#">Young Gods, Charlie Smith london and The Griffin Gallery,
+			<a href="#" class="pomeriti">Young Gods, Charlie Smith london and The Griffin Gallery,
 			London, UK. Curated by Zavier Ellis</a>
-			<a href="#"><span>2013</span> MA Degree Show, City & Guilds of London Art School, London, UK</a>
+			<!--2013-->
+			<a href="#" class="godine">2013</a>
+			<a href="#" class="pomeriti-g"> MA Degree Show, City & Guilds of London Art School, London, UK</a>
 			<a class="pomeriti" href="#">Young 2013, Niš Art Foundation, Art Gallery of Philip Morris
 			Operations, Niš, Serbia</a>
-			<a href="#"><span>2012</span> Perspectives 11, Art klinika, Novi Sad, Serbia. Travelled to
+			<!--2012-->
+			<a href="#" class="godine">2012</a>
+			<a href="#" class="pomeriti-g"> Perspectives 11, Art klinika, Novi Sad, Serbia. Travelled to
 			Srem Museum, Sremska Mitrovica, Serbia</a>
 			<a class="pomeriti" href="#">Annul Degree Exhibition of the Department of Visual Arts of the
 			Academy of Arts, Gallery of Matica srpska, Novi Sad, Serbia</a>
-			<a href="#"><span>2011</span> Umêni Pádu: The Art of Fall, Conkling Gallery, Minnesota State
+			<!--2011-->
+			<a href="#" class="godine">2011</a>
+			<a href="#" class="pomeriti-g"> Umêni Pádu: The Art of Fall, Conkling Gallery, Minnesota State
 			University, Mankato, USA</a>
-			<a class="pomeriti" href="#">KotorArt, Kotor Fortress, Montenegro</a>
-			<a class="pomeriti" href="#">XIV INTERBIFEP (International Biennial Festival of Portrait,
+			<a href="#" class="pomeriti">KotorArt, Kotor Fortress, Montenegro</a>
+			<a href="#" class="pomeriti">XIV INTERBIFEP (International Biennial Festival of Portrait,
 			Drawings and Graphics), International Gallery of Portrait,
 			Tuzla, Bosnia and Herzegovina</a>
-			<a class="pomeriti" href="#">Palette of Youth, Art Gallery of Cultural Centre of Vrbas, Vrbas, Serbia. Travelled to Most Gallery, Novi Sad, Serbia</a>
-			<a class="pomeriti" href="#">Young 2011, Niš Art Foundation, Art Gallery of Philip Morris
+			<a href="#" class="pomeriti">Palette of Youth, Art Gallery of Cultural Centre of Vrbas, Vrbas, Serbia. Travelled to Most Gallery, Novi Sad, Serbia</a>
+			<a href="#" class="pomeriti">Young 2011, Niš Art Foundation, Art Gallery of Philip Morris
 			Operations, Niš, Serbia. Travelled to Gallery of Niš Art
 			Foundation, Belgrade and Gallery of Matica srpska, Novi Sad,
 			Serbia</a>
 		</div>
-		<div id="dole"></div>
+		<div id="prostor-footer"></div>
 
 
 
@@ -115,7 +142,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="slick/slick.js"></script>
 
+
+
 <script>
+	$(document).ready(function(){
+		$('#ex-nav').fadeIn(300);
+	});
+
 	$('#solo').on('click', function(){
 		$('#solo').css('opacity', '1');
 		$('#group').css('opacity', "0.5");
@@ -125,22 +158,27 @@
 		$('#solo').css('opacity', "0.5");
 	});
 
-	$(".open-list").click(function () {
-    var $target = $($(this).data('target'));
-    $(".list").not($target).hide();
-    $target.fadeIn(300);
-});
-	$(document).ready(function(){
-		$('#ex-nav').fadeIn(300);
+	$('.open-list').click(function () {
+    	var $target = $($(this).data('target'));
+    		$(".list").not($target).hide();
+    		$target.fadeIn(300);
+    $('.dropdown-container-cg, .dropdown-container-saat, .close-btn').hide();
 	});
 
-	$('.otvori-cg').click(function(e){    
+	$('.otvori-cg').on('click', function(){    
     	$('.dropdown-container-cg').fadeToggle(300);
     	$('.dropdown-container-cg').slick('setPosition');
+    	$('.close-btn').fadeToggle(300);
 	});
-	$('.otvori-saat').click(function(e){    
+	$('.close-btn').on('click', function(){
+		$('.dropdown-container-cg, .dropdown-container-saat, .close-btn').fadeOut(300);
+	});
+
+
+	$('.otvori-saat').on('click', function(){    
     	$('.dropdown-container-saat').fadeToggle(300);
     	$('.dropdown-container-saat').slick('setPosition');
+    	$('.close-btn').fadeToggle(300);
 	});
 
 	$('.dropdown-container-cg, .dropdown-container-saat').slick({
@@ -150,6 +188,34 @@
 	  fade: true,
 	  cssEase: 'linear'
 	});
+
+
+		$('#nav-mobile-btn').on('click', function(){
+		$('#nav-mobile').fadeToggle(300);
+	});
+
+  $('#nav-mobile-btn, #nav-mobile a').click(function(){
+ 		if($('.gore').hasClass('gore-x'))
+ 		{
+    		$('.gore').removeClass('gore-x');
+    		$('.gore').addClass('gore-close');
+  		}
+ 		else{
+    		$('.gore').addClass('gore-x');
+    		$('.gore').removeClass('gore-close');
+     		}
+  		});
+    $('#nav-mobile-btn, #nav-mobile a').click(function(){
+ 		if($('.dole').hasClass('dole-x'))
+ 		{
+    		$('.dole').removeClass('dole-x');
+    		$('.dole').addClass('dole-close');
+  		}
+ 		else{
+    		$('.dole').addClass('dole-x');
+    		$('.dole').removeClass('dole-close');
+     		}
+  		});
 
 </script>
 

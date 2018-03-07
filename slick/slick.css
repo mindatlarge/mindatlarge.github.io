@@ -76,8 +76,7 @@
 
 .slick-slide
 {
-    padding-top: 2rem;
-    margin-bottom: 1rem;
+    padding: 2rem 0 1rem 0;
     display: none;
     float: left;
 
@@ -90,6 +89,7 @@
     float: right;
 }
 .slick-slide img {
+    width: 1024px;
     margin: 0 auto;
     display: block;
 }
@@ -121,7 +121,6 @@
     display: none;
 }
 .slick-arrow {opacity: 0.7;}
-.slick-arrow:hover {opacity: 1;}
 
 .slick-prev, .slick-next {
     transform: scale(0.5);
@@ -129,25 +128,58 @@
     border: none;
 
     position: absolute;
-    top:50%;
+    top:47%;
     z-index: 1;
 }
 .slick-next {right: 1rem;}
-.slick-prev:hover, .slick-next:hover {
-    cursor: pointer;
-}
-
 .slick-prev:focus, .slick-next:focus {
     outline: none;
 }
-
 .slick-dots {
     display: none !important;
 }
+@media screen and (min-width: 1024px) {
+    .slick-arrow:hover {opacity: 1;}
+    .slick-prev:hover, .slick-next:hover {
+    cursor: pointer;}
+}
+@media screen and (max-width: 1023px) {.slick-arrow {opacity: 1;}}
+
+
 @media screen and (min-height: 631px) and (max-height: 800px) {
     .slick-slide img {
-        width: 70%;
-    }
+        width: 70%;}
+    .caption {
+        margin-left: calc((100% - 70%) / 2);}
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .slick-slide img {
+        width:67%;}
+    .caption {
+        width: 67%;
+        margin-left: calc((100% - 67%) / 2);}
+    .close-btn {right: 3.32rem;}
+}
+@media screen and (min-width: 645px) and (max-width: 1023px) {
+    .slick-slide img {
+        width: 80%;}
+    .caption {
+        width: 80%;
+        margin-left: calc((100% - 80%) / 2);}
+    .slick-next, .slick-prev {
+        top: 42%;}
+    .slick-next {right: -0.7rem;}
+    .slick-prev {left: -0.7rem;}
+    .close-btn {right: 1.7rem; transform: scale(0.45);}
+}
+
+@media screen and (max-width: 644px) {
+    .slick-slide img {
+        width: 100%;}
+    .slick-arrow {display: none !important;}
+    .caption {width: 100%;
+    margin-left: calc((100% - 100%) / 2);}
+    .close-btn {right: 1.3rem; transform: scale(0.4);}
 }
 
 

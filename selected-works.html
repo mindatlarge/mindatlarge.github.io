@@ -10,11 +10,11 @@
 <body>
 	<div id="container">
 		<header>
-			<a id="jelena" class="l-no" href="#">Jelena Bulajić</a>
+			<a id="jelena" class="l-o" href="drugi index.html">Jelena Bulajić</a>
 			<div id="nav">
-				<a class="n-1" href="Exhibitions.html">Exhibitions</a>
-				<a class="n-2" href="selected-works.html">Selected works</a>
-				<a class="n-4" href="Contact.html">Contact</a>
+				<a class="n-1 l-o" href="Exhibitions.html">Exhibitions</a>
+				<a class="n-2 l-no" href="selected-works.html">Selected works</a>
+				<a class="n-4 l-o" href="Contact.html">Contact</a>
 			</div>
 
 			<div id="nav-mobile-btn">
@@ -26,21 +26,40 @@
 				<a href="Exhibitions.html">Exhibitions</a>
 				<a href="selected-works.html">Selected works</a>
 				<a href="Contact.html">Contact</a>
-			</div>
+			</div>	
 
 		</header>
+		<div id="s-w-container" style="display: none;">
 
+			<div id="year-list">
+				<a href="#">2017</a>
+				<a href="#">2016</a>
+				<a href="#">2015</a>
+				<a href="#">2014</a>
+				<a href="#">2013</a>
+				<a href="#">2012</a>
+				<a href="#">2011</a>
+				<a href="#">2010</a>
+				<a href="#">2009</a>
+				<a href="#">2008</a>
+				<a href="#">2007</a>
+				<a href="#">2006</a>
+				<a href="#">2005</a>
+				<a href="#">2004</a>
+			</div>
+		</div>
 
 
 	</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-
 <script>
+	
 	$(document).ready(function(){
- 		$('html').addClass('cursor');
- 		});
+		$('#s-w-container').fadeIn(300);
+	});
+
 		$('#nav-mobile-btn').on('click', function(){
 		$('#nav-mobile').fadeToggle(300);
 	});
@@ -67,7 +86,6 @@
     		$('.dole').removeClass('dole-close');
      		}
   		});
-
 
 </script>
 

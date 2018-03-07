@@ -10,11 +10,11 @@
 <body>
 	<div id="container">
 		<header>
-			<a id="jelena" class="l-no" href="#">Jelena Bulajić</a>
+			<a id="jelena" class="l-o" href="drugi index.html">Jelena Bulajić</a>
 			<div id="nav">
-				<a class="n-1" href="Exhibitions.html">Exhibitions</a>
-				<a class="n-2" href="selected-works.html">Selected works</a>
-				<a class="n-4" href="Contact.html">Contact</a>
+				<a class="n-1 l-o" href="Exhibitions.html">Exhibitions</a>
+				<a class="n-2 l-o" href="selected-works.html">Selected works</a>
+				<a class="n-4 l-no" href="Contact.html">Contact</a>
 			</div>
 
 			<div id="nav-mobile-btn">
@@ -29,8 +29,23 @@
 			</div>
 
 		</header>
-
-
+		<div id="contact-container" style="display: none;">
+			<div id="jelena-info">
+				<p>Studio</p>
+				<p>studio@jelenabulajic.com</p>
+			</div>
+			<div id="carlier-gebauer-info">
+				<p>Gallery</p>
+				<p>carlier | gebauer</p>
+				<p>Markgrafenstraße 67</p>
+				<p>10969 Berlin</p>
+				<p>Germany</p>
+				<p>+49 (0)30 2400 863-0</p>
+				<p>mail@carliergebauer.com</p>
+				<p>www.carliergebauer.com</p>
+			</div>
+			</div>
+		</div>
 
 	</div>
 
@@ -38,9 +53,11 @@
 
 
 <script>
+	
 	$(document).ready(function(){
- 		$('html').addClass('cursor');
- 		});
+		$('#contact-container').fadeIn(300);
+	});
+
 		$('#nav-mobile-btn').on('click', function(){
 		$('#nav-mobile').fadeToggle(300);
 	});
@@ -67,7 +84,6 @@
     		$('.dole').removeClass('dole-close');
      		}
   		});
-
 
 </script>
 

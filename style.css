@@ -6,30 +6,24 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;}
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
 body {font-family: courier; font-size: 12px;}
 html:hover {cursor: pointer;}
 .cursor {cursor: default !important;}
+a {text-decoration: none;}
 #container {
-	width: 100vw;
 }
 header {
-	width: 735px;
+	width: 550px;
 	height: 1.5rem;
 	margin: 3.5rem 0 0 2rem;
+	background-color: white;
 }
 header a {
-	text-decoration: none;
 	color: black;
 	display: inline-block;
 }
-header:hover a {
-	opacity: 0.5;
-	transition: 0.5s;}
-header a:hover, #nav a:hover {
-		opacity: 1;
-		transition: 0.6s;
-	}
 #nav {
 	display: inline-block;
 	margin-left: 4rem;
@@ -41,40 +35,136 @@ header a:hover, #nav a:hover {
 .l-o {
 	opacity: 0.5;
 }
+
+/* EXHIBITIONS */
+.close-btn {
+	transform: scale(0.5);
+	opacity: 0.5;
+	position: absolute;
+	right: 3rem;
+	display: inline-block;
+	z-index: 1000000;
+}
+
 #ex-nav{
 	margin-top: 1rem;
 }
 #group {padding-left: 8.58rem;}
 #ex-nav a {opacity: 0.5;}
-#ex-nav a:hover {opacity: 1 !important; transition: 0.5s;}
 
 .list {
 	margin: 7.2rem 2rem 0 2rem;
 }
 .list a {
 	padding-top: 0.5rem;
-	text-decoration: none;
 	display: block;
 }
 .list a:not(.ima){
 	color: rgba(0, 0, 0, 0.5);
 }
-.list a:hover:not(.ima) {
-	cursor: default;
-}
 .pomeriti {margin-left: 2.27rem;}
-span {color: black;}
+#solo-list .godine, #group-list .godine {color: black;}
+.pomeriti-g {margin: -1.38rem 0 0 2.35rem; line-height: 14px; vertical-align: middle;}
 .ima {color: rgba(0, 0, 0, 0.68);}
-.ima:hover:not(span) {color: black;}
 .caption {
 	margin-top: 0.2rem;
 	margin-left: calc((100% - 1024px)/2);
 	color: rgba(0, 0, 0, 0.72);
-	font-size: 10px;
+	padding-top: 0.5rem;
 }
-#dole {margin-bottom: 2rem;}
+#prostor-footer {margin-bottom: 2rem;}
+
+/* SELECTED WORKS */
+
+#year-list {margin:7.2rem 0 0 2rem; width: 3rem;}
+#year-list a {
+	color: black;
+	display: block;
+	padding-top: 0.5rem;
+}
+
+/* CONTACT */
+#contact-container div {display: inline-block; vertical-align: text-top;}
+#contact-container {margin: 7.2rem 0 0 2rem;}
+#carlier-gebauer-info {margin-left: 9rem;}
+#contact-container p {padding-top: 0.5rem;}
+
+/* HOVER ELEMENTI ZA PC/LAPTOP */
+@media screen and (min-width: 1024px) {
+	header:hover a {
+	opacity: 0.5;
+	transition: 0.5s;}
+
+	header a:hover, #nav a:hover {
+		opacity: 1;
+		transition: 0.6s;}
+	#ex-nav a:hover {opacity: 1 !important; transition: 0.5s;}
+
+	.list a:hover:not(.ima) {
+		cursor: default;}
+
+	.ima:hover:not(span) {color: black;}
+
+	#year-list:hover a {opacity: 0.5; transition: 0.6s;}
+	#year-list a:hover {opacity: 1;}
+
+	#contact-container:hover, #container:hover {cursor: default;}
+
+	#nav-mobile {display: none;}
+	.close-btn:hover {opacity: 1; cursor: pointer;}
+}
+
+@media screen and (max-width: 1023px) {
+	#jelena {opacity: 1;}
+	#nav {display: none;}
+	header {width: 7rem;}
+	#ex-nav {width: 15rem;}
+	.close-btn {opacity: 1;}
 
 
+	/* NAV MENU BTN */
+	#nav-mobile-btn {
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		position: absolute;
+		top: 3.4rem;
+		right: 2rem;
+		z-index: 100;
+	}
+	#nav-mobile {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		background-color: white;
+		z-index: 1;
+		padding: 3rem 0 0 2rem;
+	}
+	#nav-mobile a {
+		display: block;
+		padding-top: 0.5rem;
+	}
+	.bar {
+		width: 22px;
+		height: 1px;
+		transform: translateY(8px);
+		background-color: black;
+	}
+	.gore {
+		margin-bottom: 3px;
+	}
+	.gore-x {transform: rotate(45deg) translate(5px, 8px); transition: 0.4s;}
+	.gore-close {transform: rotate(0deg) translate(0px, 8px); transition: 0.4s;}
+	.dole-x {transform: rotate(-45deg) translate(-5px, 3px); transition: 0.4s;}
+	.dole-close {transform: rotate(0deg); transition: 0.4s;}
+}
 
+@media screen and (max-width: 554px) {
+	#contact-container div {display: block;}
+	#carlier-gebauer-info {margin: 2rem 0 0 0;}
+
+}
 
 
