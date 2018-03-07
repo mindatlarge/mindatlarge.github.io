@@ -147,6 +147,7 @@ header a {
 		display: block;
 		padding-top: 0.5rem;
 		width: 7rem;
+		opacity: 0.5;
 	}
 	.bar {
 		width: 22px;
