@@ -128,7 +128,7 @@ header a {
 		width: 22px;
 		height: 22px;
 		position: absolute;
-		top: 3.4rem;
+		top: 3.3rem;
 		right: 2rem;
 		z-index: 100;
 	}
@@ -145,6 +145,7 @@ header a {
 	#nav-mobile a {
 		display: block;
 		padding-top: 0.5rem;
+		width: 7rem;
 	}
 	.bar {
 		width: 22px;
@@ -155,16 +156,17 @@ header a {
 	.gore {
 		margin-bottom: 3px;
 	}
-	.gore-x {transform: rotate(45deg) translate(5px, 8px); transition: 0.4s;}
+	.gore-x {transform: rotate(45deg) translate(6px, 8px); transition: 0.4s;}
 	.gore-close {transform: rotate(0deg) translate(0px, 8px); transition: 0.4s;}
 	.dole-x {transform: rotate(-45deg) translate(-5px, 3px); transition: 0.4s;}
 	.dole-close {transform: rotate(0deg); transition: 0.4s;}
 }
 
 @media screen and (max-width: 554px) {
+	#contact-container, #year-list, .list {margin-top: 4.5rem;}
 	#contact-container div {display: block;}
 	#carlier-gebauer-info {margin: 2rem 0 0 0;}
-
+	#ex-nav #group {padding-left: 4.2rem;}
 }
 
 

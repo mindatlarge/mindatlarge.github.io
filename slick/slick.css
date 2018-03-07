@@ -179,7 +179,7 @@
     .slick-arrow {display: none !important;}
     .caption {width: 100%;
     margin-left: calc((100% - 100%) / 2);}
-    .close-btn {right: 1.3rem; transform: scale(0.4);}
+    .close-btn {right: 1.35rem; transform: scale(0.4); opacity: 0.72;}
 }
 
 
