@@ -43,7 +43,7 @@ header a {
 	position: absolute;
 	right: 3rem;
 	display: inline-block;
-	z-index: 1000000;
+	z-index: 10;
 }
 
 #ex-nav{
@@ -128,19 +128,20 @@ header a {
 		width: 22px;
 		height: 22px;
 		position: absolute;
-		top: 3.3rem;
+		top: 3.32rem;
 		right: 2rem;
-		z-index: 100;
+		z-index: 1000;
 	}
 	#nav-mobile {
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 100vh;
+		height: 100%;
 		width: 100vw;
 		background-color: white;
 		z-index: 1;
 		padding: 3rem 0 0 2rem;
+		z-index: 100;
 	}
 	#nav-mobile a {
 		display: block;
@@ -167,6 +168,7 @@ header a {
 	#contact-container div {display: block;}
 	#carlier-gebauer-info {margin: 2rem 0 0 0;}
 	#ex-nav #group {padding-left: 4.2rem;}
+	.bar {width: 18px;}
 }
 
 
