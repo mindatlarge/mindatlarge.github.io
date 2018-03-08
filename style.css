@@ -87,7 +87,7 @@ header a {
 #contact-container div {display: inline-block; vertical-align: text-top;}
 #contact-container {margin: 7.2rem 0 0 2rem;}
 #carlier-gebauer-info {margin-left: 9rem;}
-#contact-container p {padding-top: 0.5rem; text-decoration: none; color: black;}
+#contact-container p {padding-top: 0.5rem; }
 
 /* HOVER ELEMENTI ZA PC/LAPTOP */
 @media screen and (min-width: 1024px) {
