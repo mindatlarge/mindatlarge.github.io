@@ -91,6 +91,7 @@ header a {
 
 /* HOVER ELEMENTI ZA PC/LAPTOP */
 @media screen and (min-width: 1024px) {
+	#nav-mobile-btn {display: none;}
 	header:hover a {
 	opacity: 0.5;
 	transition: 0.5s;}
