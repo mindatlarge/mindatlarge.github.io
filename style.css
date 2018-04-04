@@ -118,7 +118,7 @@ header a {
 	width: 100%;
 
 }
-.cell:hover p {
+.cell:hover p, .cell1:hover p {
 	visibility: visible !important;
 }
 .cell p {
