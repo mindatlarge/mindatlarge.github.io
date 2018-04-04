@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name=”description” content=”Jelena Bulajic is a visual artist from Serbia.”>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Jelena Bulajić</title>
+</head>
+<body>
+	
+	<div id="container">
+		<header>
+			<a id="jelena" class="l-o" href="drugi index.html">Jelena Bulajić</a>
+			<div id="nav">
+				<a class="n-2 l-o" href="selected-works.html">Selected works</a>
+				<a class="n-1 l-o" href="Exhibitions.html">Exhibitions</a>
+				<a class="n-2 l-no" href="about.html">About</a>
+				<a class="n-4 l-o" href="Contact.html">Contact</a>
+			</div>
+			
+			<div id="about-nav" style="display: none;">
+				<a href="#">Biography</a>
+				<a href="#">Bibliography</a>
+				<a href="#">Essays</a>
+				<a href="#">Collections</a>
+			</div>
+
+			<div id="nav-mobile-btn"><img src="add.png"></div>
+			<div id="nav-mobile" style="display: none;">
+				<a href="index.html">Jelena Bulajić</a>
+				<a href="selected-works.html">Selected works</a>
+				<a href="Exhibitions.html">Exhibitions</a>
+				<a href="about.html" style="opacity: 1;">About</a>
+				<a href="Contact.html">Contact</a>
+			</div>
+		</header>
+
+
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="menu-button-touch.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('#about-nav').fadeIn(300);
+	});
+
+</script>
+
+</body>
+</html>

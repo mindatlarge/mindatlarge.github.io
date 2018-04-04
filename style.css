@@ -121,7 +121,7 @@ header a {
 .cell:hover p, .cell1:hover p {
 	visibility: visible !important;
 }
-.cell p {
+.cell p, .cell1 p {
 	margin-top: 0.5rem;
 }
 
