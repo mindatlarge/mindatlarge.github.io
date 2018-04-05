@@ -38,8 +38,8 @@
 				<div><img src="exhibitions/SATCHI-W/SATCHI-6.jpg">
 				<p class="caption">Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.</p></div>
 			</div>
-
-	<div id="container">
+<div id="container">
+	
 		<header>
 			<a id="jelena" class="l-o" href="drugi index.html">Jelena Bulajić</a>
 			<div id="nav">
@@ -80,7 +80,7 @@
 			<a href="#" class="godine">2014</a>
 			<a href="#" class="pomeriti-g">Museum Collection of Cultural Centre of Vrbas, Vrbas, Serbia</a>
 			<a href="#" class="godine">2013</a>
-			<a href="#"" class="pomeriti-g">Old Age, Art Gallery of Cultural Centre of Belgrade, Belgrade,
+			<a href="#" class="pomeriti-g">Old Age, Art Gallery of Cultural Centre of Belgrade, Belgrade,
 			Serbia. Travelled to Nadežda Petrović Gallery, Čačak and Likovni
 			Susret Gallery, Subotica, Serbia</a>
 			<a href="#" class="godine">2012</a>
@@ -175,10 +175,10 @@
 	});
 	/* DOK IMA JEDNA GALERIJA U SOLO */
 	$('.otvori-cg').on('click', function(){    
-    	$('.dropdown-container-cg').fadeToggle(250);
+    	$('.dropdown-container-cg').fadeToggle(230);
     	$('.dropdown-container-cg').slick('setPosition');
     	$('#container').addClass('pozadina-galerija');
-    	$('.close-btn').fadeToggle(300);
+    	$('.close-btn').fadeToggle();
 	});
 	$('.close-btn').on('click', function(){
 		$('.dropdown-container-cg, .dropdown-container-saat, .close-btn').fadeOut(200);
@@ -187,7 +187,7 @@
 
 	/* DOK IMA JEDNA GALERIJA U SOLO */
 	$('.otvori-saat').on('click', function(){    
-    	$('.dropdown-container-saat').fadeToggle(250);
+    	$('.dropdown-container-saat').fadeToggle(230);
     	$('.dropdown-container-saat').slick('setPosition');
     	$('#container').addClass('pozadina-galerija');
     	$('.close-btn').fadeToggle();
@@ -196,7 +196,7 @@
 	$('.dropdown-container-cg, .dropdown-container-saat').slick({
 	  dots: false,
 	  infinite: true,
-	  speed: 500,
+	  speed: 270,
 	  fade: true,
 	  cssEase: 'linear'
 	});

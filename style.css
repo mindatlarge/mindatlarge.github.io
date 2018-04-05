@@ -13,15 +13,15 @@ html:hover {cursor: pointer;}
 .cursor {cursor: default !important;}
 a {text-decoration: none;}
 #container {
-	position: absolute;
+	/*position: absolute;
+	height: 100%;
 	top: 0;
-	left: 0;
+	left: 0;*/
 }
 .rotate {transform: rotate(45deg);}
 footer {height: 3rem;}
 header {
 	width: 80vw;
-	height: 1.5rem;
 	margin: 3.5rem 0 0 2rem;
 	z-index: 1;
 }
@@ -81,25 +81,16 @@ header a {
 	padding-top: 0.5rem;
 }
 
-.dropdown-container-saat {
-	vertical-align: middle;
-}
-
 /* SELECTED WORKS */
 #year-list {
-	margin:7.2rem 0 0 2rem;
-	width: 96vw;
+	margin:7.2rem 2rem 0 2rem;
 	left: 0;
-
 }
 #year-list a {
 	color: black;
 	display: block;
 	padding-top: 0.5rem;
-
 }
-
-
 /* PROBA */
 .yrs {
 	display: inline-flex;
@@ -110,8 +101,8 @@ header a {
 }
 .cell, .cell1 {
 	display: block;
-	width: 25vw;
-	padding: 2rem 2rem;
+	width: 18vw;
+	margin: 1rem 1rem;
 }
 .yrs img {
 	display: block;
@@ -119,7 +110,8 @@ header a {
 
 }
 .cell:hover p, .cell1:hover p {
-	visibility: visible !important;
+	opacity: 1 !important;
+	transition: 0.3s;
 }
 .cell p, .cell1 p {
 	margin-top: 0.5rem;
@@ -128,7 +120,7 @@ header a {
 .cell a, .cell1 a {
 	cursor: url(cursor/add.png), auto;
 }
-
+.prazan-cell {width: 20vw;}
 
 /*  ABOUT */
 #about-nav {
@@ -143,7 +135,7 @@ header a {
 /* CONTACT */
 #contact-container div {display: inline-block; vertical-align: text-top;}
 #contact-container {margin: 7.2rem 0 0 2rem;}
-#carlier-gebauer-info {margin-left: 9rem;}
+#carlier-gebauer-info {margin-left: 10.3rem;}
 #contact-container p {padding-top: 0.5rem; }
 
 /* HOVER ELEMENTI ZA NON-TOUCH DEVICE*/
@@ -196,11 +188,11 @@ header a {
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 100%;
+		height: 100vh;
 		width: 100vw;
-		background-color: white;
 		padding: 3rem 0 0 2rem;
 		z-index: 100;
+		background: white;
 	}
 	#nav-mobile a {
 		display: block;
@@ -218,12 +210,19 @@ header a {
 	#ex-nav {margin-top: 1.5rem;}
 	#ex-nav #group {padding-left: 4.2rem;}
 	.bar {width: 18px;}
-	#container {overflow-x: hidden;}
 	#about-nav {margin-top: 1.5rem;}
 	#about-nav a:not(:first-child) {margin-left: 4.2rem;}
 	#about-nav a:nth-last-child(-n+2){top:7.5rem; left:-2.2rem; position: absolute;}
 	#about-nav a:last-child {left: 6.5rem;}
 }
+@media screen and (min-width: 1921px) {
+	#container {width: 1920px; margin: 0 auto;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.cell, .cell1 {width: 22vw; margin: 1rem 1rem;}
+}
 
-
+@media screen and (min-width: 1251px) and (max-width: 1400px) {
+	.prazan-cell {display: none;}
+}
 
