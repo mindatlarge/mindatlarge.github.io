@@ -51,7 +51,8 @@ header a {
 	cursor: url(cursor/substract.png), auto;
 }
 .pozadina-galerija {filter: blur(2px); opacity: 0.3; transition: all 0.3s;}
-
+.pozadina-about {filter: blur(2px); opacity: 0.3; transition: all 0.3s; background: white;}
+.h-poz-about {position: fixed; top: 0; }
 #ex-nav{
 	margin-top: 1rem;
 }
@@ -131,6 +132,15 @@ header a {
 
 #about-nav a:nth-child(2), #about-nav a:last-child {margin-left: 6.3rem;}
 #about-nav a:nth-child(3) {margin-left: 4.9rem;}
+
+/* essays */
+.about-text {
+	margin: 7.2rem auto 0 auto;
+	width: 40vw;}
+.about-text p { z-index: 1000; }
+.essays1 {
+	height: 30vh;
+}
 
 /* CONTACT */
 #contact-container div {display: inline-block; vertical-align: text-top;}
