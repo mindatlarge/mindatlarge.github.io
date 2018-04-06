@@ -11,6 +11,7 @@
 body {font-family: courier; font-size: 12px;}
 html:hover {cursor: pointer;}
 .cursor {cursor: default !important;}
+span {font-style: italic;}
 a {text-decoration: none;}
 #container {
 	/*position: absolute;
@@ -52,7 +53,8 @@ header a {
 }
 .pozadina-galerija {filter: blur(2px); opacity: 0.3; transition: all 0.3s;}
 .pozadina-about {filter: blur(2px); opacity: 0.3; transition: all 0.3s; background: white;}
-.h-poz-about {position: fixed; top: 0; }
+.h-poz-about {position: fixed; top: 0;}
+.l-poz-about {position: fixed; top: 7.2rem;}
 #ex-nav{
 	margin-top: 1rem;
 }
@@ -66,7 +68,7 @@ header a {
 	padding-top: 0.5rem;
 	display: block;
 }
-.list a.ima {cursor: url(cursor/add.png), auto}
+
 .list a:not(.ima){
 	color: rgba(0, 0, 0, 0.5);
 }
@@ -92,25 +94,23 @@ header a {
 	display: block;
 	padding-top: 0.5rem;
 }
-/* PROBA */
 .yrs {
 	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: flex-start;
-	justify-content: space-around;
-}
-.cell, .cell1 {
+	justify-content: space-between;}
+.cell {
 	display: block;
 	width: 18vw;
-	margin: 1rem 1rem;
+	margin: 2% 3vw;
 }
 .yrs img {
 	display: block;
 	width: 100%;
 
 }
-.cell:hover p, .cell1:hover p {
+.cell:hover p {
 	opacity: 1 !important;
 	transition: 0.3s;
 }
@@ -129,19 +129,18 @@ header a {
 	display: block;
 }
 #about-nav a {opacity: 0.5; display: inline-block;}
+#about-nav a:nth-child(2) {margin-left: 6.3rem;}
+#about-nav a:last-child {margin-left: 7.5rem;}
 
-#about-nav a:nth-child(2), #about-nav a:last-child {margin-left: 6.3rem;}
-#about-nav a:nth-child(3) {margin-left: 4.9rem;}
+/* ESSAYS */
 
-/* essays */
-.about-text {
-	margin: 7.2rem auto 0 auto;
-	width: 40vw;}
-.about-text p { z-index: 1000; }
-.essays1 {
-	height: 30vh;
-}
+#essays-list {margin: 7.2rem 2rem 0 2rem; position: fixed; top: 6.8rem;}
+#essays-list a {opacity: 0.5; color: black; display: block;}
+.essays-text {width: 50%; margin: 10% auto; text-align: justify;}
+.uvuci {width: 90%; margin: 0 auto;}
 
+h3 {margin-bottom: 1%; font-size: 14px;}
+h2 {margin-bottom: 1.5%; font-size: 15px;}
 /* CONTACT */
 #contact-container div {display: inline-block; vertical-align: text-top;}
 #contact-container {margin: 7.2rem 0 0 2rem;}
@@ -165,6 +164,8 @@ header a {
 
 	.ima:hover:not(span) {color: black;}
 
+	#essays-list a:hover {opacity: 1; transition: 0.5s;}
+
 	/*#year-list:hover a {opacity: 0.5; transition: 0.6s;}
 	#year-list a:hover {opacity: 1;}*/
 
@@ -174,6 +175,7 @@ header a {
 }
 
 @media screen and (max-width: 1023px) {
+	header {width: 80vw;}
 	#jelena {opacity: 1;}
 	#nav {display: none;}
 	#ex-nav {width: 15rem;}
@@ -181,7 +183,8 @@ header a {
 		margin-left: 8%;
 	}
 
-
+	/* ABOUT ESSAYS TEXT */ 
+	.essays-text {width: 80%;}
 
 	/* NAV MENU BTN */
 	#nav-mobile-btn {
@@ -217,22 +220,15 @@ header a {
 	#contact-container, #year-list, .list {margin-top: 4.5rem;}
 	#contact-container div {display: block;}
 	#carlier-gebauer-info {margin: 2rem 0 0 0;}
-	#ex-nav {margin-top: 1.5rem;}
+	#ex-nav, #about-nav {margin-top: 1.5rem;}
 	#ex-nav #group {padding-left: 4.2rem;}
-	.bar {width: 18px;}
-	#about-nav {margin-top: 1.5rem;}
-	#about-nav a:not(:first-child) {margin-left: 4.2rem;}
+	/*#about-nav a:not(:first-child) {margin-left: 4.2rem;}
 	#about-nav a:nth-last-child(-n+2){top:7.5rem; left:-2.2rem; position: absolute;}
-	#about-nav a:last-child {left: 6.5rem;}
+	#about-nav a:last-child {left: 6.5rem;}*/
+	#essays-list {margin-top: 4.5rem;}
 }
 @media screen and (min-width: 1921px) {
 	#container {width: 1920px; margin: 0 auto;}
 }
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-	.cell, .cell1 {width: 22vw; margin: 1rem 1rem;}
-}
 
-@media screen and (min-width: 1251px) and (max-width: 1400px) {
-	.prazan-cell {display: none;}
-}
 

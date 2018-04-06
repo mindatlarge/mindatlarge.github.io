@@ -342,7 +342,12 @@ img.mfp-img {
     0% {opacity: 0;}    
     100% {opacity: 1;}
 }
-
+@media screen and (max-width: 1024px) {
+  img.mfp-img, div.mfp-title {width: 85%; margin: 0 auto;}
+}
+@media screen and (max-width: 767px) {
+  .mfp-arrow {display: none !important;}
+}
 .mfp-figure {
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;

@@ -153,7 +153,6 @@
 
 
 <script>
-
 	$(document).ready(function(){
 		$('#ex-nav').fadeIn(300);
 	});
@@ -201,7 +200,15 @@
 	  cssEase: 'linear'
 	});
 
-
+var $carousel = $('.dropdown-container-saat, .dropdown-container-cg');
+$(document).on('keydown', function(e) {
+                if(e.keyCode == 37) {
+                    $carousel.slick('slickPrev');
+                }
+                if(e.keyCode == 39) {
+                    $carousel.slick('slickNext');
+                }
+            });
 
 </script>
 
