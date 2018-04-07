@@ -1,7 +1,6 @@
 @font-face {
 	font-family: courier;
-	src: url(Courier New.ttf);
-}
+	src: url(Courier New.ttf);}
 * {
 	margin: 0;
 	padding: 0;
@@ -11,15 +10,10 @@
 body {font-family: courier; font-size: 12px;}
 html:hover {cursor: pointer;}
 .cursor {cursor: default !important;}
+.cursor-a {cursor: url(cursor/substract.png), auto !important; z-index: 1000;}
 span {font-style: italic;}
 a {text-decoration: none;}
-#container {
-	/*position: absolute;
-	height: 100%;
-	top: 0;
-	left: 0;*/
-}
-.rotate {transform: rotate(45deg);}
+.rotate {transform: rotate(45deg); position: fixed !important;}
 footer {height: 3rem;}
 header {
 	width: 80vw;
@@ -72,9 +66,9 @@ header a {
 .list a:not(.ima){
 	color: rgba(0, 0, 0, 0.5);
 }
-.pomeriti {margin-left: 2.27rem;}
+
 #solo-list .godine, #group-list .godine {color: black;}
-.pomeriti-g {margin: -1.38rem 0 0 2.35rem; line-height: 14px; vertical-align: middle;}
+
 .ima {color: rgba(0, 0, 0, 0.68);}
 .caption {
 	width: 60%;
@@ -86,7 +80,7 @@ header a {
 
 /* SELECTED WORKS */
 #year-list {
-	margin:7.2rem 2rem 0 2rem;
+	margin: 9rem 2rem 0 2rem;
 	left: 0;
 }
 #year-list a {
@@ -131,6 +125,9 @@ header a {
 #about-nav a {opacity: 0.5; display: inline-block;}
 #about-nav a:nth-child(2) {margin-left: 6.3rem;}
 #about-nav a:last-child {margin-left: 7.5rem;}
+/* BIOGRAPHY */
+#biography-list {margin: 7.7rem 2rem 0 2rem;}
+
 
 /* ESSAYS */
 
@@ -139,8 +136,8 @@ header a {
 .essays-text {width: 50%; margin: 10% auto; text-align: justify;}
 .uvuci {width: 90%; margin: 0 auto;}
 
-h3 {margin-bottom: 1%; font-size: 14px;}
-h2 {margin-bottom: 1.5%; font-size: 15px;}
+h3 {margin-bottom: 1%; font-size: 14px; font-weight: normal;}
+h2 {margin-bottom: 1.5%; font-size: 15px; font-weight: normal;}
 /* CONTACT */
 #contact-container div {display: inline-block; vertical-align: text-top;}
 #contact-container {margin: 7.2rem 0 0 2rem;}
@@ -180,7 +177,7 @@ h2 {margin-bottom: 1.5%; font-size: 15px;}
 	#nav {display: none;}
 	#ex-nav {width: 15rem;}
 	#about-nav a:not(:first-child) {
-		margin-left: 8%;
+		margin-left: 10%;
 	}
 
 	/* ABOUT ESSAYS TEXT */ 
@@ -189,8 +186,8 @@ h2 {margin-bottom: 1.5%; font-size: 15px;}
 	/* NAV MENU BTN */
 	#nav-mobile-btn {
 		display: inline-block;
-		width: 15px;
-		height: 15px;
+		width: 12px;
+		height: 12px;
 		position: absolute;
 		top: 3.5rem;
 		right: 2rem;
@@ -198,7 +195,7 @@ h2 {margin-bottom: 1.5%; font-size: 15px;}
 	}
 	#nav-mobile-btn img {width: 100%;}
 	#nav-mobile {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		height: 100vh;
@@ -215,18 +212,52 @@ h2 {margin-bottom: 1.5%; font-size: 15px;}
 	}
 
 }
+@media screen and (min-width: 555px) {
+	.pomeriti {margin-left: 2.27rem;}
+	.pomeriti-g {margin: -1.38rem 0 0 2.35rem; line-height: 14px; vertical-align: middle;}
+	.bio {
+		transform: translateY(-11.9px);
+		margin-left: 5.5rem;
+		line-height: 11px;
+		vertical-align: middle;
+}
 
+}
 @media screen and (max-width: 554px) {
-	#contact-container, #year-list, .list {margin-top: 4.5rem;}
+	#contact-container, .list, #essays-list, #biography-list {margin-top: 4.5rem;}
 	#contact-container div {display: block;}
 	#carlier-gebauer-info {margin: 2rem 0 0 0;}
 	#ex-nav, #about-nav {margin-top: 1.5rem;}
 	#ex-nav #group {padding-left: 4.2rem;}
-	/*#about-nav a:not(:first-child) {margin-left: 4.2rem;}
-	#about-nav a:nth-last-child(-n+2){top:7.5rem; left:-2.2rem; position: absolute;}
-	#about-nav a:last-child {left: 6.5rem;}*/
-	#essays-list {margin-top: 4.5rem;}
+	.essays-text {background: white;}
+	#biography-list p {margin-top: 0.5rem;}
+	.bio {color: rgba(0 ,0 ,0 ,0.5);}
 }
+@media screen and (max-width: 759px) {
+	.dropdown-container-saat, .dropdown-container-cg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: white;
+		z-index: 1001;
+	}
+	.dropdown-container-saat div, .dropdown-container-cg div {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		padding: 20% 0;
+		background: white;
+	}
+	.dropdown-container-saat div:first-child, .dropdown-container-cg div:first-child {margin-top: 25%;}
+	.dropdown-container-saat div:last-child, .dropdown-container-cg div:last-child {margin-bottom: 55%;}
+	.dropdown-container-saat img, .dropdown-container-cg img {
+		width: 100%;
+	}
+}
+
+
+
+
 @media screen and (min-width: 1921px) {
 	#container {width: 1920px; margin: 0 auto;}
 }

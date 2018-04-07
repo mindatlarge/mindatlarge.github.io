@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name=”description” content=”Jelena Bulajic is a visual artist from Serbia.”>
+	<meta name="keywords" content="Jelena Bulajic">
 	<meta name="google" content="notranslate">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Jelena Bulajić</title>
@@ -20,9 +21,9 @@
 			</div>
 			
 			<div id="about-nav" style="display: none;">
-				<a href="#" class="item">Biography</a>
+				<a href="#" class="o-b item">Biography</a>
 				<a href="#" class="o-e item">Essays</a>
-				<a href="#" class="item">Collections</a>
+				<a href="#" class="o-c item">Collections</a>
 			</div>
 
 			<div id="nav-mobile-btn"><img src="add.png"></div>
@@ -34,6 +35,38 @@
 				<a href="Contact.html">Contact</a>
 			</div>
 		</header>
+
+		<div id="biography-list" style="display: none;">
+				<p>1990</p>
+				<p class="bio">Born in Vrbas</p>
+				<p>2008-2012</p>
+				<p class="bio">BA in Visual Arts, Academy of Arts, University of Novi Sad, Novi Sad, Serbia</p>
+				<p>2009</p>
+				<p class="bio">Milivoj Nikolajević Foundation Award for Drawing, Academy of Arts, University of Novi Sad, Novi Sad, Serbia</p>
+				<p>2010-2011</p>
+				<p class="bio class='bio'">Lives and studies in Cetinje, Montenegro</p>
+				<p>2011</p>
+				<p class='bio'>Grand Diploma for Drawing, XIV INTERBIFEP (International Biennial Festival of Portrait, Drawings and Graphics), International Gallery of Portrait, Tuzla, Bosnia and Herzegovin</p>
+				<p>2011-2012</p>
+				<p class='bio'>Lives and studies in Minnesota, USA</p>
+				<p>2012</p>
+				<p class='bio'>Annual Award of the Department of Visual Arts for the best work in the discipline of Painting, Academy of Arts, University of Novi Sad, Novi Sad, Serbia</p>
+				<p>2012</p>
+				<p class='bio'>Elizabeth Greenshields Foundation Grant, Montreal, Canada</p>
+				<p>2012</p>
+				<p class='bio'>Perspectives Award, Art klinika, Novi Sad, Serbia</p>
+				<p>2012-2016</p>
+				<p class='bio'>Lives and works in London, UK</p>
+				<p>2012-2013</p>
+				<p class='bio'>MA in Fine Art (Distinction), City & Guilds of London Art School, London, UK</p>
+				<p>2013</p>
+				<p class='bio'>Niš Art Foundation Award, Niš, Serbia</p>
+				<p>2013</p>
+				<p class='bio'>GAM MA Fine Art Prize, City & Guilds of London Art School, London, UK </p>
+				<p>2016-2018</p>
+				<p class='bio'>Lives and works in Belgrade, Serbia</p>
+
+		</div>
 
 
 		<div id="essays-list" style="display: none;">
@@ -80,13 +113,12 @@
 	$(document).ready(function(){
 		$('#about-nav').fadeIn(300);
 	});
-
-$('html').click(function() {
+//otvaranje eseja
+$('body').click(function() {
     $('.essays-text').hide();
     $('#container').removeClass('pozadina-about');
     $('header').removeClass('h-poz-about');
  })
-// otvaranje textova
  $('.e-links').click(function(e){
      e.stopPropagation();
  });
@@ -98,10 +130,17 @@ $('html').click(function() {
  	$('#container').addClass('pozadina-about');
  	$('header').addClass('h-poz-about');
  });
-// otvaranje linkova eseja
+// otvaranje linkova
  $('.o-e').on('click', function(){
  	$('#essays-list').fadeIn(300);
+ 	$('#biography-list').hide();
  });
+
+ $('.o-b').on('click', function(){
+ 	$('#biography-list').fadeIn(300);
+ 	$('#essays-list').hide();
+ });
+
 // about meni aktivno
   $('#about-nav a').click(function() {
     $('#about-nav a').css('opacity', '0.5');

@@ -142,7 +142,7 @@
     top:40%;
     z-index: 10000;
 }
-.slick-next {right: 0%;}
+.slick-next {right: -1%;}
 .slick-prev {left: -1.5%;}
 .slick-prev:focus, .slick-next:focus {
     outline: none;
