@@ -5,15 +5,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name=”description” content=”Jelena Bulajic is a visual artist from Serbia.”>
 	<meta name="keywords" content="Jelena Bulajic">
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="Magnific-Popup-master/dist/magnific-popup.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+	<script src="menu-button-touch.js"></script>
+	<script src="fade.js"></script>
 	<title>Jelena Bulajić</title>
 </head>
 <body>
 
 	<div id="container" style="width: 98vw; left: 0;">
 		<header>
-			<a id="jelena" class="l-o" href="drugi index.html">Jelena Bulajić</a>
+			<h1><a id="jelena" class="l-o" href="drugi index.html">Jelena Bulajić</a></h1>
 			<div id="nav">
 				<a class="n-1 l-no" href="selected-works.html">Selected works</a>
 				<a class="n-2 l-o" href="Exhibitions.html">Exhibitions</a>
@@ -21,7 +27,7 @@
 				<a class="n-4 l-o" href="Contact.html">Contact</a>
 			</div>
 
-			<div id="nav-mobile-btn"><img src="add.png"></div>
+			<div id="nav-mobile-btn"><img src="add.png" alt="menu-button"></div>
 			<div id="nav-mobile" style="display: none;">
 				<a href="index.html">Jelena Bulajić</a>
 				<a href="selected-works.html" style="opacity: 1;">Selected works</a>
@@ -37,14 +43,20 @@
 				<div class="y-2018 yrs">
 					<div class="cell">
 						<a href="selected-works/2018/mahmud.jpg"
-						title="<span>untitled</span>, 2018, mixed media on linen, 22.8 x 17.1 cm (left), 40.8 x 30.6 cm (right)">
+						title="<span>Untitled</span>, 2018, mixed media on linen, 22.8 x 17.1 cm (left), 40.8 x 30.6 cm (right)">
 							<img src="selected-works/2018/mahmud.jpg" alt="Jelena Bulajic"></a>
 						<p style="opacity: 0;"><span>Untitled</span>, 2018</p>
 					</div>
 					<div class="cell">
 						<a href="selected-works/2018/ivan.jpg" 
-						title="<span>untitled</span>, 2018, mixed media on linen, 20 x 16 cm (left), 46 x 34.5 cm (right)">
+						title="<span>Untitled</span>, 2018, mixed media on linen, 20 x 16 cm (left), 46 x 34.5 cm (right)">
 							<img src="selected-works/2018/ivan.jpg" alt="Jelena Bulajic"></a>
+						<p style="opacity: 0;"><span>Untitled</span>, 2018</p>
+					</div>
+					<div class="cell">
+						<a href="selected-works/2018/ohnetitel" 
+						title="<span>Untitled</span>, 2018, mixed media on linen, 26 x 20.2 cm (left), 45 x 33.8 cm (right)">
+							<img src="selected-works/2018/ohnetitel" alt="Jelena Bulajic"></a>
 						<p style="opacity: 0;"><span>Untitled</span>, 2018</p>
 					</div>
 
@@ -53,17 +65,21 @@
 				<div class="y-2017 yrs">
 					<div class="cell">
 						<a href="selected-works/2017/istok.jpg" 
-						title="<span>untitled</span>, 2017, mixed media on linen, 19 x 14.1 cm (left), 30.1 x 22.6 cm (right)">
+						title="<span>Untitled</span>, 2017, mixed media on linen, 19 x 14.1 cm (left), 30.1 x 22.6 cm (right)">
 							<img src="selected-works/2017/istok.jpg" alt="Jelena Bulajic"></a>
 						<p style="opacity: 0;"><span>Untitled</span>, 2017</p>
 					</div>
 					<div class="cell">
 						<a href="selected-works/2017/alise.jpg" 
-						title="<span>untitled</span>, 2017, mixed media on linen, 18 x 15 cm (left), 30.6 x 22.6 cm (right)">
+						title="<span>Untitled</span>, 2017, mixed media on linen, 18 x 15 cm (left), 30.6 x 22.6 cm (right)">
 							<img src="selected-works/2017/alise.jpg" alt="Jelena Bulajic"></a>
 						<p style="opacity: 0;"><span>Untitled</span>, 2017</p>
 					</div>
+
+					<div class="cell"></div>
+
 				</div>
+
 			<a href="#">2016</a>
 				<div class="y-2016 yrs">
 					<div class="cell">
@@ -87,7 +103,9 @@
 							<img src="selected-works/2010-2015/grozda.jpg" alt="Jelena Bulajic, Grozda"></a>
 						<p style="opacity: 0;"><span>Grozda</span>, 2014</p>
 					</div>
-		
+
+					<div class="cell"></div>
+
 				</div>
 
 
@@ -95,11 +113,6 @@
 
 
 	</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
-<script src="menu-button-touch.js"></script>
-<script src="fade.js"></script>
 
 <script>
 	$(document).ready(function(){

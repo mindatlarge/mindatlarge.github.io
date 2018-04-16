@@ -57,7 +57,7 @@
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
 
-  cursor: url(substract.png), auto; }
+ cursor: url(substract.png), auto; }
 
 .mfp-zoom {
   cursor: pointer;
