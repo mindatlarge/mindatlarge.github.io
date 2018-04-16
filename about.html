@@ -117,7 +117,7 @@
 
 //otvaranje eseja vece od 768px
 if($(window).width() >= 768)
-$('html').on('click touch', function() {
+$(document, '#tony-carter').on('click touch', function() {
     $('.essays-text').hide();
     $('#container').removeClass('pozadina-about');
     $('header').removeClass('h-poz-about');
@@ -138,7 +138,7 @@ if($(window).width() >= 768)
 
 // za touch
  	if($(window).width() < 768)
-	$('html').on('click touch', function() {
+	$(document).on('click touch', function() {
     $('.essays-text').hide();
     $('#container').removeClass('pozadina-about-m');
 
@@ -146,7 +146,7 @@ if($(window).width() >= 768)
  $('.e-links').click(function(e){
      e.stopPropagation();
  });
-if($(window).width() < 768)
+if($(window, '#tony-carter').width() < 768)
  $('.e-links').click(function (){
  	var $target = $($(this).data('target'));
  	$('.essays-text').not($target).fadeOut(100);
