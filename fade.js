@@ -1,4 +1,5 @@
 $(window).on("load",function() {
+  if (window.matchMedia('(min-width: 412px').matches) {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".cell").each(function() {
@@ -12,4 +13,7 @@ $(window).on("load",function() {
       }
     });
   }).scroll();
+} else {
+  $('.cell').css('opacity', '1');
+}
 });

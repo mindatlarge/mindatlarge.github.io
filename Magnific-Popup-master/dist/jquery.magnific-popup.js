@@ -869,7 +869,7 @@ $.magnificPopup = {
 
 		focus: '', // CSS selector of input to focus after popup is opened
 
-		closeOnContentClick: false,
+		closeOnContentClick: true,
 
 		closeOnBgClick: true,
 

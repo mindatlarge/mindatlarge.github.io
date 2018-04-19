@@ -103,8 +103,7 @@
 							<img src="selected-works/2010-2015/grozda.jpg" alt="Jelena Bulajic, Grozda"></a>
 						<p style="opacity: 0;"><span>Grozda</span>, 2014</p>
 					</div>
-
-					<div class="cell"></div>
+					<div class="cell d1"></div>
 
 				</div>
 
@@ -119,9 +118,10 @@
 		$('#year-list').fadeIn(300);
 	});
 
-	$('.cell, .cell1').magnificPopup({
+	$('.cell').magnificPopup({		
   delegate: 'a',
   type: 'image',
+  fixedContentPos: true,
   gallery: {
   	enabled: true
   }

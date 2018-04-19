@@ -51,7 +51,7 @@ header a {
 .pozadina-about {filter: blur(2px); opacity: 0.3; transition: all 0.3s; background: white;}
 .pozadina-about-m {display: none;}
 .h-poz-about {position: fixed; top: 0;}
-.l-poz-about {position: fixed; top: 7.2rem;}
+.l-poz-about {position: fixed; top: 6.25rem;}
 #ex-nav{
 	margin-top: 1rem;
 }
@@ -80,7 +80,7 @@ header a {
 	margin: 9rem 2rem 0 2rem;
 	left: 0;
 }
-#year-list .yrs {padding: 1rem 4rem;}
+#year-list .yrs {padding: 1rem 0rem;}
 #year-list a {
 	color: black;
 	display: block;
@@ -96,14 +96,10 @@ header a {
 	display: block;
 	width: 18vw;
 }
-.cell:not(:first-child) {margin-left: 5vw;}
+.cell {margin-left: 4.3vw;}
 .yrs img {
 	display: block;
 	width: 100%;
-}
-.cell:hover p {
-	opacity: 1 !important;
-	transition: 0.3s;
 }
 .cell p {
 	margin-top: 0.5rem;
@@ -129,7 +125,7 @@ header a {
 
 /* ESSAYS */
 
-#essays-list {margin: 7.2rem 2rem 0 2rem; position: fixed; top: 6.8rem;}
+#essays-list {margin: 7.2rem 2rem 0 2rem;}
 #essays-list a {opacity: 0.7; color: black; display: block;}
 .essays-text {width: 50%; margin: 7.2rem auto; text-align: justify;}
 
@@ -168,6 +164,10 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	#contact-container:hover, #container:hover {cursor: default;}
 
 	#nav-mobile {display: none;}
+	.cell:hover p {
+	opacity: 1 !important;
+	transition: 0.3s;
+}
 }
 
 @media screen and (max-width: 1023px) {
@@ -210,18 +210,20 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 		width: 7rem;
 		opacity: 0.5;
 	}
+	/* sel works */
+	.cell p { opacity: 1 !important; }
 
 }
-@media screen and (max-width: 1280px) {
-	.cell {width: 15rem;}
-}
+
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
 	.essays-text {width: 70%;}
 }
 @media screen and (max-width: 768px) {
 	.text1 {margin-top: 1.6rem; }
 	#tony-carter h1 {margin-bottom: 0.7rem;}
-
+}
+@media screen and (min-width: 768px) {
+	#essays-text {position: fixed; top: 6.8rem;}
 }
 @media screen and (min-width: 575px) {
 	.pomeriti {margin-left: 2.27rem;}
@@ -231,7 +233,6 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 		margin-left: 5.5rem;
 		line-height: 11px;
 		vertical-align: middle;}
-
 }
 @media screen and (max-width: 575px) {
 	#contact-container, .list, #essays-list, #biography-list {margin-top: 4.5rem;}
@@ -249,16 +250,26 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 
 /* SELECTED WORKS */ 
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1440px) {
 	.yrs {justify-content: space-between; width: 100%; }
-	.cell {width: 23vw;}
-	.yrs:not(:first-child) {margin-left: 0vw;}
+	.cell {width: 25vw; margin-left: 2vw;}
 }
 @media screen and (max-width: 1023px) {
-	.yrs {justify-content: space-between; width: 100%; }
-	.cell {width: 25vw; background: red;}
-	.yrs:not(:first-child) {margin-left: 0vw;}
-
+	.cell {width: 40vw; margin-left: 0; margin-top: 2rem;}
+}
+@media screen and (max-width: 575px) {
+	.cell {width: 90vw; margin: 2rem 0;}
+	.cell a { pointer-events: none; }
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+	.cell a {pointer-events: none;}
+}
+@media screen and (max-device-width: 568px) and (orientation: landscape) {
+	.cell {width: 50vw; margin: 2rem auto;}
+	footer {height: 0rem;}
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	.cell p {opacity: 1 !important;}
 }
 
 

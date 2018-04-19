@@ -58,7 +58,11 @@
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
 
  cursor: url(substract.png), auto; }
-
+.mfp-close {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
 .mfp-zoom {
   cursor: pointer;
   cursor: -webkit-zoom-in;
@@ -345,9 +349,9 @@ img.mfp-img {
 @media screen and (max-width: 1024px) {
   img.mfp-img, div.mfp-title {width: 85%; margin: 0 auto;}
 }
-@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 767px) {
   .mfp-arrow {display: none !important;}
-}
+}*/
 .mfp-figure {
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;

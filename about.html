@@ -117,11 +117,12 @@
 
 //otvaranje eseja vece od 768px
 if($(window).width() >= 768)
-$(document, '#tony-carter').on('click touch', function() {
+$(document).click(function() {
     $('.essays-text').hide();
     $('#container').removeClass('pozadina-about');
     $('header').removeClass('h-poz-about');
     $('html').css('cursor', 'default');
+    $('#essays-list').removeClass('l-poz-about');
  })
  $('.e-links').click(function(e){
      e.stopPropagation();
@@ -134,26 +135,25 @@ if($(window).width() >= 768)
  	$('#container').addClass('pozadina-about');
  	$('header').addClass('h-poz-about');	
  	$('html').css('cursor', 'url(cursor/substract.png), auto');
+ 	$('#essays-list').addClass('l-poz-about');
 });
 
 // za touch
  	if($(window).width() < 768)
-	$(document, '#tony-carter').on('click touch', function() {
+	$(document).click(function() {
     $('.essays-text').hide();
     $('#container').removeClass('pozadina-about-m');
-
  })
  $('.e-links').click(function(e){
      e.stopPropagation();
  });
-if($(window, '#tony-carter').width() < 768)
+if($(window).width() < 768)
  $('.e-links').click(function (){
  	var $target = $($(this).data('target'));
  	$('.essays-text').not($target).fadeOut(100);
  	$target.fadeIn(200);
  	$('#container').addClass('pozadina-about-m');
 }); 
-
 
 // otvaranje linkova
  $('.o-e').on('click', function(){
@@ -171,8 +171,7 @@ if($(window, '#tony-carter').width() < 768)
     $('#about-nav a').css('opacity', '0.5');
     $(this).css('opacity', '1');
       });
-
-
+  
 </script>
 
 </body>
