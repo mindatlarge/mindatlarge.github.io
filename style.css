@@ -86,6 +86,7 @@ header a {
 	display: block;
 	padding-top: 0.5rem;
 }
+.yrs-anchors:not(:first-child) {margin-top: 3rem;}
 .yrs {
 	display: inline-flex;
 	flex-direction: row;
@@ -96,7 +97,7 @@ header a {
 	display: block;
 	width: 18vw;
 }
-.cell {margin-left: 4.3vw;}
+.cell {margin-left: 4.5vw;}
 .yrs img {
 	display: block;
 	width: 100%;
@@ -258,18 +259,23 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	.cell {width: 40vw; margin-left: 0; margin-top: 2rem;}
 }
 @media screen and (max-width: 575px) {
+	.m-opis {display: block !important;}
 	.cell {width: 90vw; margin: 2rem 0;}
 	.cell a { pointer-events: none; }
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
 	.cell a {pointer-events: none;}
+	.m-opis {display: block !important;}
 }
 @media screen and (max-device-width: 568px) and (orientation: landscape) {
 	.cell {width: 50vw; margin: 2rem auto;}
 	footer {height: 0rem;}
+	.m-opis {display: block !important;}
+
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.cell p {opacity: 1 !important;}
+	.m-opis {display: block !important;}
 }
 
 
