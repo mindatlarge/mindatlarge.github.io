@@ -120,7 +120,7 @@
 			<a href="#" class="pomeriti-g"> (upcoming) Jelena Bulajic, Museum of Contemporary Art of Vojvodina (MSUV),
 			Novi Sad, Serbia</a>
 			<a href="#" class="godine">2017</a>
-			<a href="#" class="ima otvori-g pomeriti-g"> Jelena Bulajic, carlier | gebauer, Berlin, Germany</a>
+			<a href="#" class="ima otvori-cg pomeriti-g"> Jelena Bulajic, carlier | gebauer, Berlin, Germany</a>
 
 			<a href="#" class="godine">2016</a>
 			<a href="#" class="pomeriti-g"> Collision, Unit 1 Gallery | Workshop, London, UK</a>
@@ -143,7 +143,7 @@
 			<a href="#" class="godine">2016</a><a href="#" class="pomeriti-g"> Wasted Time, Ferenczy Museum Centre Art Mill, Szentendre,
 			Hungary</a>
 			<a href="#" class="pomeriti">I Prefer Life, The Weserburg, Bremen, Germany</a>
-			<a href="#" class="pomeriti ima otvori-g">Champagne Life, The Saatchi Gallery, London, UK</a>
+			<a href="#" class="pomeriti ima otvori-saat">Champagne Life, The Saatchi Gallery, London, UK</a>
 			<!--2015-->
 			<a href="#" class="godine">2015</a>
 			<a href="#" class="pomeriti-g"> New London Figurative, Charlie Smith london, London, UK</a>
@@ -211,26 +211,28 @@
     		$target.fadeIn(300);
     $('.dropdown-container-cg, .dropdown-container-saat, .close-btn').hide();
 	});
+
 	/* DOK IMA JEDNA GALERIJA U SOLO */
-	$('.otvori-g').on('click', function(){    
+	$('.otvori-cg').on('click', function(){    
     	$('.dropdown-container-cg').fadeToggle(100);
     	$('#container').addClass('pozadina-galerija');
     	$('.dropdown-container-cg').slick('setPosition');
     	$('.close-btn').fadeToggle();
 	});
-	$('.close-btn').on('click', function(){
-		$('.dropdown-container-cg, .dropdown-container-saat, .close-btn').fadeOut(200);
-		$('#container').removeClass('pozadina-galerija');
-	});
 
-	/* DOK IMA JEDNA GALERIJA U SOLO 
+
+	/* DOK IMA JEDNA GALERIJA U GROUP */
 	$('.otvori-saat').on('click', function(){    
     	$('.dropdown-container-saat').fadeToggle(100);
     	$('#container').addClass('pozadina-galerija');
     	$('.dropdown-container-saat').slick('setPosition');
     	$('.close-btn').toggle();
 	});
-*/
+	$('.close-btn').on('click', function(){
+		$('.dropdown-container-cg, .dropdown-container-saat, .close-btn').fadeOut(200);
+		$('#container').removeClass('pozadina-galerija');
+	});
+
 	$('.dropdown-container-cg, .dropdown-container-saat').slick({
 	  dots: false,
 	  infinite: true,

@@ -45,7 +45,7 @@ header a {
 	width: 100vw;
 	height: 100vh;
 	z-index: 3;
-	cursor: url(cursor/substract.png), auto; 
+	cursor: url(cursor/substract.png), auto;
 }
 .pozadina-galerija {filter: blur(2px); opacity: 0.3; transition: all 0.3s; height: 100vh; overflow: hidden;}
 .pozadina-about {filter: blur(2px); opacity: 0.3; transition: all 0.3s; background: white;}
@@ -80,13 +80,13 @@ header a {
 	margin: 9rem 2rem 0 2rem;
 	left: 0;
 }
-#year-list .yrs {padding: 1rem 0rem;}
+#year-list .yrs {margin: 1rem 0rem;}
 #year-list a {
 	color: black;
 	display: block;
 	padding-top: 0.5rem;
 }
-.yrs-anchors:not(:first-child) {margin-top: 3rem;}
+.yrs-anchors:not(:first-child) {margin-top: 2rem;}
 .yrs {
 	display: inline-flex;
 	flex-direction: row;
@@ -107,7 +107,7 @@ header a {
 }
 
 .cell a {
-	cursor: url(cursor/add.png), auto;
+	cursor: crosshair;
 }
 .prazan-cell {width: 20vw;}
 
@@ -253,29 +253,42 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 
 @media screen and (max-width: 1440px) {
 	.yrs {justify-content: space-between; width: 100%; }
-	.cell {width: 25vw; margin-left: 2vw;}
+	.cell {width: 25vw; margin-left: 1vw; margin-top: 1.8rem;}
 }
 @media screen and (max-width: 1023px) {
 	.cell {width: 40vw; margin-left: 0; margin-top: 2rem;}
 }
 @media screen and (max-width: 575px) {
 	.m-opis {display: block !important;}
+	.opis-del {display: none;}
 	.cell {width: 90vw; margin: 2rem 0;}
-	.cell a { pointer-events: none; }
+	.cell a { pointer-events: none;}
+	.obrisatizamob {display: none;}
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
 	.cell a {pointer-events: none;}
 	.m-opis {display: block !important;}
+	.opis-del {display: none;}
+	.obrisatizamob {display: none;}
 }
 @media screen and (max-device-width: 568px) and (orientation: landscape) {
 	.cell {width: 50vw; margin: 2rem auto;}
 	footer {height: 0rem;}
 	.m-opis {display: block !important;}
+	.opis-del {display: none;}
+	.obrisatizamob {display: none;}
 
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.cell p {opacity: 1 !important;}
-	.m-opis {display: block !important;}
 }
+
+/* EXHIBITION ZA MOBILNI 
+@media screen and (max-width: 575px) {
+	.dropdown-container-saat div {text-align: center;}
+	.dropdown-container-saat img {
+		width: 90%;
+	}
+} */
 
 

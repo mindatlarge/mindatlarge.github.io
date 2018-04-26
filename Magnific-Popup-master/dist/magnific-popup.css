@@ -249,8 +249,7 @@ img.mfp-img {
   line-height: 0;
   box-sizing: border-box;
   padding: 40px 0 40px;
-  margin: 0 auto;
-  margin-top: -2rem; }
+  margin: 0 auto; }
 
 .mfp-bottom-bar {
   margin-top: -36px;
@@ -385,7 +384,6 @@ img.mfp-img {
     border: none;
     z-index: 1000;
 }
-
 
 
 

@@ -131,6 +131,7 @@
 /*.slick-arrow {opacity: 0.7;}*/
 
 .slick-prev, .slick-next {
+    transform: scale(0.15);
     background: transparent;
     border: none;
 
@@ -142,7 +143,7 @@
 
 }
 .slick-next {right: 2rem; text-align: right;}
-.slick-prev {left: 2rem; text-align: left;}
+.slick-prev {left: 1rem; text-align: left;}
 .slick-prev:focus, .slick-next:focus {
     outline: none;
 }
@@ -176,19 +177,19 @@ figcaption, .caption {
 /* ARROWS */
 @media screen and (max-width: 575px) {
     .slick-arrow {
-        transform: scale(0.7);
+        transform: scale(0.1);
         color: rgba(0, 0, 0, 0.6);
     }
-    .slick-prev {left: 1rem; top: 92%;}
-    .slick-next {right: 1rem; top: 92%;}
+    .slick-prev {left: 0.5rem; top: 70%;}
+    .slick-next {right: 1rem; top: 70%;}
 }
 
 /* GALERIJA VELICINA SLIKE */
 @media screen and (max-width: 1675px) {
-    .slick-slide img, figcaption, .caption { width: 73%;}
+    .slick-slide img, figcaption, .caption { width: 85%;}
 }
 @media screen and (max-width: 1440px) {
-    .slick-slide img, figcaption, .caption { width: 75%;}
+    .slick-slide img, figcaption, .caption { width: 85%;}
 }
 @media screen and (max-width: 575px) {
     .slick-slide img, figcaption, .caption {width: 90%;}
