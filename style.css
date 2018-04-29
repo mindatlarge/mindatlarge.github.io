@@ -107,7 +107,8 @@ header a {
 }
 
 .cell a {
-	cursor: url(cursor/add.png), auto;
+	cursor: pointer;
+	/*cursor: url(cursor/add.png), auto;*/
 }
 .prazan-cell {width: 20vw;}
 

@@ -56,7 +56,8 @@
   cursor: progress; }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close, .mfp-content, .mfp-img, .mfp-title {
- cursor: url(substract.png), auto; }
+  cursor: default;
+ /*cursor: url(substract.png), auto; */}
 .mfp-close {
   position: absolute;
   top: 0;
@@ -109,7 +110,7 @@
 button.mfp-close,
 button.mfp-arrow {
   overflow: visible;
-  cursor: pointer;
+  cursor: default;
   background: transparent;
   border: 0;
   -webkit-appearance: none;
