@@ -247,9 +247,9 @@ img.mfp-img {
   display: block;
   line-height: 0;
   box-sizing: border-box;
-  padding: 40px 0 40px;
+  padding: 20px 0 40px;
   margin: 0 auto;
-  margin-top: -0.7rem;}
+  margin-top: 0rem;}
 
 .mfp-bottom-bar {
   margin-top: -36px;

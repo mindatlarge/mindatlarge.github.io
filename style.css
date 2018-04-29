@@ -259,7 +259,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	.cell {width: 40vw; margin-left: 0; margin-top: 2rem;}
 }
 @media screen and (max-width: 575px) {
-	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.6);}
+	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
 	.opis-del {display: none;}
 	.cell {width: 90vw; margin: 2rem 0;}
 	.cell a { pointer-events: none;}
@@ -267,14 +267,14 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
 	.cell a {pointer-events: none;}
-	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.6);}
+	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
 	.opis-del {display: none;}
 	.obrisatizamob {display: none;}
 }
 @media screen and (max-device-width: 568px) and (orientation: landscape) {
 	.cell {width: 50vw; margin: 2rem auto;}
 	footer {height: 0rem;}
-	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.6);}
+	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
 	.opis-del {display: none;}
 	.obrisatizamob {display: none;}
 
