@@ -8,7 +8,7 @@
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
 body {font-family: courier; font-size: 12px;}
-html:hover {cursor: pointer;}
+html:hover {cursor: default;}
 .cursor {cursor: default !important;}
 .cursor-a {cursor: url(cursor/substract.png), auto !important; z-index: 1000;}
 span {font-style: italic;}
@@ -107,7 +107,7 @@ header a {
 }
 
 .cell a {
-	cursor: pointer;
+	cursor: default;
 	/*cursor: url(cursor/add.png), auto;*/
 }
 .prazan-cell {width: 20vw;}
@@ -144,6 +144,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 /* HOVER ELEMENTI ZA NON-TOUCH DEVICE*/
 @media screen and (min-width: 1024px) {
 	#nav-mobile-btn {display: none;}
+	a {cursor: default;}
 	header:hover a {
 	opacity: 0.5;
 	transition: 0.5s;}
