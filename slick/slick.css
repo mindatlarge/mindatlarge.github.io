@@ -131,7 +131,7 @@
 /*.slick-arrow {opacity: 0.7;}*/
 
 .slick-prev, .slick-next {
-    transform: scale(0.18);
+    transform: scale(0.15);
     background: transparent;
     border: none;
 
@@ -186,10 +186,13 @@ figcaption, .caption {
 
 /* GALERIJA VELICINA SLIKE */
 @media screen and (max-width: 1675px) {
-    .slick-slide img, figcaption, .caption { width: 80%;}
+    .slick-slide img, figcaption, .caption { width: 85%;}
 }
 @media screen and (max-width: 1440px) {
-    .slick-slide img, figcaption, .caption { width: 80%;}
+    .slick-slide img, figcaption, .caption { width: 75%;}
+}
+@media screen and (max-width: 1280px) {
+    .slick-slide img, figcaption, .caption { width: 68%;}
 }
 @media screen and (max-width: 575px) {
     .slick-slide img, figcaption, .caption {width: 90%;}

@@ -69,7 +69,7 @@
   cursor: zoom-in; }
 
 .mfp-auto-cursor .mfp-content {
-  cursor: auto; }
+  cursor: url(substract.png), auto; }
 
 .mfp-close,
 .mfp-arrow,
