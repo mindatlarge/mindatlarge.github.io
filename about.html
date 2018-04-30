@@ -121,7 +121,6 @@ $(document).click(function() {
     $('.essays-text').hide();
     $('#container').removeClass('pozadina-about');
     $('header').removeClass('h-poz-about');
-    $('html').css('cursor', 'default');
     $('#essays-list').removeClass('l-poz-about');
  })
  $('.e-links').click(function(e){
@@ -134,21 +133,20 @@ if($(window).width() >= 768)
  	$target.fadeIn(200);
  	$('#container').addClass('pozadina-about');
  	$('header').addClass('h-poz-about');	
- 	$('html').css('cursor', 'url(cursor/substract.png), auto');
  	$('#essays-list').addClass('l-poz-about');
 });
 
 // za touch
  	if($(window).width() < 768)
-	$(document).click(function() {
+	$(document).on('click touchstart', function() {
     $('.essays-text').hide();
     $('#container').removeClass('pozadina-about-m');
  })
- $('.e-links').click(function(e){
+ $('.e-links').on('click touchstart', function(e){
      e.stopPropagation();
  });
 if($(window).width() < 768)
- $('.e-links').click(function (){
+ $('.e-links').on('click touchstart', function (){
  	var $target = $($(this).data('target'));
  	$('.essays-text').not($target).fadeOut(100);
  	$target.fadeIn(200);

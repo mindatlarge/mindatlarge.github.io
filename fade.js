@@ -1,5 +1,5 @@
+if ($(window).width() > 575) {
 $(window).on("load",function() {
-  if (window.matchMedia('(min-width: 412px').matches) {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".cell").each(function() {
@@ -11,9 +11,11 @@ $(window).on("load",function() {
       } else { 
         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
       }
+
     });
   }).scroll();
+});
+
 } else {
   $('.cell').css('opacity', '1');
 }
-});
