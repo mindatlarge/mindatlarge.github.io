@@ -183,7 +183,7 @@ button::-moz-focus-inner {
 
 .mfp-arrow-left {
   text-align: left;
-  right: 7%; }
+  right: 6%; }
   .mfp-arrow-left:after {
     border-right: 17px solid #FFF;
     margin-left: 31px; }
@@ -193,7 +193,7 @@ button::-moz-focus-inner {
 
 .mfp-arrow-right {
   text-align: right;
-  right: 6%; }
+  right: 5%; }
   .mfp-arrow-right:after {
     border-left: 17px solid #FFF;
     margin-left: 39px; }
