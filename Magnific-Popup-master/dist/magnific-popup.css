@@ -183,7 +183,7 @@ button::-moz-focus-inner {
 
 .mfp-arrow-left {
   text-align: left;
-  right: 6%; }
+  right: 7%; }
   .mfp-arrow-left:after {
     border-right: 17px solid #FFF;
     margin-left: 31px; }
@@ -193,7 +193,7 @@ button::-moz-focus-inner {
 
 .mfp-arrow-right {
   text-align: right;
-  right: 5%; }
+  right: 6%; }
   .mfp-arrow-right:after {
     border-left: 17px solid #FFF;
     margin-left: 39px; }
@@ -384,4 +384,18 @@ button.mfp-close {
   bottom: 10.5px;
 }
 .mfp-img { pointer-events: none; }
+
+@media screen and (max-width: 1440px) {
+  button.mfp-close {
+    transform: scale(0.7) rotate(45deg);
+  }
+  .mfp-arrow-right {
+    transform: scale(0.4);
+    right: 7%;
+  }
+  .mfp-arrow-left {
+    transform: scale(0.4);
+    right: 8.5%;
+  }
+}
 

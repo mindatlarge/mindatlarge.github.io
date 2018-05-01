@@ -93,20 +93,20 @@ header a {
 	flex-wrap: wrap;
 	align-content: flex-start;
 	justify-content: space-around;}
-.cell {
+.cell, .cell-v {
 	display: block;
 	width: 18vw;
 }
-.cell {margin-left: 4.5vw;}
+.cell, .cell-v {margin-left: 4.5vw;}
 .yrs img {
 	display: block;
 	width: 100%;
 }
-.cell p {
+.cell p, .cell-v p {
 	margin-top: 0.5rem;
 }
 
-.cell a {
+.cell a, .cell-v a {
 	cursor: default;
 }
 .prazan-cell {width: 20vw;}
@@ -167,7 +167,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	#contact-container:hover, #container:hover {cursor: default;}
 
 	#nav-mobile {display: none;}
-	.cell:hover p {
+	.cell:hover p, .cell-v:hover p {
 	opacity: 1 !important;
 	transition: 0.3s;
 }
@@ -218,7 +218,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 		margin-top: 0.7rem;
 	}
 	/* sel works */
-	.cell p { opacity: 1 !important; }
+	.cell p, .cell-v p { opacity: 1 !important; }
 
 }
 
@@ -259,28 +259,28 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 
 @media screen and (max-width: 1440px) {
 	.yrs {justify-content: space-between; width: 100%; }
-	.cell {width: 25vw; margin-left: 1vw; margin-top: 1.8rem;}
+	.cell, .cell-v {width: 25vw; margin-left: 1vw; margin-top: 1.8rem;}
 }
 @media screen and (max-width: 1023px) {
-	.cell {width: 40vw; margin-left: 0; margin-top: 2rem;}
+	.cell, .cell-v {width: 40vw; margin-left: 0; margin-top: 2rem;}
 }
 @media screen and (max-width: 768px) {
-	.cell a {pointer-events: none;}
+	.cell a, .cell-v a {pointer-events: none;}
 	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
 	.opis-del {display: none;}
 }
 @media screen and (max-width: 575px) {
-	.cell {width: 90vw; margin: 2rem 0;}
+	.cell, .cell-v {width: 90vw; margin: 2rem 0;}
 	.obrisatizamob {display: none;}
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
-	.cell a {pointer-events: none;}
+	.cell a, .cell-v {pointer-events: none;}
 	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
 	.opis-del {display: none;}
 	.obrisatizamob {display: none;}
 }
 @media screen and (max-device-width: 568px) and (orientation: landscape) {
-	.cell {width: 50vw; margin: 2rem auto;}
+	.cell, .cell-v {width: 50vw; margin: 2rem auto;}
 	footer {height: 0rem;}
 	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
 	.opis-del {display: none;}
@@ -288,7 +288,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-	.cell p {opacity: 1 !important;}
+	.cell p, .cell-v p {opacity: 1 !important;}
 }
 
 /* EXHIBITION ZA MOBILNI 

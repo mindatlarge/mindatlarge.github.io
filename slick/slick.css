@@ -95,7 +95,8 @@
     float: right;
 }
 .slick-slide img {
-    width: 65%;
+    width: 68%;
+    height: 92vh;
     margin: 0 auto;
 
     z-index: 10000;
@@ -136,27 +137,17 @@
     border: none;
 
     position: absolute;
-    top:48%;
+    top: 40%;
     z-index: 10000;
-    width: 30px;
-    height: 30px;
 
 }
-.slick-next {right: 2rem; text-align: right;}
-.slick-prev {left: 1rem; text-align: left;}
+.slick-next {right: -1.2rem; text-align: right;}
+.slick-prev {left: -1.2rem; text-align: left;}
 .slick-prev:focus, .slick-next:focus {
     outline: none;
 }
 .slick-dots {
     display: none !important;
-}
-@media screen and (min-width: 1024px) {
-    /*.slick-arrow:hover {opacity: 1;}*/
-    .slick-prev:hover, .slick-next:hover {
-    cursor: pointer;}
-}
-@media screen and (max-width: 1023px) {
-   /* .slick-arrow {opacity: 1;}*/
 }
 
 /* VERTIKALNO CENTRIRANJE SLIKA U GALERIJI-EXHIBITION */
@@ -169,7 +160,7 @@ figure {
 }
 figcaption, .caption {
     margin: 0.35rem auto;
-    width: 65%;
+    width: 68%;
     color: rgba(0, 0, 0, 0.72);
     text-align: left;
 }

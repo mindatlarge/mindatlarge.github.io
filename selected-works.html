@@ -37,7 +37,7 @@
 			</div>	
 
 		</header>
-		<!--<div id="exit-sw"><img src="Magnific-Popup-master/dist/exit.png"></div>-->
+
 			<div id="year-list" style="display: none;">
 			<a href="#" class="yrs-anchors">2018</a>
 				<div class="y-2018 yrs">
@@ -63,7 +63,7 @@
 						<p class="m-opis" style="display:none;"><span>Untitled</span>, 2018, mixed media on linen, 20.2 x 26 cm (left), 45 x 33.8 cm (right)</p>
 					</div>
 
-					<div class="cell">
+					<div class="cell-v">
 						<a href="selected-works/2018/alise-nova.jpg" 
 						alt="<span>Untitled</span>, 2018, mixed media on linen, 14 x 19 cm (left), 30 x 22 cm (right)">
 							<img src="selected-works/2018/alise-nova.jpg" alt="Jelena Bulajic"></a>
@@ -135,7 +135,7 @@
 		$('#year-list').fadeIn(300);
 	});
 
-	$('.cell').magnificPopup({		
+	$('.cell, .cell-v').magnificPopup({		
   delegate: 'a',
   type: 'image',
   fixedContentPos: true,
