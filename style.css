@@ -248,8 +248,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	#nav-mobile-btn {right: 1rem;}
 	.yrs-anchors {margin-left: -1rem;}
 	.list, #biography-list, #essays-list {margin-left: 1rem; margin-right: 1rem;}
-
-}
+	#contact-container {margin-left: 1rem; margin-right: 1rem;}
 
 
 	#contact-container, .list, #essays-list, #biography-list {margin-top: 4.5rem;}
@@ -282,8 +281,8 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	.cell a, .cell-v a {pointer-events: none;}
 	.obrisatizamob {display: none;}
 	/* DA BUDE PORAVNATO SA 1 */
-	.cell, .cell-v {width: 90%; margin: 2rem -1rem;}
-	#year-list {width: 100vw; margin-left: 2rem;}
+	.cell, .cell-v {width: 100%; margin: 2rem -1rem;}
+	#year-list {width: 100vw; margin: 9rem 0 0 0; padding-left: 2rem;}
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
 	.cell a, .cell-v {pointer-events: none;}
