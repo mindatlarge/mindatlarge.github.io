@@ -145,6 +145,9 @@ if($(window).width() >= 768)
  $('.e-links').on('click touchstart', function(e){
      e.stopPropagation();
  });
+ $(window).on('touchmove', function(e){
+ 	e.preventDefault();
+ });
 if($(window).width() < 768)
  $('.e-links').on('click touchstart', function (){
  	var $target = $($(this).data('target'));
