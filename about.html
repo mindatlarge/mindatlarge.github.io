@@ -145,9 +145,6 @@ if($(window).width() >= 768)
  $('.e-links').on('click touchstart', function(e){
      e.stopPropagation();
  });
- $(window).on('touchmove', function(e){
- 	e.preventDefault();
- });
 if($(window).width() < 768)
  $('.e-links').on('click touchstart', function (){
  	var $target = $($(this).data('target'));
@@ -155,6 +152,16 @@ if($(window).width() < 768)
  	$target.fadeIn(200);
  	$('#container').addClass('pozadina-about-m')
 }); 
+var touchmoved;
+$(window).on('touchend', function(e){
+    if(touchmoved != true){
+        // you're on button click action
+    }
+}).on('touchmove', function(e){
+    touchmoved = true;
+}).on('touchstart', function(){
+    touchmoved = false;
+});
 
 // otvaranje linkova
  $('.o-e').on('click', function(){
