@@ -82,7 +82,7 @@
 .mfp-hide {
   display: none !important; }
 
-.mfp-preloader {
+/*.mfp-preloader {
   color: #CCC;
   position: absolute;
   top: 50%;
@@ -95,7 +95,7 @@
   .mfp-preloader a {
     color: #CCC; }
     .mfp-preloader a:hover {
-      color: #FFF; }
+      color: #FFF; }*/
 
 .mfp-s-ready .mfp-preloader {
   display: none; }
@@ -121,7 +121,8 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
-.mfp-close {
+/*.mfp-close {
+  display: none;
   width: 44px;
   height: 44px;
   position: absolute;
@@ -130,7 +131,7 @@ button::-moz-focus-inner {
   color: black;}
 
 .mfp-close-btn-in .mfp-close {
-  color: #FFF; }
+  color: #FFF; }*/
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
@@ -153,12 +154,11 @@ button::-moz-focus-inner {
   overflow: hidden;
   position: absolute;
   margin: 0;
-  bottom: -10px;
+  top: 50%;
   padding: 0;
-  width: 10px;
+  width: 90px;
   height: 90px;
-  background: green;
-  transform: scale(0.45);}
+  transform: scale(0.65);}
   .mfp-arrow {
     opacity: 1; }
   .mfp-arrow:before,
@@ -170,7 +170,7 @@ button::-moz-focus-inner {
     position: absolute;
     left: 0;
     top: 0;
-    margin-top: 35px;
+
     margin-left: 35px;}
   .mfp-arrow:after {
     border-top-width: 13px;
@@ -183,7 +183,7 @@ button::-moz-focus-inner {
 
 .mfp-arrow-left {
   text-align: left;
-  right: 7%; }
+  left: 0; }
   .mfp-arrow-left:after {
     border-right: 17px solid #FFF;
     margin-left: 31px; }
@@ -193,7 +193,7 @@ button::-moz-focus-inner {
 
 .mfp-arrow-right {
   text-align: right;
-  right: 6%; }
+  right: 0; }
   .mfp-arrow-right:after {
     border-left: 17px solid #FFF;
     margin-left: 39px; }
@@ -337,7 +337,7 @@ img.mfp-img {
 /*@media screen and (max-width: 767px) {
   .mfp-arrow {display: none !important;}
 }*/
-.mfp-figure {
+.mfp-img {
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;
     -o-animation-name: fadeIn;
@@ -378,24 +378,6 @@ img.mfp-img {
 .mfp-last .mfp-arrow-right {
     display: none;
 }
-button.mfp-close {
-  transform: rotate(45deg) scale(0.77);
-  right: 1.5%;
-  bottom: 10.5px;
-}
-.mfp-img { pointer-events: none; }
 
-@media screen and (max-width: 1440px) {
-  button.mfp-close {
-    transform: scale(0.7) rotate(45deg);
-  }
-  .mfp-arrow-right {
-    transform: scale(0.4);
-    right: 7%;
-  }
-  .mfp-arrow-left {
-    transform: scale(0.4);
-    right: 8.5%;
-  }
-}
+.mfp-img { pointer-events: none; }
 

@@ -242,6 +242,16 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 		vertical-align: middle;}
 }
 @media screen and (max-width: 575px) {
+	/* LEVO  1 */
+	header { margin-left: 1rem;}
+	#nav-mobile {padding-left: 1rem;}
+	#nav-mobile-btn {right: 1rem;}
+	.yrs-anchors {margin-left: -1rem;}
+	.list, #biography-list, #essays-list {margin-left: 1rem; margin-right: 1rem;}
+
+}
+
+
 	#contact-container, .list, #essays-list, #biography-list {margin-top: 4.5rem;}
 	#contact-container div {display: block;}
 	#carlier-gebauer-info {margin: 2rem 0 0 0;}
@@ -265,13 +275,15 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	.cell, .cell-v {width: 40vw; margin-left: 0; margin-top: 2rem;}
 }
 @media screen and (max-width: 768px) {
-	.cell a, .cell-v a {pointer-events: none;}
 	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
 	.opis-del {display: none;}
 }
 @media screen and (max-width: 575px) {
-	.cell, .cell-v {width: 90vw; margin: 2rem 0;}
+	.cell a, .cell-v a {pointer-events: none;}
 	.obrisatizamob {display: none;}
+	/* DA BUDE PORAVNATO SA 1 */
+	.cell, .cell-v {width: 90%; margin: 2rem -1rem;}
+	#year-list {width: 100vw; margin-left: 2rem;}
 }
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
 	.cell a, .cell-v {pointer-events: none;}
@@ -280,6 +292,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	.obrisatizamob {display: none;}
 }
 @media screen and (max-device-width: 568px) and (orientation: landscape) {
+	.cell a, .cell-v a {pointer-events: none;}
 	.cell, .cell-v {width: 50vw; margin: 2rem auto;}
 	footer {height: 0rem;}
 	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
@@ -290,13 +303,5 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.cell p, .cell-v p {opacity: 1 !important;}
 }
-
-/* EXHIBITION ZA MOBILNI 
-@media screen and (max-width: 575px) {
-	.dropdown-container-saat div {text-align: center;}
-	.dropdown-container-saat img {
-		width: 90%;
-	}
-} */
 
 
