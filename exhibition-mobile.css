@@ -45,7 +45,7 @@
 		height: 80vh;
 		width: auto;
 	}	
-	figcaption {top: calc(-60vh - 10rem);}
+	figcaption {top: -70vh;}
 }
 /* IPHONE X */
 @media screen and (max-width: 823px) and (max-height: 414px) and (orientation: landscape) {
@@ -69,7 +69,7 @@
 	}	
 		figcaption {	
 		position: absolute;
-		top: -60vh;
+		top: -70vh;
 
 		width: 100%;
 		opacity: 0.75;
