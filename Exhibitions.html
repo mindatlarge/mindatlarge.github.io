@@ -21,7 +21,7 @@
 	<!-- GALERIJA IDE PREKO CELOG EKRANA -->
 		<div class="close-btn" style="display: none"></div>
 
-			<div class="dropdown-container-cg" style="display: none;">
+			<div class="dropdown-container-cg close-btn-m" style="display: none;">
 				<div>
 					<figure>
 					<img src="exhibitions/CGEBAUER-W/CGEBAUER-1.jpg" alt="Jelena Bulajic carlier gebauer">
@@ -54,7 +54,7 @@
 			</div>
 			</div>
 
-			<div class="dropdown-container-saat" style="display: none;">
+			<div class="dropdown-container-saat close-btn-m" style="display: none;">
 				<div>
 					<figure>
 					<img src="exhibitions/SATCHI-W/SATCHI-1.jpg" alt="Jelena Bulajic Saatchi gallery">
@@ -213,10 +213,11 @@
     		$target.fadeIn(300);
     $('.dropdown-container-cg, .dropdown-container-saat, .close-btn').hide();
 	});
+
 	if($(window).width() > 576)
 	$('.dropdown-container-cg, .dropdown-container-saat').slick({
 	  dots: false,
-	  infinite: true,
+	  infinite: false,
 	  speed: 200,
 	  fade: true,
 	  cssEase: 'linear'

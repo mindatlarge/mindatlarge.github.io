@@ -8,9 +8,6 @@
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
 body {font-family: courier; font-size: 12px;}
-html:hover {cursor: default;}
-.cursor {cursor: default !important;}
-.cursor-a {cursor: default; z-index: 1000;}
 span {font-style: italic;}
 a {text-decoration: none;}
 header h1 {display: inline; font-size: 12px;}
@@ -47,7 +44,7 @@ header a {
 	z-index: 3;
 	cursor: default;
 }
-.pozadina-galerija {filter: blur(2px); opacity: 0.3; transition: all 0.3s; height: 100vh; overflow: hidden;}
+.pozadina-galerija {filter: blur(2px); opacity: 0.3; transition: all 0.3s;}
 .pozadina-about {filter: blur(2px); opacity: 0.3; transition: all 0.3s; background: white;}
 .pozadina-about-m {display: none;}
 .h-poz-about {position: fixed; top: 0;}
