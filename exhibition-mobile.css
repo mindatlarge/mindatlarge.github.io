@@ -17,7 +17,7 @@
 	}
 	figcaption {	
 		position: absolute;
-		top: -55vh;
+		top: calc(-50vh - 10rem);
 
 		width: 100%;
 		opacity: 0.75;
