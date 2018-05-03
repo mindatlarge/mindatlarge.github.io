@@ -3,7 +3,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding-top: 80vh;
+	padding-top: 70vh;
 }
 .dropdown-container-saat div, .dropdown-container-cg div {
 	top:0;
@@ -16,7 +16,7 @@
 }
 figcaption {	
 	position: absolute;
-	top: -70vh;
+	top: -69vh;
 
 	width: 100%;
 	opacity: 0.75;
