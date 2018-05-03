@@ -1,5 +1,6 @@
+
 $(document).ready(function() {
-	
+	//mobile
 	if ($(window).width() > 575 ) {
 		// CARLIER_GEBAUER DESKTOP
 	$('.otvori-cg').on('click', function(){ 
@@ -45,5 +46,15 @@ $(document).ready(function() {
 
 	}
 });
+
+
+
+
+
+
+
+
+
+
 
 
