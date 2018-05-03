@@ -1,4 +1,5 @@
-@media screen and (max-width: 575px) {
+/* FOR PORTRAIT ORIENTATION */
+@media screen and (max-width: 767px) {
 	.dropdown-container-saat, .dropdown-container-cg {
 		position: absolute;
 		top: 0;
@@ -22,20 +23,61 @@
 		opacity: 0.75;
 	}
 	.caption {display: none;}
-	.skloni {display: none;}
 
 } 
-
+/* LANDSCAPE ORIENTATION */
+/* OD IPHONE 6 PLUS */
 @media screen and (max-height: 414px) and (orientation: landscape) {
-
 	.dropdown-container-saat, .dropdown-container-cg {
 		width: 100vw;
 		text-align: center;
 
-}
+	}
+	.dropdown-container-saat div, .dropdown-container-cg div {
+		top:0;
+		height: 100%;
+		margin: 10rem 4rem 0 4rem;
+
+	}
 	.dropdown-container-saat img, .dropdown-container-cg img {
 		text-align: center;
 		height: 80vh;
 		width: auto;
 	}	
+	figcaption {top: -60%;}
 }
+/* IPHONE X */
+@media screen and (max-width: 823px) and (max-height: 414px) and (orientation: landscape) {
+	.dropdown-container-saat, .dropdown-container-cg {
+		padding-top: 70vh;
+
+		width: 100vw;
+		text-align: center;
+
+	}
+	.dropdown-container-saat div, .dropdown-container-cg div {
+		top:0;
+		height: 100%;
+		margin: 10rem 4rem 0 4rem;
+
+	}
+	.dropdown-container-saat img, .dropdown-container-cg img {
+		text-align: center;
+		height: 80vh;
+		width: auto;
+	}	
+		figcaption {	
+		position: absolute;
+		top: -60%;
+
+		width: 100%;
+		opacity: 0.75;
+	}
+
+	.caption {display: none;}
+
+}
+
+
+
+

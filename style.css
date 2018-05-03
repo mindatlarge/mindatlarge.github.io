@@ -158,8 +158,6 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 
 	#essays-list a:hover {opacity: 1; transition: 0.5s;}
 
-	/*#year-list:hover a {opacity: 0.5; transition: 0.6s;}
-	#year-list a:hover {opacity: 1;}*/
 
 	#contact-container:hover, #container:hover {cursor: default;}
 
@@ -230,6 +228,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	#essays-text {position: fixed; top: 6.8rem;}
 }
 @media screen and (min-width: 575px) {
+	/* za sve sto nije telefon*/
 	.pomeriti {margin-left: 2.27rem;}
 	.pomeriti-g {margin: -1.38rem 0 0 2.35rem; line-height: 14px; vertical-align: middle;}
 	.bio {
@@ -239,7 +238,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 		vertical-align: middle;}
 }
 @media screen and (max-width: 575px) {
-	/* LEVO  1 */
+	/* LEVA DESNA MARGINA 1 */
 	header { margin-left: 1rem;}
 	#nav-mobile {padding-left: 1rem;}
 	#nav-mobile-btn {right: 1rem;}
@@ -261,7 +260,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	#container {width: 1920px; margin: 0 auto;}
 }
 
-/* SELECTED WORKS */ 
+/* SELECTED WORKS RAZMESTAJ SLIKA*/ 
 
 @media screen and (max-width: 1440px) {
 	.yrs {justify-content: space-between; width: 100%; }
@@ -271,19 +270,20 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	.cell, .cell-v {width: 40vw; margin-left: 0; margin-top: 2rem;}
 }
 @media screen and (max-width: 768px) {
-	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
+	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.65);}
 	.opis-del {display: none;}
 }
 @media screen and (max-width: 575px) {
 	.cell a, .cell-v a {pointer-events: none;}
 	.obrisatizamob {display: none;}
-	/* DA BUDE PORAVNATO SA 1 */
+	/* LEVA DESNA MARGINA 1*/
 	.cell, .cell-v {width: 100%; margin: 2rem -1rem;}
 	#year-list {width: 100vw; margin: 9rem 0 0 0; padding-left: 2rem;}
 }
+/* IPHONE X */
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
 	.cell a, .cell-v {pointer-events: none;}
-	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
+	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.65);}
 	.opis-del {display: none;}
 	.obrisatizamob {display: none;}
 }
@@ -291,7 +291,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	.cell a, .cell-v a {pointer-events: none;}
 	.cell, .cell-v {width: 50vw; margin: 2rem auto;}
 	footer {height: 0rem;}
-	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.5);}
+	.m-opis {display: block !important;  color: rgba(0, 0, 0, 0.65);}
 	.opis-del {display: none;}
 	.obrisatizamob {display: none;}
 

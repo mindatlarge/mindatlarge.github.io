@@ -1,4 +1,4 @@
-if ($(window).width() > 575) {
+if ($(window).width() > 768 && $(window).height() > 414) {
 $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
