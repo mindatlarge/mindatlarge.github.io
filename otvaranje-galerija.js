@@ -25,21 +25,21 @@ $(document).ready(function() {
 
 		} else {
 
-			// CARLIER_GEBAUER MOB
+
 	$('.otvori-cg').on('click', function(){
 		$('.dropdown-container-cg').fadeToggle(100);
 		$('#container').hide();
 		$('.close-btn-m').show();
 	});
-			// SAATCHI MOB
+
 	$('.otvori-saat').on('click', function(){
-		$('dropdown-container-saat').fadeToggle(100);
+		$('.dropdown-container-saat').css('display', 'block');
 		$('#container').hide();
 		$('.close-btn-m').show();
 	});
 			// ZATVORI GALERIJU MOB
-	$('.close-btn-m').on('click', function(){
-		$('.dropdown-container-cg, .dropdown-container-saat, .close-btn-m').fadeOut(200);
+	$('.zatvori-m').on('click', function(){
+		$('.dropdown-container-cg, .dropdown-container-saat').fadeOut(100);
 		$('#container').fadeIn(200);
 	});
 
