@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 	//mobile
-	if ($(window).width() > 767 ) {
+	if ($(window).width() > 767 && ($(window).height() > 414)) {
 		// CARLIER_GEBAUER DESKTOP
 	$('.otvori-cg').on('click', function(){ 
 		$('.dropdown-container-cg').fadeToggle(100);
