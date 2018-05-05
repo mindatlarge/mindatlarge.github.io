@@ -120,7 +120,8 @@ header a {
 /* BIOGRAPHY */
 #biography-list {margin: 7.7rem 2rem 0 2rem;}
 .bio {opacity: 0.5; padding-left: 2px;}
-
+/* DA NEMA ESSAYS I COLLECTIONS */
+.o-e, .o-c {display: none !important;}
 
 /* ESSAYS */
 
