@@ -133,14 +133,14 @@
 .slick-prev, .slick-next {
     background: transparent;
     border: none;
-
     top: 50%;
     position: absolute;
     z-index: 10000;
 
 }
-.slick-next {right: 1rem; text-align: right;}
-.slick-prev {left: 1rem; text-align: left;}
+.slick-next {right: 0rem; text-align: right;}
+.slick-prev {left: 0rem; text-align: left;}
+button.slick-next, button.slick-prev {transform: translateY(-50%) scale(0.2);}
 .slick-prev:focus, .slick-next:focus {
     outline: none;
 }

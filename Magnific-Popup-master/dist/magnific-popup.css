@@ -359,6 +359,7 @@ img.mfp-img {
     height: 24px;
     background: url('next.png');
     background-size: contain;
+    background-repeat: no-repeat;
     border: none;
     z-index: 1000;
     left: 1rem;
@@ -368,9 +369,10 @@ img.mfp-img {
     height: 24px;
     background: url('back.png');
     background-size: contain;
+    background-repeat: no-repeat;
     border: none;
     z-index: 1000;
-    left: -0.5rem;
+    left: 0rem;
 }
 .mfp-first .mfp-arrow-left {
     display: none;
