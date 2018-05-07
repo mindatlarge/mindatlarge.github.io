@@ -220,26 +220,6 @@ callbacks: {
 
 });
 
-	$(".mfp-arrow").hide();
-
-$("html").mousemove(function( event ) {
-    $(".mfp-arrow").fadeIn(100);
-
-    myStopFunction();
-    myFunction();
-});
-
-function myFunction() {
-    myVar = setTimeout(function(){
-        $(".mfp-arrow").fadeOut(100);
-    }, 1000);
-}
-function myStopFunction() {
-    if(typeof myVar != 'undefined'){
-        clearTimeout(myVar);
-    }
-}
-
 </script>
 
 </body>
