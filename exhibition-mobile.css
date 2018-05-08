@@ -4,8 +4,8 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		padding-top: calc(50vh - 50%);
-		padding-bottom: 6rem;
+		padding-top: calc(40vh - 50%);
+		padding-bottom: 3.5rem;
 	}
 	.dropdown-container-saat div, .dropdown-container-cg div {
 		top:0;
@@ -16,7 +16,7 @@
 		width: 100%;
 	}
 	.caption, figcaption {display: none;}
-	.caption-m {opacity: 0.75; transform: translateY(10rem);}
+	.caption-m {opacity: 0.75; transform: translateY(9.5rem);}
 }
 /* nema caption za non-mobile */
 @media screen and (min-width: 767px) and (min-height: 415px) {

@@ -171,13 +171,16 @@ figcaption, .caption {
 /* GALERIJA VELICINA SLIKE */
 
 @media screen and (max-width: 1440px) {
-    .slick-slide img, figcaption, .caption { width: 82%;}
+    .slick-slide img, figcaption, .caption { width: 80%;}
 }
 @media screen and (max-width: 1280px) {
     .slick-slide img, figcaption, .caption { width: 68%;}
 }
 @media screen and (max-width: 1024px) {
-    .slick-slide img, figcaption, .caption { width: 80%;}
+    .slick-slide img, figcaption, .caption { width: 85%;}
+}
+@media screen and (max-width: 900px) {
+     button.slick-next, button.slick-prev {transform: translateY(-50%) scale(0.14);}
 }
 @media screen and (height: 631px) {
     .slick-slide img, figcaption, .caption { width: 60%;} 
