@@ -18,6 +18,10 @@
 	.caption, figcaption {display: none;}
 	.caption-m {opacity: 0.75; transform: translateY(9.5rem);}
 }
+@media screen and (max-width: 320px) {
+	.dropdown-container-saat, .dropdown-container-cg {padding-top: 8vh; padding-bottom: 1rem;}
+	.caption-m {transform: translateY(5.8rem);}
+}
 /* nema caption za non-mobile */
 @media screen and (min-width: 767px) and (min-height: 415px) {
 	.caption-m, .caption-m-l {display: none;}
