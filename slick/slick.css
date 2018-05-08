@@ -171,10 +171,11 @@ figcaption, .caption {
 /* GALERIJA VELICINA SLIKE */
 
 @media screen and (max-width: 1440px) {
-    .slick-slide img, figcaption, .caption { width: 80%;}
+    .slick-slide img, figcaption, .caption {
+        width: 85vw;}
 }
 @media screen and (max-width: 1280px) {
-    .slick-slide img, figcaption, .caption { width: 68%;}
+    .slick-slide img, figcaption, .caption { width: 90vw;}
 }
 @media screen and (max-width: 1024px) {
     .slick-slide img, figcaption, .caption { width: 85%;}
