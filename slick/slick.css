@@ -95,8 +95,9 @@
     float: right;
 }
 .slick-slide img {
-    width: 67.8%;
+    width: 68%;
     margin: 0 auto;
+
 
     z-index: 10000;
 }
@@ -159,7 +160,7 @@ figure {
 figcaption, .caption {
     margin: 0.35rem auto;
     width: 68%;
-    color: rgba(0, 0, 0, 0.72);
+    color: rgba(0, 0, 0, 0.75);
     text-align: left;
 }
 
@@ -168,11 +169,13 @@ figcaption, .caption {
     opacity: 0;
 }
 
-/* GALERIJA VELICINA SLIKE */
-
+ /*GALERIJA VELICINA SLIKE */
+@media screen and (max-width: 1600px) {
+    .slick-slide img, figcaption, .caption { width: 80vw;}
+}
 @media screen and (max-width: 1440px) {
     .slick-slide img, figcaption, .caption {
-        width: 85vw;}
+        width: 82vw;}
 }
 @media screen and (max-width: 1280px) {
     .slick-slide img, figcaption, .caption { width: 90vw;}
@@ -185,7 +188,8 @@ figcaption, .caption {
 }
 @media screen and (height: 631px) {
     .slick-slide img, figcaption, .caption { width: 60%;} 
-}
+} 
+
 
 
 

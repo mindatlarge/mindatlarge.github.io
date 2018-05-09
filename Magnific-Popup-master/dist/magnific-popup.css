@@ -245,6 +245,7 @@ img.mfp-img {
   cursor: default; }
 
 .mfp-title {
+  opacity: 0.75;
   text-align: left;
   line-height: 18px;
   color: black;
