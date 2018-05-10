@@ -175,10 +175,10 @@ figcaption, .caption {
 }
 @media screen and (max-width: 1440px) {
     .slick-slide img, figcaption, .caption {
-        width: 82vw;}
+        width: 75.5vw;}
 }
 @media screen and (max-width: 1280px) {
-    .slick-slide img, figcaption, .caption { width: 90vw;}
+    .slick-slide img, figcaption, .caption { width: 68vw;}
 }
 @media screen and (max-width: 1024px) {
     .slick-slide img, figcaption, .caption { width: 85%;}

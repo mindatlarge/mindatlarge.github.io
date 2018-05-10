@@ -23,25 +23,23 @@ $(document).ready(function() {
 		$('#container').removeClass('pozadina-galerija');
 	});
 
-
 		} else {
-
 
 	$('.otvori-cg').on('click', function(){
 		$('.dropdown-container-cg').fadeToggle(100);
 		$('#container').hide();
-		$('.close-btn-m').show();
 	});
 
 	$('.otvori-saat').on('click', function(){
-		$('.dropdown-container-saat').css('display', 'block');
+		$('.dropdown-container-saat').fadeToggle(100);
 		$('#container').hide();
-		$('.close-btn-m').show();
 	});
 			// ZATVORI GALERIJU MOB
 	$('.zatvori-m').on('click', function(){
 		$('.dropdown-container-cg, .dropdown-container-saat').fadeOut(100);
+		$(window).scrollTop(0);
 		$('#container').fadeIn(200);
+
 	});
 
 	}

@@ -50,6 +50,8 @@ header a {
 .pozadina-about-m {display: none;}
 .h-poz-about {position: fixed; top: 0;}
 .l-poz-about {position: fixed; top: 6.25rem;}
+.lock {height: 100vh; overflow: hidden;}
+
 #ex-nav{
 	margin-top: 1rem;
 }
