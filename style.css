@@ -45,12 +45,10 @@ header a {
 	z-index: 3;
 	cursor: default;
 }
-.pozadina-galerija {filter: blur(2px); opacity: 0.3; transition: all 0.3s; height: 100vh; overflow: hidden;}
 .pozadina-about {filter: blur(2px); opacity: 0.3; transition: all 0.3s; background: white;}
 .pozadina-about-m {display: none;}
 .h-poz-about {position: fixed; top: 0;}
 .l-poz-about {position: fixed; top: 6.25rem;}
-.lock {height: 100vh; overflow: hidden;}
 
 #ex-nav{
 	margin-top: 1rem;
