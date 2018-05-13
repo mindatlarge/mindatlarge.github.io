@@ -4,8 +4,8 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		padding-top: calc(40vh - 50%);
-		margin-bottom: 6.2rem;
+		padding-top: calc(30vh - 50%);
+		margin-bottom: 9.2rem;
 		width: 100vw;
 	}
 	.dropdown-container-saat div, .dropdown-container-cg div {
@@ -17,7 +17,7 @@
 		width: 100%;
 	}
 	.caption {display: none;}
-	.caption-m {opacity: 0.75; transform: translateY(4.5rem);}
+	.caption-m {opacity: 0.75; transform: translateY(7.5rem);}
 }
 @media screen and (max-width: 320px) {
 	.dropdown-container-saat, .dropdown-container-cg {padding-top: 8vh; padding-bottom: 1rem;}

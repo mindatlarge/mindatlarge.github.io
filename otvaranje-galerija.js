@@ -53,6 +53,60 @@ $(document).ready(function() {
 },
 		type: 'image'
 		});
+		//SAATCHI
+				$('.otvori-saat').magnificPopup({
+			items: [{
+				src: 'exhibitions/SATCHI-W/SATCHI-1.jpg',
+				title: 'Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.'},
+			{	src: 'exhibitions/SATCHI-W/SATCHI-2',
+				title: 'Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.'},
+			{	src: 'exhibitions/SATCHI-W/SATCHI-3.jpg',
+				title: 'Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.'},
+			{	src: 'exhibitions/SATCHI-W/SATCHI-4.jpg',
+				title: 'Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.'},
+			{	src: 'exhibitions/SATCHI-W/SATCHI-5.jpg',
+				title: 'Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.'},
+			{	src: 'exhibitions/SATCHI-W/SATCHI-6.jpg',
+				title: 'Champagne Life, exhibition view at the Saatchi Gallery, 2016. Courtesy of the artist and the Saatchi Gallery. Photo: Bim Hjortronsteen.'},
+		],
+		gallery: {enabled: true},
+		callbacks: {
+	        change: function() {
+        var mfp = $.magnificPopup.instance;
+        var container = $(mfp.container);
+
+        if (mfp.index >= mfp.items.length - 1) container.addClass('mfp-last');
+        else container.removeClass('mfp-last');
+        if (mfp.index == 0) container.addClass('mfp-first');
+        else container.removeClass('mfp-first');
+    },
+    open: function() {
+        var mfp = $.magnificPopup.instance;
+        var proto = $.magnificPopup.proto;
+
+        // extend function that moves to next item
+        mfp.next = function() {
+
+            // if index is not last, call parent method
+            if(mfp.index < mfp.items.length - 1) {
+                proto.next.call(mfp);
+            } else {
+               // otherwise do whatever you want, e.g. hide "next" arrow
+            }
+        };
+
+        // same with prev method
+        mfp.prev = function() {
+            if(mfp.index > 0) {
+                proto.prev.call(mfp);
+            }
+        };
+
+    }
+},
+		type: 'image'
+		});
+
 
 		} else {
 			// MOBILNA
