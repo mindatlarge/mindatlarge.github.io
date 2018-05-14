@@ -4,8 +4,8 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		padding-top: calc(30vh - 50%);
-		margin-bottom: 9.2rem;
+		padding-top: calc(25vh - 50%);
+		margin-bottom: 12.2rem;
 		width: 100vw;
 	}
 	.dropdown-container-saat div, .dropdown-container-cg div {
