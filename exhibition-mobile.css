@@ -20,7 +20,7 @@
 	.caption-m {opacity: 0.75; transform: translateY(7.5rem);}
 }
 @media screen and (max-width: 320px) {
-	.dropdown-container-saat, .dropdown-container-cg {padding-top: -10vh; padding-bottom: 6.5rem;}
+	.dropdown-container-saat, .dropdown-container-cg {padding-top: -50vh; padding-bottom: 10rem;}
 	.dropdown-container-saat div, .dropdown-container-cg div {margin: 40% 1rem 0 1rem;}
 	.caption-m {transform: translateY(5.8rem);}
 }
