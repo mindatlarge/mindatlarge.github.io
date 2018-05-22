@@ -168,6 +168,10 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	opacity: 1 !important;
 	transition: 0.3s;
 }
+
+#sw-footer {
+	height: 7.2rem;
+}
 }
 
 @media screen and (max-width: 1023px) {
