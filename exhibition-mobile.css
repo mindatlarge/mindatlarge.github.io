@@ -5,9 +5,9 @@
 		top: 0;
 		left: 0;
 		padding-top: -30vh !important;
-		margin-bottom: 15.2rem !important;
+		margin-bottom: 15.2rem;
 		width: 100vw;
-		background-color: red;
+		background-color: yellow;
 	}
 	.dropdown-container-saat div, .dropdown-container-cg div {
 		top:0;
@@ -21,7 +21,7 @@
 	.caption-m {opacity: 0.75; transform: translateY(7.5rem);}
 }
 @media screen and (max-width: 320px) {
-	.dropdown-container-saat, .dropdown-container-cg {margin-top: -0vh; padding-bottom: 6.5rem;}
+	.dropdown-container-saat, .dropdown-container-cg {margin-top: -0vh; padding-bottom: 11.5rem;}
 	.dropdown-container-saat div, .dropdown-container-cg div {margin: 40% 1rem 0 1rem;}
 	.caption-m {transform: translateY(5.8rem);}
 }
