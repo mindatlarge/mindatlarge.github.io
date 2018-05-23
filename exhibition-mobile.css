@@ -1,13 +1,12 @@
 /* FOR PORTRAIT ORIENTATION */
-@media screen and (max-width: 460px) and (orientation: portrait) {
+@media screen and (max-width: 767px) and (orientation: portrait) {
 	.dropdown-container-saat, .dropdown-container-cg {
 		position: absolute;
 		top: 0;
 		left: 0;
 		padding-top: -30vh !important;
-		margin-bottom: 15.2rem;
-		width: 100vw;
-		background-color: yellow;
+		margin-bottom: 12.2rem;
+		background-color: lightblue;
 	}
 	.dropdown-container-saat div, .dropdown-container-cg div {
 		top:0;
@@ -21,7 +20,7 @@
 	.caption-m {opacity: 0.75; transform: translateY(7.5rem);}
 }
 @media screen and (max-width: 320px) {
-	.dropdown-container-saat, .dropdown-container-cg {margin-top: -0vh; padding-bottom: 11.5rem;}
+	.dropdown-container-saat, .dropdown-container-cg {margin-top: 0vh; padding-bottom: 9.5rem;}
 	.dropdown-container-saat div, .dropdown-container-cg div {margin: 40% 1rem 0 1rem;}
 	.caption-m {transform: translateY(5.8rem);}
 }
