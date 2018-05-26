@@ -258,7 +258,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	#biography-list p {margin-top: 0.5rem;}
 	/* u 1 red za telefon */
 	.pomeriti {margin-left: 2.27rem;}
-	.pomeriti-g {margin: -1.38rem 0 0 2.35rem; line-height: 14px; vertical-align: middle;}
+	.pomeriti-g {margin: -1.44rem 0 0 2.35rem; line-height: 12px;}
 }
 @media screen and (min-width: 1921px) {
 	#container {width: 1920px; margin: 0 auto;}
