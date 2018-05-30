@@ -45,10 +45,6 @@ header a {
 	z-index: 3;
 	cursor: default;
 }
-.pozadina-about {filter: blur(2px); opacity: 0.3; transition: all 0.3s; background: white;}
-.pozadina-about-m {display: none;}
-.h-poz-about {position: fixed; top: 0;}
-.l-poz-about {position: fixed; top: 6.25rem;}
 
 #ex-nav{
 	margin-top: 1rem;
@@ -57,11 +53,7 @@ header a {
 #ex-nav a {opacity: 0.5;}
 
 .list {
-	margin: 7.2rem 2rem 0 2rem;
-}
-.list a {
-	padding-top: 0.5rem;
-	display: block;
+	margin: 7.9rem 2rem 0 2rem;
 }
 
 
@@ -116,11 +108,22 @@ header a {
 #about-nav a:last-child {margin-left: 7.5rem;}
 /* BIOGRAPHY */
 #biography-list {margin: 7.7rem 2rem 0 2rem;}
-.bio {padding-left: 2px;}
+.row {display: inline-block; margin-bottom: 0.5rem;}
+.row p {display: inline;}
+.row1 {width: 95px; left: 0; float: left;}
+.row2 {width: calc(100% - 95px);}
+
+.row3 {width: 43px; left: 0; float: left;}
+.row4 {width: calc(100% - 43px);}
+
+.asas {background-color: red;}
+
+
+.yr-s {display: none !important;}
 /* DA NEMA ESSAYS I COLLECTIONS */
 .o-e, .o-c {display: none !important;}
 
-/* ESSAYS */
+/* ESSAYS 
 
 #essays-list {margin: 7.2rem 2rem 0 2rem;}
 #essays-list a {opacity: 0.7; color: black; display: block; width: 100%;}
@@ -128,14 +131,14 @@ header a {
 
 
 .uvuci {width: 90%; margin: 0 auto;}
-.text1 {line-height: 17px; margin-top: 2rem;}
+.text1 {line-height: 17px; margin-top: 2rem;}*/
 
 h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 /* CONTACT */
 #contact-container div {display: inline-block; vertical-align: text-top;}
 
 #carlier-gebauer-info {margin-left: 10.3rem;}
-#contact-container p {padding-top: 0.5rem; }
+#contact-container a {padding-top: 0.5rem; display: block; color: black;}
 
 /* HOVER ELEMENTI ZA NON-TOUCH DEVICE*/
 @media screen and (min-width: 1024px) {
@@ -218,26 +221,16 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+/*@media screen and (min-width: 1024px) and (max-width: 1280px) {
 	.essays-text {width: 70%;}
-}
+}*/
 @media screen and (max-width: 768px) {
-	.text1 {margin-top: 1.6rem; }
+	.text1 {margin-top: 1.6rem;}
 	#tony-carter h1 {margin-bottom: 0.7rem;}
 }
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
 	#essays-text {position: fixed; top: 6.8rem;}
-}
-@media screen and (min-width: 575px) {
-	/* za sve sto nije telefon u 1 red*/
-	.pomeriti {margin-left: 2.27rem;}
-	.pomeriti-g {margin: -1.38rem 0 0 2.35rem; line-height: 14px; vertical-align: middle;}
-	.bio {
-		transform: translateY(-11.9px);
-		margin-left: 5.5rem;
-		line-height: 11px;
-		vertical-align: middle;}
-}
+}*/
 @media screen and (max-width: 575px) {
 	/* LEVA DESNA MARGINA 1 */
 	header { margin-left: 1rem;}
@@ -248,17 +241,25 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	#contact-container {margin-left: 1rem; margin-right: 1rem;}
 
 
-	#contact-container, .list, #essays-list, #biography-list {margin-top: 4.5rem;}
+	.list, #essays-list {margin-top: 5.3rem;}
+	#contact-container {margin-top: 6.4rem;}
+
+	#biography-list {margin-top: 5.6rem;}
 	#contact-container div {display: block;}
 	#carlier-gebauer-info {margin: 2rem 0 0 0;}
 	#ex-nav, #about-nav {margin-top: 1.5rem;}
 	#ex-nav #group {padding-left: 4.2rem;}
 	.list a {line-height: 15px;}
-	.essays-text {background: white;}
-	#biography-list p {margin-top: 0.5rem;}
+	/*.essays-text {background: white;}*/
+
 	/* u 1 red za telefon */
-	.pomeriti {margin-left: 2.27rem;}
-	.pomeriti-g {margin: -1.44rem 0 0 2.35rem; line-height: 12px;}
+
+	.row {margin-bottom: 1rem;}
+	.row1 {width: 56px;}
+	.row2 {width: calc(100% - 56px);}
+	.yr-s {display: block !important;}
+	.yr-l {display: none !important;}
+
 }
 @media screen and (min-width: 1921px) {
 	#container {width: 1920px; margin: 0 auto;}
@@ -282,7 +283,7 @@ h1 {margin-bottom: 0.7rem; font-size: 15px; font-weight: normal;}
 	.obrisatizamob {display: none;}
 	/* LEVA DESNA MARGINA 1*/
 	.cell, .cell-v {width: 100%; margin: 2rem -1rem;}
-	#year-list {width: 100vw; margin: 9rem 0 0 0; padding-left: 2rem;}
+	#year-list {width: 100vw; margin: 7.4rem 0 0 0; padding-left: 2rem;}
 }
 /* IPHONE X */
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {

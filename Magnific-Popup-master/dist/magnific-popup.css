@@ -380,7 +380,7 @@ img.mfp-img {
 }
 
 .mfp-last .mfp-arrow-right {
-    display: none;
+    opacity: 0;
 }
 
 .mfp-img { pointer-events: none; }

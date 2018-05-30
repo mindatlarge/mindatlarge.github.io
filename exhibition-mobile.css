@@ -18,11 +18,11 @@
 	.caption {display: none;}
 	.caption-m {opacity: 0.75; transform: translateY(7.5rem);}
 }
-@media screen and (max-width: 320px) {
+/*@media screen and (max-width: 320px) {
 	.dropdown-container-saat, .dropdown-container-cg {margin-top: 0vh; padding-bottom: 8.5rem;}
 	.dropdown-container-saat div, .dropdown-container-cg div {margin: 40% 1rem 0 1rem;}
 	.caption-m {transform: translateY(5.8rem);}
-}
+}*/
 /* nema caption za non-mobile */
 @media screen and (min-width: 767px) and (min-height: 415px) {
 	.caption-m, .caption-m-l {display: none;}
