@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="Magnific-Popup-master/dist/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="exhibition-mobile.css">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="menu-button-touch.js"></script>
 	<script src="Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
 	<script src="otvaranje-galerija.js"></script>
@@ -92,6 +92,7 @@
 <div id="container">
 	
 		<header>
+			<h1><a id="jelena" class="l-no" href="drugi index.html">Jelena Bulajić</a></h1>
 			<div id="nav">
 				<a class="n-2 l-o" href="selected-works.html">Selected works</a>
 				<a class="n-1" href="Exhibitions.html" style="opacity: 1;">Exhibitions</a>
@@ -100,11 +101,12 @@
 			</div>
 
 			<div id="ex-nav" style="display: none;">
-				<a id="solo" class="open-list" data-target="#solo-list" href="#">Solo</a>
+				<a id="solo" class="open-list" data-target="#solo-list" href="#" style="opacity: 1;">Solo</a>
 				<a id="group" class="open-list" data-target="#group-list" href="#">Group</a>
 			</div>
 			<div id="nav-mobile-btn"><img src="add.png" alt="menu-button"></div>
 			<div id="nav-mobile" style="display: none;">
+				<a href="index.html">Jelena Bulajić</a>
 				<a href="selected-works.html">Selected works</a>
 				<a href="Exhibitions.html" style="opacity: 1;">Exhibitions</a>
 				<a href="about.html">About</a>
@@ -334,7 +336,7 @@
 
 <script>
 	$(document).ready(function(){
-		$('#ex-nav').fadeIn(300);
+		$('#ex-nav, #solo-list').delay(80).fadeIn(500);
 	});
 
 	$('#solo').on('click', function(){
@@ -349,7 +351,7 @@
 	$('.open-list').click(function () {
     	var $target = $($(this).data('target'));
     		$(".list").not($target).hide();
-    		$target.fadeIn(300);
+    		$target.delay(80).fadeIn(500);
     $('.dropdown-container-cg, .dropdown-container-saat, .close-btn').hide();
 	});
 

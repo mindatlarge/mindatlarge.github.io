@@ -10,13 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="menu-button-touch.js"></script>
 	<title>Jelena Bulajić</title>
 </head>
 <body>
 	<div id="container">
-			<header>
+		<header>
+			<h1><a id="jelena" class="l-no" href="drugi index.html">Jelena Bulajić</a></h1>
 			<div id="nav">
 				<a class="n-1 l-o" href="selected-works.html">Selected works</a>
 				<a class="n-2 l-o" href="Exhibitions.html">Exhibitions</a>
@@ -25,11 +26,12 @@
 			</div>
 			
 			<div id="about-nav" style="display: none;">
-				<a href="#" class="o-b item">Biography</a>
+				<a href="#" class="o-b item" style="opacity: 1">Biography</a>
 			</div>
 
 			<div id="nav-mobile-btn"><img src="add.png" alt="menu-button"></div>
 			<div id="nav-mobile" style="display: none;">
+				<a href="index.html">Jelena Bulajić</a>
 				<a href="selected-works.html">Selected works</a>
 				<a href="Exhibitions.html">Exhibitions</a>
 				<a href="about.html" style="opacity: 1;">About</a>
@@ -42,7 +44,7 @@
 					<p>1990</p>
 				</div>
 				<div class="row2 row">
-					<p>Jelena Bulajić, born in Vrbas, Serbia</p>
+					<p>Born in Vrbas, Serbia</p>
 				</div>
 
 				<div class="row1 row">
@@ -158,12 +160,12 @@
 
 <script>
 	$(document).ready(function(){
-		$('#about-nav').fadeIn(300);
+		$('#about-nav, #biography-list').delay(80).fadeIn(500);
 	});
 
 
  $('.o-b').on('click', function(){
- 	$('#biography-list').fadeIn(300);
+ 	$('#biography-list').fadeIn(500);
  	$('#essays-list').hide();
  });
 
