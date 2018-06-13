@@ -88,7 +88,7 @@ header a {
 
 /* SELECTED WORKS */
 #year-list, #contact-container {
-	width: 100vw - 4rem;
+	width: 100vw - 2rem;
 
 	margin: 9.3rem 2rem 0 2rem;
 	left: 0;}
@@ -106,10 +106,14 @@ header a {
 	margin-top: 2rem;}
 
 .yrs {
+	width: 100%;
+
 	display: inline-flex;
+
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: flex-start;
+	
+	align-content: space-between;
 	justify-content: space-around;}
 
 
@@ -125,8 +129,8 @@ header a {
 	transition-delay: 0.8s;
 	transition: 1s;}
 
-.cell, .cell-v {
-	margin-left: 4.5vw;}
+/*.cell, .cell-v {
+	margin-left: 4.8vw;}*/
 
 .yrs img {
 	display: block;
@@ -331,8 +335,6 @@ header a {
 
 	.cell, .cell-v {
 		width: 25vw;
-
-		margin-left: 1vw;
 		margin-top: 1.8rem;}
 }
 @media screen and (max-width: 1023px) {
