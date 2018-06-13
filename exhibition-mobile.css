@@ -2,21 +2,26 @@
 @media screen and (max-width: 767px) and (orientation: portrait) {
 	.dropdown-container-saat, .dropdown-container-cg {
 		position: absolute;
+
 		top: 0;
 		left: 0;
-		padding-top: -50%;
-		margin-bottom: 15.2rem;
-	}
+
+		/*padding-top: -50%;
+		margin-bottom: 15.2rem;*/}
+
 	.dropdown-container-saat div, .dropdown-container-cg div {
 		top:0;
 		height: 100%;
-		margin: 45% 1rem 0 1rem;
-	}
+		margin: 45% 1rem 0 1rem;}
+
 	.dropdown-container-saat img, .dropdown-container-cg img {
 		width: 100%;
 	}
+
 	.caption {display: none;}
-	.caption-m {opacity: 0.75; transform: translateY(7.5rem);}
+	.caption-m {
+		opacity: 0.75;
+		transform: translateY(7.5rem);}
 }
 /*@media screen and (max-width: 320px) {
 	.dropdown-container-saat, .dropdown-container-cg {margin-top: 0vh; padding-bottom: 8.5rem;}
