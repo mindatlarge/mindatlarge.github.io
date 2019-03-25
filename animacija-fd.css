@@ -1,0 +1,103 @@
+/* ANIMACIJA FD */
+
+.fd-g {
+	background-color: #141414;
+	position: relative;
+	left: calc(50% - 300px);
+  top: calc(50% - 200px);
+  z-index: 1000;
+}
+
+.fd-pozadina {
+	background-color: #141414;
+}
+
+.fd-planes {
+  position: relative;
+  left: calc(50% - 250px);
+  top: calc(50% - 220px);
+}
+
+.slider-fd {
+  display:block;
+  width:74px;
+  height:393px;
+  background-color:#00B16A;
+  border-radius:50px;
+  position:absolute;
+  margin-left:250px;}
+#slider1 {
+  transform:rotate(90deg);}
+#slider2 {
+  transform:rotate(45deg);}
+#slider3 {
+  transform:rotate(-45deg);}
+ .circle {
+    background-color:#141414;
+    display:block;
+    width:60px;
+    height:60px;
+    border-radius:30px;
+    box-shadow: 0 2px 4px #141414;
+    position:absolute;
+    z-index:2;}  
+#circle1 {
+   -webkit-transform:translate(101px, 165px);
+   animation: myFrames 2s ease-in-out 0s infinite alternate forwards running;}
+@keyframes myFrames {
+  from {
+    -webkit-transform:translate(98px, 165px);}
+  to {
+    -webkit-transform:translate(412px, 165px);}}
+#circle2 {
+   -webkit-transform:translate(370px, 52px);
+   animation: myFrames1 2s ease-in-out 0.9s infinite alternate forwards running;}
+@keyframes myFrames1 {
+  from {
+    -webkit-transform:translate(370px, 52px);}
+  to {
+    -webkit-transform:translate(145px, 280px);}}
+#circle3 {
+  -webkit-transform:translate(370px, 280px);
+  animation: myFrames2 2s ease-in-out 1.5s infinite alternate forwards running;}
+ @keyframes myFrames2 {
+   from {
+     -webkit-transform:translate(370px, 280px);}
+   to {
+     -webkit-transform:translate(145px, 52px);}}
+
+
+/* ANIMACIJA PLANES */
+
+.planes {
+  display:inline-block;
+  margin-left:100px;
+  margin-top:100px;}
+#plane1 {
+  animation: myFramesP 2.5s ease-in 1.8s infinite alternate both;}
+@keyframes myFramesP {
+  from {
+    opacity:0;}
+  to {
+    opacity:1;}}
+#plane2 {
+  animation: myFramesPa 2.5s ease-in 1s infinite alternate both;
+  transform:translate(-130px, -31px);}
+ 
+@keyframes myFramesPa {
+  from {
+    opacity:0;}
+  to {
+    opacity:1;}}
+#plane3 {
+  animation: myFramesPb 2.5s ease-in 0s infinite alternate both;
+  transform:translate(-260px, -62px);}
+@keyframes myFramesPb {
+  from {
+    opacity:0;}
+  to {
+    opacity:1;}}
+
+
+
+

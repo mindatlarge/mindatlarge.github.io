@@ -1,0 +1,128 @@
+@font-face {
+	font-family: dobar;
+	src: url(Sans-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+*::-moz-selection {
+  opacity: 0;
+}
+
+*::selection {
+  opacity: 0;
+
+}
+
+body {
+	overflow-x: hidden;
+	background-color: black;
+}
+
+
+h1 {
+	font-weight: lighter;
+}
+
+a , h1, p {
+	font-family: dobar;
+	font-size: 18px;
+	color: lightgray;
+	opacity: 0.9;
+	text-decoration: none;
+}
+
+
+a {
+	cursor: default;
+}
+a:not(.about-c):hover {
+	text-decoration: underline;
+}
+
+a.about-nav:hover {
+	text-decoration: none;
+}
+
+header {
+	position: fixed;
+	top: 40px;
+	right: 50px;
+	z-index: 100;
+}
+
+nav {
+	position: fixed;
+	top: 40px;
+	left: 50px;
+	z-index: 100;
+}
+
+nav a {
+	margin-bottom: 2px;
+	display: block;
+}
+
+#dole {
+	margin-top: 25px;
+}
+
+#contact {
+	position: fixed;
+	bottom: 40px;
+	right: 50px;
+	text-align: right;
+}
+#home {
+	position: fixed;
+	bottom: 40px;
+	left: 50px;
+	z-index: 100;
+}
+.active {
+	text-decoration: underline;
+}
+.novired {
+	display: block;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+video {
+	width:45%;
+
+	position: relative;
+	top: 50vh;
+	left: 50%;
+	transform: translate(-50%, -55%);
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none;
+}
+video::-webkit-media-controls-time-remaining-display {
+	display: none;
+}
+video::-webkit-media-controls-current-time-display {
+	display: none;
+}
+
+video:focus {
+	outline: 0;
+}
+
+
+.about-c {
+	text-align: right;
+}
+
+
+
+

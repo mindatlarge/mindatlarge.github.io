@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Nemanja Karisic</title>
+	
+
+</head>
+<body>
+
+	<header>
+		<a href="about.html"><h1>Nemanja Karisic</h1></a>
+	</header>
+	<nav>
+		<a href="menu.html">Works</a>
+		<div id="dole">
+		<a href="bender at sea.html">Bender at Sea</a>
+		<a href="CMOK.html">CMOK</a>
+		<a href="curiously enough.html">Curiously Enough</a>
+		<a href="dekametar.html">Dekametar</a>
+		<a href="eyesthetic.html">Eyesthetic</a>
+		<a href="fd.html">FD</a>
+		<a href="HtLYCF.html">How to Lead Your Canine Friend</a>
+		<a href="jb.html">Jelena Bulajic</a>
+		<a href="jellyfish.html">Jellyfish</a>
+		<a class="active" href="logos.html">Logomarks</a>
+		<a href="leaving home.html">Leaving Home</a>
+		<a href="parallel.html">Parallel</a>
+		<a href="posters.html">Posters</a>
+		<a href="sequence.html">Sequence_01</a>
+		<a href="wave.html">Wave</a>
+		<a href="wititm.html">Who is That in the Mirror</a>
+		<a href="zerotocoder.html">Zero to Coder</a>
+	</div>
+	</nav>
+
+		<div id="home">
+		<a href="index.html">Home</a>
+	</div>
+
+
+	<div id="contact">
+		<div class="about active-about">
+			<a class="about-c" href="#">Krald,</a>
+			<a class="about-c novired" href="#">logistic company</a>
+			<a class="about-c novired" href="#">roads intersection in different axis</a>
+			<a class="about-c novired" href="#">2017</a>
+		</div>
+
+		<div class="about">
+			<a class="about-c" href="#">Trut,</a>
+			<a class="about-c novired" href="#">beekeeping cooperative</a>
+			<a class="about-c novired" href="#">bee hive + bee</a>
+			<a class="about-c novired" href="#">2017</a>
+		</div>
+
+		<div class="about">
+			<a class="about-c" href="#">Koki Promet,</a>
+			<a class="about-c novired" href="#">trading company</a>
+			<a class="about-c novired" href="#">package + arrows</a>
+			<a class="about-c novired" href="#">2018</a>
+		</div>
+	</div>
+
+	<div class="gallery">
+		<div class="grid active-s">
+			<img src="kokipromet/kraldsam-01.jpg">
+		</div>
+
+		<div class="grid" id="grid2">
+			<img src="kokipromet/trutsam-01.jpg">
+		</div>
+
+		<div class="grid" id="grid3">
+			<img src="kokipromet/kokisam-01.jpg">
+		</div>
+	</div>
+
+		<div class="slider-number">
+		<div class="slider active-counter">
+			<a href="#">1</a>
+		</div>
+		<div class="slider">
+			<a href="#">2</a>
+		</div>
+		<div class="slider">
+			<a href="#">3</a>
+		</div>
+	</div>
+
+		<div class="slider-static">
+			<a href="#"> / 3</a>
+		</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js">
+</script>
+<script src="galerija.js"></script>
+
+<script>
+		$(document).ready(function(){ /*
+			var controller = new ScrollMagic.Controller();
+
+		  var scene = new ScrollMagic.Scene({
+		  	triggerElement: '#grid2' ,
+		  })
+
+		  .setClassToggle('#krald-about', 'skloni-about')
+		  .addTo(controller);
+
+
+		   var scene = new ScrollMagic.Scene({
+		  	triggerElement: '#grid2' ,
+		  })
+
+		  .setClassToggle('#trut-about', 'prikazi-about')
+		  .addTo(controller);
+
+
+		  	var scene = new ScrollMagic.Scene({
+		  	triggerElement: '#grid3' ,
+		  })
+
+		  .setClassToggle('#trut-about', 'skloni-about')
+		  .addTo(controller);
+
+
+		 	var scene = new ScrollMagic.Scene({
+		  	triggerElement: '#grid3' ,
+		  })
+
+		  .setClassToggle('#koki-about', 'prikazi-about')
+		  .addTo(controller); */
+
+		  		  $('.gallery').on('click', function(e){
+						  var sWidth = $(this).innerWidth();
+						  var sOffset = $(this).offset();
+						  var x = e.pageX - sOffset.left;
+						  var currentActive = $('#contact').children('.active-about');
+						  var prev = currentActive.prev();
+						  var next = currentActive.next();
+						  
+						  if (sWidth / 2 > x) {
+						    if (prev.length > 0) {
+						          currentActive.removeClass('active-about');
+						          prev.addClass('active-about');
+
+						        }
+						    }
+						    else {
+						      if (next.length > 0) {
+						            currentActive.removeClass('active-about');
+						            next.addClass('active-about');
+						          }
+						    }
+			});
+
+
+		});
+</script>
+
+
+</body>
+</html>

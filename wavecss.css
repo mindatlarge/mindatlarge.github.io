@@ -1,0 +1,193 @@
+@font-face {
+	font-family: dobar;
+	src: url(Sans-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+*::-moz-selection {
+  opacity: 0;
+}
+
+*::selection {
+  opacity: 0;
+
+}
+
+body {
+	background-color: black;
+	overflow-x: hidden;
+}
+
+
+h1 {
+	font-weight: lighter;
+}
+
+a , h1, p {
+	font-family: dobar;
+	font-size: 18px;
+	color: red;
+	text-decoration: none;
+}
+
+
+a {
+	cursor: default;
+}
+a:not(.about-c):hover {
+	text-decoration: underline;
+}
+
+a.about-nav:hover {
+	text-decoration: none;
+}
+
+header {
+	position: fixed;
+	top: 40px;
+	right: 50px;
+	z-index: 100;
+}
+
+nav {
+	position: fixed;
+	top: 40px;
+	left: 50px;
+	z-index: 100;
+}
+
+nav a {
+	margin-bottom: 2px;
+}
+
+#dole {
+	margin-top: 25px;
+}
+
+#contact {
+	position: fixed;
+	bottom: 40px;
+	right: 50px;
+	text-align: right;
+}
+#home {
+	position: fixed;
+	bottom: 40px;
+	left: 50px;
+	z-index: 100;
+}
+
+nav a {
+	display: block;
+}
+nav:last-child() {
+	margin-left: 15px;
+}
+
+.active {
+	text-decoration: underline;
+}
+#page-1-content {
+	margin: 10% auto;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	background: transparent;
+	overflow: hidden;
+	padding-top: 18rem;
+	-webkit-border-radius: 50%;
+	-webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.rect {
+	position: relative;
+	right: 200px;
+  	background: red;
+  	opacity: 0.7;
+  	width: 1000px;
+  	height: 1000px;
+  	border-radius: 32%;
+  	animation-name: flow;
+  	animation-duration: 15s;
+  	animation-timing-function: linear;
+  	animation-delay: 0s;
+  	animation-iteration-count: infinite;
+
+  	-webkit-animation-name: flow;
+  	-webkit-animation-duration: 15s;
+  	-webkit-animation-timing-function: linear;
+  	-webkit-animation-delay: 0s;
+  	-webkit-animation-iteration-count: infinite;
+}
+
+.rect2 {
+	position: relative;
+	bottom: 1000px;
+	right: 200px;
+  	background: red;
+  	opacity: 0.6;
+  	width: 1000px;
+  	height: 1000px;
+  	border-radius: 32%;
+
+    animation-name: flowi;
+  	animation-duration: 13s;
+  	animation-timing-function: linear;
+  	animation-delay: 0s;
+  	animation-iteration-count: infinite;
+
+  	-webkit-animation-name: flowi;
+  	-webkit-animation-duration: 13s;
+  	-webkit-animation-timing-function: linear;
+  	-webkit-animation-delay: 0s;
+  	-webkit-animation-iteration-count: infinite;
+}
+
+.about-c {
+	text-align: right;
+}
+.novired {
+	display: block;
+}
+.active {
+	text-decoration: underline;
+}
+
+@-webkit-keyframes flow {
+  0% {
+    transform: rotate3D(0,0,1,0deg);
+  }
+
+  50% {
+  	transform:  rotate3d(0,0,1,180deg);
+  }
+
+  100% {
+    transform: rotate3D(0,0,1,360deg);
+  }
+}
+@keyframes flowi {
+  0% {
+    transform: rotate3D(0,0,1,0deg);
+  }
+
+   50% {
+  	transform:  rotate3d(0,0,1,180deg);
+  }
+
+  100% {
+    transform: rotate3D(0,0,1,360deg);
+  }
+}
+
+@media only screen and (max-height: 830px) {
+	#page-1-content {
+		margin: 0 auto;
+	}
+}
