@@ -267,9 +267,16 @@ nav:last-child() {
 
 	#page-1-content {
 		transform: scale(0.5);
-		margin-left: -35px;
+		margin-top: -15%;
+		margin-left: -90px;
 	}
 
+}
+
+@media screen and (max-width: 320px) {
+	a, h1, p {
+		font-size: 13px;
+	}
 }
 
 

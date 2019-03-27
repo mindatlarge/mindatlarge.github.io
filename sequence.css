@@ -185,7 +185,7 @@ video:focus {
 }
 
 @media screen and (max-width: 425px) {
-		a, h1, p {
+	a, h1, p {
 		font-size: 15px;
 	}
 	header, #contact {
@@ -194,6 +194,12 @@ video:focus {
 
 	nav, #home {
 		left: 20px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	a, h1, p {
+		font-size: 13px;
 	}
 }
 

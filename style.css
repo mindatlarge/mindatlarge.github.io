@@ -509,9 +509,12 @@ span {
 	.gallery-jb img {
 		width: 97%;}
 	.gallery-posters img {
-		width: 85%;}
+		width: 83%;}
 	.gallery-cmok img {
 		width: 76%;}
+	.gallery-cmok img {
+		width: 90%;
+	}
 
 	.gallery img, .gallery-jb img, .gallery-cmok img {
 		margin-top: 50%;
@@ -535,10 +538,31 @@ span {
 		left: 47.6%;
 	}
 
-.container-about {
-	background-color: green;
 }
 
+@media screen and (max-width: 320px) {
+	a, h1, p {
+		font-size: 13px;
+	}
+
+	.gallery-e img {
+		width: 77%;
+	}
+	.gallery-posters img {
+		width: 70%;
+	}
+
+	.gallery img, .gallery-jb img, .gallery-cmok img {
+		transform: translateY(-30%);
+	}
+
+	.gallery-e img {
+		transform: translateY(-34%);
+	}
+
+	.gallery-posters img {
+		transform: translateY(-32%);
+	}
 }
 
 
