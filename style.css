@@ -466,8 +466,12 @@ span {
 
 @media screen and (max-width: 425px) {
 	body, html {
-		position: relative;
-		overflow: hidden !important;
+		position: fixed;
+		overflow: hidden;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 	}
 
 	a, h1, p {
