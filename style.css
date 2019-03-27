@@ -488,6 +488,10 @@ span {
 		left: 20px;
 	}
 
+	#header-about {
+		top: 26px;
+	}
+
 	nav {
 		width: 50vw;
 	}
