@@ -490,7 +490,7 @@ span {
 	}
 
 	#header-about {
-		top: 26px;
+		top: 23px;
 	}
 
 	nav {
@@ -533,8 +533,8 @@ span {
 		transform: translateY(-28%);
 	}
 	.gallery-e img {
-		margin-top: 50%;
-		transform: translateY(-30%);
+		margin-top: 47%;
+		transform: translateY(-50%);
 	}
 
 	.about-nav {
