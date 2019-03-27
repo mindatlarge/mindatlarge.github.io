@@ -201,6 +201,21 @@ video:focus {
 	a, h1, p {
 		font-size: 13px;
 	}
+	video {
+		top: 40vh;
+	}
+
+	header, nav {
+		top: 20px;
+	}
+	#contact, #home, .slider-number, .slider-static {
+		bottom: 20px;
+	}
+
+	.container {
+		margin-top: 50px;
+		height: 100vh;
+	}
 }
 
 

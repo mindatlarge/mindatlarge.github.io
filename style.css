@@ -374,8 +374,11 @@ span {
 	#contact, #home, .slider-number, .slider-static {
 		bottom: 30px;
 	}
-	header, nav, .about-nav {
+	nav, .about-nav {
 		top: 30px;
+	}
+	header {
+		top: 25px;
 	}
 
 	.slider-number {
@@ -518,11 +521,11 @@ span {
 
 	.gallery img, .gallery-jb img, .gallery-cmok img {
 		margin-top: 50%;
-		transform: translateY(-48%);
+		transform: translateY(-30%);
 	}
 	.gallery-posters img {
 		margin-top: 50%;
-		transform: translateY(-27%);
+		transform: translateY(-28%);
 	}
 	.gallery-e img {
 		margin-top: 50%;
@@ -546,7 +549,7 @@ span {
 	}
 
 	.gallery-e img {
-		width: 77%;
+		width: 85%;
 	}
 	.gallery-posters img {
 		width: 70%;
@@ -562,6 +565,18 @@ span {
 
 	.gallery-posters img {
 		transform: translateY(-32%);
+	}
+
+	header, nav {
+		top: 20px;
+	}
+	#contact, #home, .slider-number, .slider-static {
+		bottom: 20px;
+	}
+
+	.container {
+		margin-top: 50px;
+		height: 100vh;
 	}
 }
 

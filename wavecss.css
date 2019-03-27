@@ -277,6 +277,18 @@ nav:last-child() {
 	a, h1, p {
 		font-size: 13px;
 	}
+
+	header, nav {
+		top: 20px;
+	}
+	#contact, #home, .slider-number, .slider-static {
+		bottom: 20px;
+	}
+
+	.container {
+		margin-top: 50px;
+		height: 100vh;
+	}
 }
 
 

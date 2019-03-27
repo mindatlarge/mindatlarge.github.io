@@ -160,12 +160,23 @@
   nav, #home {
     left: 20px;
   }
-  
+
     #fd-s {
     width: 60%; 
-    transform: translateY(-51%);
+    transform: translateY(-61%);
   }
 
+  .gallery {
+    height: 100%;
+  }
+  .grid-skrol {
+    display: none;
+  }
+  #about-2nd-page, #about-3rd-page {
+    display: none !important;
+  }
+
+/*
   .grid-skrol {
     margin-top: 0;
   }
@@ -178,7 +189,25 @@
   .fd-planes {
     left: 50%;
   }
+*/
+}
 
+@media screen and (max-width: 320px) {
+  a, h1, p {
+    font-size: 13px;
+  }
+
+  header, nav {
+    top: 20px;
+  }
+  #contact, #home, .slider-number, .slider-static {
+    bottom: 20px;
+  }
+
+  .container {
+    margin-top: 50px;
+    height: 100vh;
+  }
 }
 
 
