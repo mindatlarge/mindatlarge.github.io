@@ -253,7 +253,7 @@ nav:last-child() {
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 475px) {
 	a, h1, p {
 		font-size: 15px;
 	}
