@@ -554,6 +554,9 @@ span {
 	.gallery-posters img {
 		width: 70%;
 	}
+	.gallery-jb img {
+		width: 95%;
+	}
 
 	.gallery img, .gallery-jb img, .gallery-cmok img {
 		transform: translateY(-30%);
