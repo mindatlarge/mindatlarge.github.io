@@ -33,6 +33,7 @@ a , h1, p {
 	font-size: 18px;
 	color: #232429;
 	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 
