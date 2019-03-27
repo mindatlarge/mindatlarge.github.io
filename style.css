@@ -466,8 +466,8 @@ span {
 
 @media screen and (max-width: 425px) {
 	body, html {
-		position: fixed;
-		overflow: hidden;
+		position: relative;
+		overflow: hidden !important;
 	}
 
 	a, h1, p {
@@ -532,7 +532,7 @@ span {
 	}
 
 .container-about {
-	background-color: tomato;
+	background-color: green;
 }
 
 }
