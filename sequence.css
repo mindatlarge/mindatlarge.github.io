@@ -125,4 +125,77 @@ video:focus {
 
 
 
+@media screen and (max-width: 1440px) {
+
+	a, h1, p {
+		font-size: 16px;
+	}
+
+	header, #contact {
+		right: 40px;
+	}
+
+	nav, #home {
+		left: 40px;
+	}
+
+	#dole {
+		margin-top: 35px;}
+
+	.slider-number {
+		left: 49.2%;
+	}
+
+}
+@media screen and (max-width: 1280px) {
+	#dole {
+		margin-top: 25px;
+	}
+
+	#contact, #home, .slider-number, .slider-static {
+		bottom: 30px;
+	}
+	header, nav, .about-nav {
+		top: 30px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	a, h1, p {
+		font-size: 16px;
+	}
+
+	nav {
+		width: 18vw;
+	}
+	.nav-hide {
+		display: none;
+	}
+
+	video {
+		width: 65%;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	video {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+		a, h1, p {
+		font-size: 15px;
+	}
+	header, #contact {
+		right: 20px;
+	}
+
+	nav, #home {
+		left: 20px;
+	}
+}
+
+
 

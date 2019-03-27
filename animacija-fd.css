@@ -98,6 +98,87 @@
   to {
     opacity:1;}}
 
+@media screen and (max-width: 1440px) {
+  .fd-g {
+    left: calc(50% - 295px);
+  }
+}
 
+@media screen and (max-width: 1280px) {
+      .fd-g {
+    transform: scale(0.8);
+    left: calc(50% - 350px);
+    }
+    .fd-planes {
+      transform: scale(0.8);
+      left: calc(50% - 330px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #fd-s {
+    width: 65%;}
+    .fd-g {
+    transform: scale(0.8);
+    left: calc(50% - 330px);
+    }
+    .fd-planes {
+      transform: scale(0.8);
+      left: calc(50% - 310px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+  #fd-s {
+    width: 50%;
+  }
+
+  .gallery {
+    padding-top: 120px;
+  }
+  .grid-skrol {
+    margin-top: -31%;
+  }
+  .fd-g {
+    transform: scale(0.7);
+    left: calc(50% - 320px);
+    }
+  .fd-planes {
+      transform: scale(0.7);
+      left: calc(50% - 290px);
+    }
+}
+
+@media screen and (max-width: 475px) {
+    a, h1, p {
+    font-size: 15px;
+  }
+  header, #contact {
+    right: 20px;
+  }
+
+  nav, #home {
+    left: 20px;
+  }
+  
+    #fd-s {
+    width: 60%; 
+    transform: translateY(-51%);
+  }
+
+  .grid-skrol {
+    margin-top: 0;
+  }
+
+  .fd-g {
+    transform: scale(0.5);
+    left: calc(50% - 255px);
+  }
+
+  .fd-planes {
+    left: 50%;
+  }
+
+}
 
 
