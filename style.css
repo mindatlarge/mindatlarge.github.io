@@ -616,15 +616,15 @@ span {
 }
 
 @media screen and (max-width: 375px) {
-	.gallery-e img {
-		margin-top: 46%;
-	}
 	.gallery-posters img {
-		width: 90%;
+		width: 83%;
 		margin-top: 46%;
 	}
 	.gallery img {
-		margin-top: 57%;
+		margin-top: 52%;
+	}
+	.gallery-e img {
+		margin-top: 41%;
 	}
 }
 
@@ -635,9 +635,6 @@ span {
 		font-size: 13px;
 	}
 
-	.gallery-e img {
-		width: 82%;
-	}
 	.gallery-posters img {
 		width: 70%;
 	}
@@ -650,7 +647,8 @@ span {
 	}
 
 	.gallery-e img {
-		transform: translateY(-31%);
+		width: 85%;
+		transform: translateY(-26%);
 	}
 
 	.gallery-posters img {

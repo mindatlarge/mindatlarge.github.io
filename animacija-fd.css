@@ -208,7 +208,7 @@
 @media screen and (max-width: 375px) {
      #fd-s {
     width: 60%; 
-    transform: translateY(-55%);
+    transform: translateY(-62%);
 }
 
 @media screen and (max-width: 320px) {
