@@ -298,7 +298,7 @@ nav:last-child() {
 }
 @media screen and (max-width: 375px) {
 	#page-1-content {
-		transform: translateY(0%) scale(0.5) !important;
+		transform: translateY(-10%) scale(0.5) !important;
 	}
 }
 

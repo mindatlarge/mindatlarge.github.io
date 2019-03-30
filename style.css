@@ -621,10 +621,10 @@ span {
 	}
 	.gallery-posters img {
 		width: 90%;
-		margin-top: 50%;
+		margin-top: 46%;
 	}
 	.gallery img {
-		margin-top: 60%;
+		margin-top: 57%;
 	}
 }
 
@@ -650,11 +650,11 @@ span {
 	}
 
 	.gallery-e img {
-		transform: translateY(-24%);
+		transform: translateY(-31%);
 	}
 
 	.gallery-posters img {
-		transform: translateY(-291%);
+		transform: translateY(-29%);
 	}
 
 	header, nav {
