@@ -357,6 +357,19 @@ span {
 		width: 60%;}
 }
 
+@media screen and (max-width: 1366px) {
+	.gallery img {
+		width: 47%;}
+	.gallery-e img {
+		width: 30%;}
+	.gallery-jb img {
+		width: 56%;}
+	.gallery-posters img {
+		width: 28%;}
+	.gallery-cmok img {
+		width: 49%;}
+}
+
 @media screen and (max-width: 1280px) {
 	a, h1, p {
 		font-size: 16px;
@@ -442,6 +455,10 @@ span {
 }
 
 @media screen and (max-width: 1024px) and (height: 1366px) {
+	a , h1, p {
+	font-size: 18px;
+}
+
 	.gallery img {
 		width: 90%;
 		margin-top: 15%}
@@ -449,7 +466,40 @@ span {
 		width: 90%;
 		margin-top: 3%;}
 	.gallery-jb img {
-		width: 90%;}
+		width: 90%;
+		transform: translateY(30%);}
+	.gallery-posters img {
+		width: 80%;}
+	.gallery-cmok img {
+		width: 90%;
+		margin-top: 3%;}
+}
+
+@media screen and (max-width: 963px) {
+	.gallery img {
+		width: 60%;
+		margin-top: 0%}
+	.gallery-e img {
+		width: 40%;}
+	.gallery-jb img {
+		width: 65%;}
+	.gallery-posters img {
+		width: 34%;}
+	.gallery-cmok img {
+		width: 90%;
+		margin-top: 3%;}
+}
+
+@media screen and (max-width: 834px) {
+	.gallery img {
+		width: 90%;
+		margin-top: 15%}
+	.gallery-e img {
+		width: 90%;
+		margin-top: 1%;}
+	.gallery-jb img {
+		width: 90%;
+		transform: translateY(30%);}
 	.gallery-posters img {
 		width: 80%;}
 	.gallery-cmok img {

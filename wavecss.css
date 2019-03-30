@@ -223,6 +223,7 @@ nav:last-child() {
 
 }
 
+
 @media screen and (max-width: 1280px) {
 	#dole {
 		margin-top: 25px;
@@ -263,6 +264,18 @@ nav:last-child() {
 @media screen and (max-width: 1024px) and (height: 1366px) {
 	#page-1-content {
 		margin: 35% auto;
+	}
+}
+
+@media screen and (max-width: 963px) {
+	#page-1-content {
+		margin-top: 3%;
+	}
+}
+
+@media screen and (max-width: 834px) {
+	#page-1-content {
+		margin-top: 30%;
 	}
 }
 
