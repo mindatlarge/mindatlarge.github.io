@@ -227,6 +227,9 @@
     margin-top: 50px;
     height: 100vh;
   }
+  #fd-s {
+    transform: translateY(-58%);
+  }
 }
 
 
