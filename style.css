@@ -617,11 +617,14 @@ span {
 
 @media screen and (max-width: 375px) {
 	.gallery-e img {
-		margin-top: 39.5%;
+		margin-top: 46%;
 	}
 	.gallery-posters img {
-		width: 78%;
-		margin-top: 45%;
+		width: 90%;
+		margin-top: 50%;
+	}
+	.gallery img {
+		margin-top: 60%;
 	}
 }
 
@@ -647,11 +650,11 @@ span {
 	}
 
 	.gallery-e img {
-		transform: translateY(-3%);
+		transform: translateY(-24%);
 	}
 
 	.gallery-posters img {
-		transform: translateY(-32%);
+		transform: translateY(-291%);
 	}
 
 	header, nav {

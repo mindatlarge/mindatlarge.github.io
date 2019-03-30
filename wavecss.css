@@ -336,7 +336,7 @@ nav:last-child() {
 
 	#page-1-content {
 		transform: scale(0.5);
-		margin-top: 3%;
+		margin-top: -10%;
 		margin-left: -91px;
 	}
 }
