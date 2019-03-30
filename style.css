@@ -645,7 +645,7 @@ span {
 		width: 95%;
 	}
 
-	.gallery img, .gallery-jb img, .gallery-cmok img {
+	.gallery-cmok img {
 		transform: translateY(-30%);
 	}
 
@@ -670,6 +670,9 @@ span {
 	.container {
 		margin-top: 50px;
 		height: 100vh;
+	}
+	.gallery img {
+		transform: translateY(-38%);
 	}
 }
 
