@@ -59,6 +59,7 @@ nav {
 	position: fixed;
 	top: 40px;
 	left: 50px;
+	width: 12vw;
 	z-index: 100;
 }
 
@@ -196,7 +197,7 @@ nav:last-child() {
 @media screen and (max-width: 1440px) {
 
 	a, h1, p {
-		font-size: 16px;
+		font-size: 17px;
 	}
 
 	header, #contact {
@@ -212,6 +213,12 @@ nav:last-child() {
 
 	.slider-number {
 		left: 49.2%;
+	}
+
+}
+@media screen and (max-width: 1440px) and (max-height: 774px) {
+	#page-1-content {
+		margin-top: 5%;
 	}
 
 }
@@ -253,6 +260,17 @@ nav:last-child() {
 
 }
 
+@media screen and (max-width: 768px) {
+	#page-1-content {
+		margin-top: 25%;
+	}
+}
+@media screen and (max-width: 768px) and (max-height: 774px) {
+	#page-1-content {
+		margin-top: 15%;
+	}
+}
+
 @media screen and (max-width: 475px) {
 	a, h1, p {
 		font-size: 15px;
@@ -267,10 +285,30 @@ nav:last-child() {
 
 	#page-1-content {
 		transform: scale(0.5);
-		margin-top: -15%;
-		margin-left: -90px;
+		margin-top: 20%;
+		margin-left: -41px;
 	}
 
+}
+@media screen and (max-width: 375px) {
+	#page-1-content {
+		transform: translateY(-19%) scale(0.5) !important;
+	}
+}
+
+@media screen and (max-width: 375px) and (min-width: 361px) {
+	#page-1-content {
+		transform: scale(0.5);
+		margin-top: 30%;
+		margin-left: -60px;
+	}
+}
+@media screen and (max-width: 360px) and (min-width: 321px) {
+	#page-1-content {
+		transform: scale(0.5);
+		margin-top: 10%;
+		margin-left: -65px;
+	}
 }
 
 @media screen and (max-width: 320px) {
@@ -288,6 +326,12 @@ nav:last-child() {
 	.container {
 		margin-top: 50px;
 		height: 100vh;
+	}
+
+	#page-1-content {
+		transform: scale(0.5);
+		margin-top: 3%;
+		margin-left: -91px;
 	}
 }
 

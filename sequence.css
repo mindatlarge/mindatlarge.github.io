@@ -60,6 +60,7 @@ nav {
 	position: fixed;
 	top: 40px;
 	left: 50px;
+	width: 12vw;
 	z-index: 100;
 }
 
@@ -128,7 +129,7 @@ video:focus {
 @media screen and (max-width: 1440px) {
 
 	a, h1, p {
-		font-size: 16px;
+		font-size: 17px;
 	}
 
 	header, #contact {
@@ -180,6 +181,7 @@ video:focus {
 
 @media screen and (max-width: 768px) {
 	video {
+		top: 48vh;
 		width: 90%;
 	}
 }
@@ -194,6 +196,12 @@ video:focus {
 
 	nav, #home {
 		left: 20px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	video {
+		top: 48vh;
 	}
 }
 
