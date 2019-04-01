@@ -213,7 +213,8 @@
 
 @media screen and (max-width: 360px) {
   #fd-s {
-    transform: translateY(-58%);
+    width: 63%;
+    transform: translateY(-54%);
   }
 }
 
@@ -230,7 +231,8 @@
   }
 
   #fd-s {
-    transform: translateY(-54%);
+    width: 60%;
+    transform: translateY(-62%);
   }
 }
 
