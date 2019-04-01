@@ -698,7 +698,7 @@ span {
 
 @media screen and (max-width: 360px) {
 	#header-about {
-		top: 26px;
+		top: 25px;
 	}
 
 	.gallery img, .gallery-jb img, .gallery-cmok img {
