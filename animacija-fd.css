@@ -138,7 +138,7 @@
 @media screen and (max-width: 768px) and (max-height: 1024px) {
   #fd-s {
     transform: translateY(-49%);
-    width: 59%;
+    width: 50%;
   }
 
   .gallery {
