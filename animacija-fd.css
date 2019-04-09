@@ -129,6 +129,10 @@
 }
 
 @media screen and (max-width: 1024px) and (height: 1366px) {
+    a, h1, p {
+    font-size: 16px;
+  }
+  
   #fd-s {
     width: 70%;
     transform: translateY(-12%);
