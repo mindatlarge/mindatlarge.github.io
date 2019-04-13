@@ -193,6 +193,12 @@ nav:last-child() {
 	}
 }
 
+@media screen and (max-width: 1536px) {
+	#page-1-content {
+		margin-top: 6%;
+	}
+}
+
 
 @media screen and (max-width: 1440px) {
 
