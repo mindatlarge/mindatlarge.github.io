@@ -357,6 +357,16 @@ span {
 		width: 60%;}
 }
 
+@media screen and (max-width: 1366px) and (max-height: 627px) {
+	a, h1, p {
+		font-size: 16px;
+	}
+	.gallery-e img {
+		width: 10%;
+	}
+}
+
+
 @media screen and (max-width: 1366px) {
 	.gallery img {
 		width: 47%;}
