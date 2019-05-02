@@ -23,7 +23,6 @@ body {
 	overflow: hidden;
 }
 
-
 h1 {
 	font-weight: lighter;
 }
@@ -378,6 +377,23 @@ span {
 		width: 28%;}
 	.gallery-cmok img {
 		width: 49%;}
+}
+
+@media screen and (max-width: 1360px) {
+		a, h1, p {
+		font-size: 14px;
+	}
+
+	.gallery img {
+		width: 42%;}
+	.gallery-e img {
+		width: 34%;}
+	.gallery-jb img {
+		width: 51%;}
+	.gallery-posters img {
+		width: 28%;}
+	.gallery-cmok img {
+		width: 42%;}
 }
 
 @media screen and (max-width: 1280px) {
