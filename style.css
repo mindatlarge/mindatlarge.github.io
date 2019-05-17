@@ -19,10 +19,7 @@
   opacity: 0;
 }
 
-video::-webkit-media-controls-fullscreen-button
-{
-        display: none !important;
-}
+
 video:focus {
 	outline: transparent;
 	border: none;
