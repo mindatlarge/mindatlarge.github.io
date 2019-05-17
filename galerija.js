@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
 		/* SLIDE GALLERY */
-			  $('.gallery, .gallery-e, .gallery-jb, .gallery-posters, .gallery-cmok, .gallery-screenshots').on('click', function(e){
+			  $('.cell__2').on('click', function(e){
 					  var sWidth = $(this).innerWidth();
 					  var sOffset = $(this).offset();
 					  var x = e.pageX - sOffset.left;
@@ -28,25 +28,25 @@ $(document).ready(function(){
 			});
 
 
-		/* STRELICE HOVER */
+		/*STRELICE HOVER */
 			  	var elementHalfWidth = $('body').width() / 2;
 
-					$('body').on('mousemove', function (e) {
+					$('.cell__2').on('mousemove', function (e) {
 					    if (e.pageX < elementHalfWidth) {
 
-					        $(this).css( 'cursor', 'url(strelice/levo.png), auto' );
+					        $(this).css( 'cursor', 'w-resize' );
 					    }
 					    else {
 
-					        $(this).css( 'cursor', 'url(strelice/desno.png), auto' );
+					        $(this).css( 'cursor', 'e-resize' );
 					    }
 
-			});
+			}); 
 
 
 		/* COUNTER */
 
-				$('.gallery, .gallery-e, .gallery-jb, .gallery-posters, .gallery-cmok, .gallery-screenshots').on('click', function(e){
+				$('.cell__2').on('click', function(e){
 						  var sWidth = $(this).innerWidth();
 						  var sOffset = $(this).offset();
 						  var x = e.pageX - sOffset.left;
