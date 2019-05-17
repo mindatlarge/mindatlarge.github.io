@@ -25,6 +25,11 @@ video:focus {
 	border: none;
 }
 
+video::-webkit-media-controls-fullscreen-button
+{
+        display: none !important;
+}
+
 h1, h2, a, p {
 	cursor: default;
 	color: black;
