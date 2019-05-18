@@ -19,14 +19,13 @@
   opacity: 0;
 }
 
-
+video::-webkit-media-controls-fullscreen-button
+{
+        display: none !important;
+}
 video:focus {
 	outline: transparent;
 	border: none;
-}
-
-video::-webkit-media-controls-fullscreen-button {
-        display: none !important;
 }
 
 h1, h2, a, p {
@@ -242,7 +241,11 @@ video {
 
 
 
-
+@media screen and (max-width: 1280px) {
+	h1 {font-size: 25px;}
+	h2 {font-size: 18px;}
+	a {font-size: 11px;}
+}
 
 @media screen and (max-width: 1024px) {
 	.grid-g {
@@ -251,6 +254,12 @@ video {
 }
 
 @media screen and (max-width: 768px) {
+	h1 {
+		font-size: 23px;
+	}
+	h2 {
+		font-size: 18px;
+	}
 	a {
 		font-size: 10px;
 	}
