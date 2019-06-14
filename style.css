@@ -328,7 +328,7 @@ video {
 }
 /* G */ @media screen and (max-width: 1023px) {
 	.grid-g {
-		grid-template-rows: 1fr 10vh 30vh;
+		grid-template-rows: 1fr 10vh 90vh;
 		grid-template-columns: 80%;
 	}
 	.cell__1 {
@@ -367,7 +367,7 @@ video {
 @media screen and (max-width: 768px) {
 	.grid-g {
 		grid-template-columns: 100vw;
-		grid-template-rows: 1fr 14vh 10vh;
+		grid-template-rows: 1fr 14vh 86vh;
 	}
 	.red a, .red_1 a, .red_2 a {font-size: 12px;}
 	img, video {padding-right: 4%;}
