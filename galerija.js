@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
 		/* SLIDE GALLERY */
-			  $('.cell__2').on('click', function(e){
+			  $('.cell__4').on('click', function(e){
 					  var sWidth = $(this).innerWidth();
 					  var sOffset = $(this).offset();
 					  var x = e.pageX - sOffset.left;
@@ -31,7 +31,7 @@ $(document).ready(function(){
 		/*STRELICE HOVER */
 			  	var elementHalfWidth = $('body').width() / 2;
 
-					$('.cell__2').on('mousemove', function (e) {
+					$('.cell__4').on('mousemove', function (e) {
 					    if (e.pageX < elementHalfWidth) {
 
 					        $(this).css( 'cursor', 'w-resize' );
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 		/* COUNTER */
 
-				$('.cell__2').on('click', function(e){
+				$('.cell__4').on('click', function(e){
 						  var sWidth = $(this).innerWidth();
 						  var sOffset = $(this).offset();
 						  var x = e.pageX - sOffset.left;

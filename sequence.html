@@ -17,8 +17,12 @@
 	
 	<style>
 		a, h1, h2 {color: white;}
-		.cell__2 {cursor: default !important;}
-		.cell__5 a:hover {color: white;}
+		.cell__4 {cursor: default !important;}
+		#line {background-color: white;}
+
+		@media screen and (max-width: 581px) {
+			.red_1 a, .red_2 a {color: white;}
+		}
 	</style>
 
 
@@ -26,29 +30,17 @@
 
 <body style="background-color: black;">
 
-	<div class="grid-g">
+		<div class="grid-g">
+
 		<div class="cell cell__1">
-		</div>
-		<div class="cell cell__2">
+			<a class="naslov" href="#">Sequence_01<br/>Music visualization done<br/>for graduation project<br/>Music: offen09<br/>2018</a>
 
-		<div class="active-s gallery">
+			<div class="back">
+			<a href="index.html">Index</a>
+			</div>
 
-			<video autoplay="autoplay" controls="controls" playsinline>
-		<source src="sekvenca/Sequence_01.mp4" type="video/mp4">
-		</video>
 
-		</div>
-
-		</div>
-		<div class="cell cell__3">
-		</div>
-		<div class="cell cell__4">
-			<a href="index.html">Back</a>
-		</div>
-		<div class="cell cell__5">
-			<a href="#">Sequence_01<br/>Music visualization done<br/>for graduation project<br/>Music: offen09<br/>2018</a>
-
-		<div class="slider-cont">
+			<div class="slider-cont">
 			<div class="slider-number">
 				<div class="slider active-counter">
 				<a href="#">1&nbsp</a>
@@ -59,9 +51,63 @@
 			<a href="#">- 1</a>
 		</div>
 	</div>
-</div>
+		</div>
 
-</div>
+		<div class="cell cell__4">
+		<div class="active-s gallery">
+			<video controls disablePictureInPicture controlsList="nodownload" playsinline>
+				<source src="Sequence/Sequence_01.mp4" type="video/mp4">
+			</video>
+		</div>
+		</div>
+
+		<div class="cell cell__5">
+			<div id="line"></div>
+		<div class="red">
+		<a href="benderatsea.html">Bender at Sea</a>
+		<a href="CMOK.html">CMOK</a>
+		<a href="curiouslyenough.html">Curiously Enough</a>
+		<a href="dekametar.html">Dekametar</a>
+	</div>
+	<div class="red">
+		<a href="depth.html">Depth</a>
+		<a href="jb.html">Jelena Bulajic</a>
+		<a href="jellyfish.html">Jellyfish</a>
+		<a href="leavinghome.html">Leaving Home</a>
+	</div>
+	<div class="red">
+		<a href="parallel.html">Parallel</a>
+		<a href="posters.html">Posters</a>
+		<a href="sequence.html">Sequence_01</a>
+		<a href="sunk.html">Sunk</a>
+	</div>
+	<div class="red">
+		<a href="wave.html">Wave</a>
+		<a href="wititm.html">Who is That in the Mirror</a>
+		<a href="zerotocoder.html">Zero to Coder</a>
+	</div>
+
+			<div class="red_1">
+		<a href="benderatsea.html">Bender at Sea</a>
+		<a href="CMOK.html">CMOK</a>
+		<a href="curiouslyenough.html">Curiously Enough</a>
+		<a href="dekametar.html">Dekametar</a>
+		<a href="depth.html">Depth</a>
+		<a href="jb.html">Jelena Bulajic</a>
+		<a href="jellyfish.html">Jellyfish</a>
+		<a href="leavinghome.html">Leaving Home</a>
+		</div>
+
+		<div class="red_2">
+		<a href="parallel.html">Parallel</a>
+		<a href="posters.html">Posters</a>
+		<a href="sequence.html">Sequence_01</a>
+		<a href="sunk.html">Sunk</a>
+		<a href="wave.html">Wave</a>
+		<a href="wititm.html">Who is That in the Mirror</a>
+		<a href="zerotocoder.html">Zero to Coder</a>
+		</div>
+		</div>
 	
 
 
@@ -69,16 +115,6 @@
 <script src="galerija.js"></script>
 
 <script>
-	$('img').hide();
-	$('a').hide();
-	$('video').hide();
-
-
-	$(document).ready(function(){
-		$('img, video').delay(150).fadeIn(600);
-		$('a').delay(500).fadeIn(600);
-	});
-
 </script>
 
 </body>
