@@ -1,6 +1,5 @@
 
-
-$(document).ready(function(){
+Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
 
 
 		/* SLIDE GALLERY */
@@ -31,7 +30,7 @@ $(document).ready(function(){
 		/*STRELICE HOVER */
 			  	var elementHalfWidth = $('body').width() / 2;
 
-					$('.cell__4').on('mousemove', function (e) {
+					$('.barba-container').on('mousemove', function (e) {
 					    if (e.pageX < elementHalfWidth) {
 
 					        $(this).css( 'cursor', 'w-resize' );
@@ -46,7 +45,7 @@ $(document).ready(function(){
 
 		/* COUNTER */
 
-				$('.cell__4').on('click', function(e){
+				$('.barba-container .cell__4').on('click', function(e){
 						  var sWidth = $(this).innerWidth();
 						  var sOffset = $(this).offset();
 						  var x = e.pageX - sOffset.left;

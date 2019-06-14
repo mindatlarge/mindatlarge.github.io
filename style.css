@@ -120,8 +120,8 @@ h1, h2 {
 	grid-column: span 3;
 }
 
+
 .cell__4 {
-	z-index: 100000 !important;
 
 	grid-column: span 4;
 	grid-row: span 2;

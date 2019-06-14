@@ -50,7 +50,7 @@
 	</div>
 		</div>
 
-		<div class="cell cell__4">
+		<div class="cell cell__4" id="celija">
 		<div class="active-s gallery">
 			<img src="BOOKS/bender at sea/1c.jpg">
 		</div>
@@ -115,9 +115,12 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="galerija.js"></script>
-<script src="barba.js-master/dist/barba.min.js"></script>
 
 <script>
+$('#celija').on('click', '#celija:not(.initialized)', function () {
+    $(this).addClass('initialized');
+      console.log('the foo was clicked');
+});
 </script>
 
 </body>
