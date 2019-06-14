@@ -1,7 +1,6 @@
 
 Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, container) {
 
-
 		/* SLIDE GALLERY */
 			  $('.cell__4').on('click', function(e){
 					  var sWidth = $(this).innerWidth();
@@ -28,24 +27,28 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
 
 
 		/*STRELICE HOVER */
-			  	var elementHalfWidth = $('body').width() / 2;
 
-					$('.barba-container').on('mousemove', function (e) {
-					    if (e.pageX < elementHalfWidth) {
+					$('.cell__4').on('mousemove', function (e) {
+						 var sWidth = $(this).innerWidth();
+					 	 var sOffset = $(this).offset();
+					  	var x = e.pageX - sOffset.left;
+					    if (sWidth / 2 > x) {
 
 					        $(this).css( 'cursor', 'w-resize' );
+
 					    }
 					    else {
-
+					    	if (sWidth / 2 < x) {
 					        $(this).css( 'cursor', 'e-resize' );
 					    }
+					}
 
 			}); 
 
 
 		/* COUNTER */
 
-				$('.barba-container .cell__4').on('click', function(e){
+				$('.cell__4').on('click', function(e){
 						  var sWidth = $(this).innerWidth();
 						  var sOffset = $(this).offset();
 						  var x = e.pageX - sOffset.left;

@@ -69,7 +69,7 @@ h1, h2 {
 /* INDEX */
 
 .grid, .grid-g {
-	margin-top: 3%;
+	padding-top: 3%;
 	margin-left: 2%;
 }
 
@@ -115,14 +115,12 @@ h1, h2 {
 
 }
 
-
 .cell__1 {
 	grid-column: span 3;
 }
 
 
 .cell__4 {
-
 	grid-column: span 4;
 	grid-row: span 2;
 }
@@ -135,7 +133,7 @@ h1, h2 {
 	width: calc(100% - 6%);
 
 	height: 1px;
-	background-color: black;
+	background: black;
 
 	margin-bottom: 4%;
 }
@@ -442,10 +440,16 @@ video {
 	}
 }
 
+.seq #barba-wrapper {
+	background: black;
+}
+.seq a {
+	color: white;
+}
+.seq #line {
+	background: white;
+}
 
-
-
-
-
+.non #barba-wrapper {background: white;}
 
 
