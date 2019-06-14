@@ -426,8 +426,8 @@ video {
 
 @media screen and (max-width: 375px) {
 	a, p, h1, h2 {font-size: 11px;}
-	img, video {padding-right: 2%;}
-	.cell__1, #line {width: calc(100vw - 2%);}
+	img, video {padding-right: 4%;}
+	.cell__1, #line {width: calc(100vw - 4%);}
 
 	#page-1-content {
 		margin-left: -18vw;
