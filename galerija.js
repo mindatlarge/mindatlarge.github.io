@@ -34,12 +34,12 @@ Barba.Dispatcher.on('transitionCompleted', function(currentStatus, oldStatus, co
 					  	var x = e.pageX - sOffset.left;
 					    if (sWidth / 2 > x) {
 
-					        $(this).css( 'cursor', 'w-resize' );
+					        $(this).css( 'cursor', 'url(strelice/levo.png), auto' );
 
 					    }
 					    else {
 					    	if (sWidth / 2 < x) {
-					        $(this).css( 'cursor', 'e-resize' );
+					        $(this).css( 'cursor', 'url(strelice/desno.png), auto' );
 					    }
 					}
 
