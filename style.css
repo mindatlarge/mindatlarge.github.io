@@ -1,4 +1,6 @@
-@font-face {-
+@font-face {
+	font-family: univers;
+	src: url(Univers.otf);
 }
 
 * {
@@ -24,7 +26,7 @@ header {
 }
 
 h1, h2 {
-	font-family: univers;
+	font-family: 'univers';
 	font-size: 0.9em;
 	font-weight: lighter;
 	line-height: 0.9;
@@ -41,6 +43,7 @@ h2 {
 .text {
 	columns: 6;
 	color: white;
+	font-family: 'univers';
 	width: 95vw;
 
 	margin-top: 65vh;
@@ -59,7 +62,7 @@ h2 {
 	.text {columns: 3;}
 }
 @media screen and (max-width: 667px) {
-	.text {columns: 2;}
+	.text {columns: 1; width: 85vw;}
 }
 
 @media screen and (max-width: 500px) {
