@@ -29,27 +29,17 @@ h1, h2 {
 	font-family: 'univers';
 	font-size: 0.9em;
 	font-weight: lighter;
-	line-height: 0.9;
+	line-height: 1.2;
 
-	display: inline;
+	display: inline-block;
 
 	color: white;
+
+	float: left;
 }
 
 h2 {
 	margin-left: 3vw;
-}
-
-.text {
-	columns: 6;
-	color: white;
-	font-family: 'univers';
-	width: 95vw;
-
-	margin-top: 65vh;
-	margin-bottom: 50px;
-
-	font-size: 0.9em;
 }
 
 @media screen and (max-width: 1440px) {
