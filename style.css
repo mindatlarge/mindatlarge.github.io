@@ -32,10 +32,10 @@ header {
 	display: block;
 
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left: 30px;
+	top: 300px;
 
-	transform: translate(-50%, -50%);
+	transform: translate(-93px, -50%);
 
 	background-image: url(portfolio.gif);
 	background-repeat: no-repeat;
@@ -43,11 +43,20 @@ header {
 	background-position: center;
 }
 
+@media screen and (max-width: 1440px) {
+	.content {
+		transform: translate(-30px, -50%);
+	}
+
+}
+
 
 @media screen and (max-width: 768px) {
 	.content {
 		width: 60vw;
 		height: 60vh;
+
+		transform: translate(-10px, -50%);
 	}
 }
 
