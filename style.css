@@ -11,20 +11,18 @@
 }
 
 body {
-	font-size: 100%;
-
 
 }
 
 a {
 	font-family: Theinhardt-Regular.otf;
-	font-size: 0.8em;
+	font-size: 12px;
 }
 
 header {
 	position: fixed;
 	top: 15px;
-	right: 50px;
+	left: 30px;
 }
 
 .content {
@@ -61,10 +59,6 @@ header {
 	.content {
 		width: 70vw;
 		height: 70vh
-	}
-
-	body {
-		font-size: 90%;
 	}
 }
 
