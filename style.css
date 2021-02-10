@@ -11,59 +11,22 @@
 }
 
 body {
-
+	background-color: white;
 }
 
 a {
-	font-family: Theinhardt-Regular.otf;
+	font-family: 'theinhardt';
 	font-size: 12px;
-}
 
-header {
-	position: fixed;
-	top: 15px;
-	left: 30px;
-}
-
-.content {
-	width: 30vw;
-	height: 30vh;
-
-	display: block;
+	color: black;
+	text-decoration: none;
 
 	position: absolute;
-	left: 30px;
-	top: 100px;
+	left: 50%;
+	top: 50%;
 
-	background-image: url(portfolio.gif);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: left;
+	transform: translate(-50%, -50%);
 }
-
-@media screen and (max-width: 1440px) {
-
-}
-
-
-@media screen and (max-width: 768px) {
-	.content {
-		width: 50vw;
-		height: 50vh;
-
-		top: 70px;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.content {
-		width: 70vw;
-		height: 30vh;
-
-		top: 100px;
-	}
-}
-
 
 
 
