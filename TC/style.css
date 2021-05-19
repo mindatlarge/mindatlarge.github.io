@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+a, p, h1, h2 {
+	font-family: times;
+	font-size: 15px;
+
+	line-height: 1.35;
+
+	color: black;
+	text-decoration: none;
+
+	font-weight: lighter;
+}
+
+p {
+	text-align: justify;
+}
+
+.main {
+	width: 500px;
+	height: auto;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 500px;
+	height: 45px;
+
+	background-color: white;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding: 15px;
+
+	z-index: 99999 !important;
+}
+
+nav {
+	width: 100px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+nav a {
+	display: inline-block;
+}
+
+.landing {
+	width: 100%;
+	height: 100vh;
+
+	padding: 0 15px;
+
+	position: relative;
+}
+
+
+.landing_image {
+}
+
+.section {
+	padding: 100px 15px 0 15px;
+}
+
+.section_contact {
+	height: 100vh;
+}
+
+.naslov {
+	text-align: center;
+
+	margin-bottom: 100px;
+}
+
+.dropdown:not(:first-child), .dropdown-essay:not(:first-child) {
+	margin-top: 10px;
+}
+
+.dropdown, .dropdown img, .dropdown-essay {
+	width: 100%;
+}
+
+.dropdown img:not(:first-child) {
+	margin-top: 10px;
+}
+
+
+.dropdown-container, .dropdown-container-essay {
+	margin-top: 15px;
+}
+
+.dropdown-link, .dropdown-link-essay {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	cursor: pointer;
+
+
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+.essay_text {
+	margin-bottom: 15px;
+}
+
+.dropdown-link, .dropdown-essay {
+	border-bottom: 1px solid black;
+}
+
+.ximg {
+	font-style: italic;
+
+	font-size: 12px;
+}
+
+
+
+
+/* ESSAYS */
+
+.essay_content {
+	width: 100%;
+}
+
+.autor {
+	margin-bottom: 60px;
+}
+
+
+
+.contact_content {
+	text-align: center;
+	height: calc(100% - 145px);
+}
+
+.tony_carter_studio p {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+
+.section_image {
+	width: 100%;
+	height: 100vh;
+
+	padding-top: 45px;
+}
+
+.tony_carter_studio img {
+	width: 100%;
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+	.main, header {
+		width: 100%;
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
