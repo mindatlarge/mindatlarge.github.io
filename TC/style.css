@@ -5,10 +5,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 a, p, h1, h2 {
 	font-family: times;
 	font-size: 15px;
