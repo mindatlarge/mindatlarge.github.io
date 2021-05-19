@@ -42,10 +42,10 @@
 
 			<nav>
 				
-				<a href="#biography">1</a>
-				<a href="#gallery">2</a>
-				<a href="#essays">3</a>
-				<a href="#contact">4</a>
+				<a href="#biography" class="scroll">1</a>
+				<a href="#gallery" class="scroll">2</a>
+				<a href="#essays" class="scroll">3</a>
+				<a href="#contact" class="scroll">4</a>
 
 
 
@@ -734,16 +734,6 @@ $(document).ready(function(){
 
 
 
-	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 $('div.dropdown-essay').each(function() {
     var $dropdown = $(this);
 
@@ -790,8 +780,24 @@ $('.dropdown-link-essay').click(function(){
 
 
 // $('<img class="fade-in" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
-
-
+var hashTagActive = "";
+    $(".scroll").on("click touchstart" , function (event) {
+        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+            //go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 1000, 'swing');
+            hashTagActive = this.hash;
+        }
+    });
 
 
 });
