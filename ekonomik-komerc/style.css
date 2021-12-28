@@ -1,0 +1,272 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url(src/HelveticaNeue.dfont);
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+p, a, ul, ol {
+	font-family: 'Helvetica';
+	font-size: 21px;
+
+	line-height: 1.4;
+
+	text-decoration: none;
+
+	color: black;
+}
+
+ol, ul {margin-left: 40px;}
+
+.landing {
+	position: relative;
+	height: 100vh;
+
+	background: #f15a29;
+}
+
+header, footer {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+header div {
+	width: 50%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 15px 30px;
+}
+
+header div img {
+	height: 120px
+}
+
+footer {
+	height: 50px;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+}
+
+footer div, .header-content div {
+	width: 50%;
+
+	display: flex;
+	align-items: center;
+
+	padding-left: 30px;
+}
+
+footer div img {
+	height: 25px;
+}
+
+footer:hover, nav a:hover {
+	background: lightgray;
+	cursor: pointer;
+}
+
+nav {
+	position: absolute;
+	top: 220px;
+	left: calc(50% + 30px);
+}
+
+nav a {
+	display: block;
+}
+
+
+
+
+
+.content-wrapper {
+	position: relative;
+	min-height: 100vh;
+
+	background: lightgray;
+}
+
+.header-content {
+	width: 100%;
+	height: 50px;
+}
+
+.header-content p {
+	padding-right: 30px;
+}
+
+.header-content div img {
+	height: 25px;
+}
+
+.levo, .desno {
+	height: 50px;
+
+	background: #f15a29;
+}
+
+.levo {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 50%;
+}
+
+.desno {
+	position: fixed;
+	left: 50%;
+	top: 0;
+
+	width: 50%;
+}
+
+.desno:hover {
+	background: lightgray;
+	cursor: pointer;
+}
+
+.desno img {transform: rotate(90deg);}
+.levo img {transform: rotate(180deg);}
+
+.content {
+	width: 50%;
+
+	padding: 60px 30px;
+}
+
+.landing-wrapper {
+	opacity: 0;
+}
+
+.prikazi {
+	opacity: 1 !important;
+	transition: 0.5s;
+}
+.skloni {
+	display: none !important;
+}
+
+#break {
+	width: calc(100% + 60px);
+	height: 50px;
+
+	transform: translateX(-30px);
+
+	background: #f15a29;
+
+	display: flex;
+	align-items: center;
+
+	padding-left: 30px;
+}
+
+
+@media screen and (max-width: 1440px) {
+	.content {padding: 30px 30px 50px 30px;}
+}
+
+@media screen and (max-width: 1300px) {
+	.levo {width: 65% !important;}
+	.desno {width: 35% !important;
+		left: 65%;
+	}
+
+	.content {width: 65%;}
+}
+
+@media screen and (max-width: 1024px) {
+	p, a, ul, ol {
+		font-size: 18px;
+	}
+
+	header div img {height: 100px}
+	footer div img, .header-content div img {height: 20px;}
+
+	footer, .header-content div {height: 40px;}
+
+	.content {padding: 15px 30px 50px 30px;}
+
+}
+
+@media screen and (max-width: 768px) {
+	header div {padding: 15px;}
+	footer div, .content-header div {padding-left: 15px;}
+
+	footer div:first-child {width: 65%;}
+	footer div:last-child {width: 35%;}
+
+	header div:first-child p {
+		display: none;
+	}
+
+	header div:first-child {
+		width: 20%;
+	}
+
+	header div:last-child {
+		width: 80%;
+	}
+
+	nav {left: calc(20% + 15px);}
+}
+
+
+@media screen and (max-width: 601px) {
+	.content {padding: 15px;}
+}
+
+
+@media screen and (min-width: 601px) {
+	.adresa_mob {display: none;}
+}
+
+@media screen and (max-width: 600px) {
+	footer div:first-child {width: 90%;}
+	footer div:last-child {width: 10%; justify-content: flex-end; padding-right: 15px;}
+
+
+	.levo, .desno {width: 50% !important;}
+	.desno {left: 50% !important;}
+	.levo {position: fixed; left: 0; top: 0;}
+	.content {width: 100%;}
+	.header-content div, footer div {padding-left: 15px;}
+
+	.adresa {display: none;}
+	.adresa_mob {display: block;}
+
+	header div:first-child {width: 40%;}
+	header div:last-child {width: 60%;}
+
+	nav {left: 15px; top: 160px;}
+	.adresa_mob {position: absolute; left: 15px; top: 300px;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
