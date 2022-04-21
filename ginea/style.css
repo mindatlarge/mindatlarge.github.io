@@ -475,6 +475,7 @@ footer img {width: 5.05vw;}
 	.about-right-content-up img {width: 40px;}
 
 	.landing-content-left h1 {
+		max-width: 100%;
 		margin: 0 auto;
 	}
 
@@ -491,7 +492,6 @@ footer img {width: 5.05vw;}
 	.prev, .next {display: none !important;}
 
 	#slick-slide11 {display: none;}
-
 }
 
 
