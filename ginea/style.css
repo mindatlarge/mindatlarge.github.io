@@ -26,7 +26,7 @@ h2 {
 	font-size: 1.33vw;
 }
 
-p, a {
+p, a, li {
 	font-family: 'Inter';
 	font-size: 1vw;
 	line-height: 1.6;
@@ -39,10 +39,15 @@ a:hover {
 	cursor: pointer;
 }
 
-h1, h2, a, p {color: #001e5f !important;}
+h1, h2, a, p, li {color: #001e5f !important;}
+
+footer h2 {
+	line-height: 1.6;
+}
 
 .landing {
 	height: 100vh;
+	max-height: auto;
 }
 header {
 	display: flex;
@@ -118,7 +123,8 @@ header img {
 
 .menu-mobile {
 	width: 100%;
-	height: 250px;
+	min-height: 250px;
+	height: auto;
 
 	position: fixed;
 	top: 80px;
@@ -146,6 +152,7 @@ header img {
 
 .landing-content {
 	height: 81.88vh;
+
 	display: flex;
 	justify-content: space-between;
 }
@@ -181,6 +188,7 @@ header img {
 
 .about-left, .about-right {
 	width: 50%;
+	height: 100%;
 }
 
 .about-right-content-up img {
@@ -190,6 +198,7 @@ header img {
 
 .about-right-content-up {
 	height: 50vh;
+	max-height: auto;
 
 	background: #f8f8f8;
 
@@ -202,6 +211,7 @@ header img {
 
 .about-right-content-down {
 	height: 50vh;
+	max-height: auto;
 
 	background: #ceb0eb;
 
@@ -266,6 +276,21 @@ header img {
 }
 
 .service_button {align-self: center !important;}
+
+.service_button div {
+	width: 20px;
+	height: 1px;
+
+	background: #001e5f;
+}
+
+.service_button div:last-child {
+	transform: rotate(90deg) translateX(-1px);
+}
+
+.active .service_button div:last-child {
+	visibility: hidden;
+}
 
 .acc__panel {display: none; padding-bottom: 2.08vw;}
 
@@ -346,8 +371,10 @@ header img {
 	display: none !important;
 }
 
+
+
 footer {
-	height: 25vh;
+	min-height: 25vh;
 	padding: 4.37vw;
 
 	display: flex;
@@ -363,10 +390,107 @@ footer div:first-child {
 footer img {width: 5.05vw;}
 
 
+
+
+
+
+
+
+
+
+/*USLUGE*/
+
+
+.services-page-wrapper {
+	min-height: 100vh;
+	height: auto;
+
+	background-color: #cfb1ec;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.services-page-wrapper .acc, .services-page-wrapper .slider {width: 50%;}
+.services-page-wrapper .acc {padding: 4.37vw; background: #e7d2ff;}
+
+
+.services-page-wrapper .slider {
+	height: 100vh;
+}
+
+.services-page-wrapper .slider div {
+	height: 100%;
+	width: 100%;
+}
+
+
+.services-page-wrapper .slider div img {
+	height: 100%;
+	width: 100%;
+
+	object-fit: cover;
+	object-position: top;
+}
+
+.acc li {margin-left: 1vw;}
+
+
+
+
+/*KONTAKT*/
+
+
+.kontakt-content {
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.kontakt-mapa, .kontakt-about {width: 50%;}
+
+.kontakt-about {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
+
+	background: #e8d3ff;
+}
+
+.kontakt-about-text, .kontakt-about-img {
+	height: 50vh;
+}
+
+.kontakt-about-text {padding: 4.37vw;}
+
+.kontakt-about h2 {line-height: 1.5;}
+.kontakt-about h2:not(:first-child) {padding-top: 3vw;}
+
+.kontakt-about-img {
+	background-image: url(mat/img/Contact/Ginea-Contact-Ilust-01.jpg);
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+
+	position: relative;
+}
+
+.kontakt-about-img div {
+	position: absolute;
+	bottom: 2.22vw;
+	left: 4.37vw;
+}
+
+.kontakt-about-img div a {display: block;}
+.kontakt-about-img img {width: 40px;}
+
+
+
 @media screen and (min-width: 1919px) {
 	h1 {font-size: 64px;}
 	h2 {font-size: 24px;}
-	a, p {font-size: 18px;}
+	a, p, li {font-size: 18px;}
 
 	.about-right-content-up img {width: 68px;}
 	.about-right-content-up, .about-right-content-down {padding: 74px;}
@@ -374,7 +498,8 @@ footer img {width: 5.05vw;}
 }
 
 @media screen and (max-width: 1400px) {
-	a, p, h2 {font-size: 14px;}
+	a, p, h2, li {font-size: 14px;}
+	.acc li {margin-left: 16px;}
 }
 
 @media screen and (max-width: 1024px) {
@@ -382,6 +507,8 @@ footer img {width: 5.05vw;}
 	.prev {left: 40px;}
 	.next {right: 40px;}
 	footer img {width: 80px;}
+
+	.service_button div {width: 12px;}
 }
 
 @media screen and (max-width: 900px) {
@@ -429,29 +556,37 @@ footer img {width: 5.05vw;}
 	.header-mobile {display: flex;}
 	header {display: none;}
 
+	.dropdown-header {height: 80px;}
+
 	.about-right-content-up img {
 		width: 40px;
 	}
 
+	.services-page-wrapper {flex-direction: column;}
+	.services-page-wrapper .acc, .services-page-wrapper .slider, .kontakt-mapa, .kontakt-about {width: 100%;}
+	.services-page-wrapper .slider, .kontakt-mapa {height: 68vh;}
+	.services-page-wrapper #services-accordion {padding-left: 40px; padding-right: 40px;}
+
+
+	.kontakt-content {flex-direction: column;}
 
 }
 
 
 @media screen and (max-width: 700px) {
 	.visual-pause-desktop {display: none;}
-	.visual-pause {height: 84.9vh; flex-wrap: wrap;}
+	.visual-pause {height: 84.9vh; flex-direction: column;}
 	.visual-pause div {width: 100%;}
 	.pause-illustration {height: 33.8vh;}
 
-	.landing-content-left, .about-right-content-up, .about-right-content-down {padding: 40px;}
+	.landing-content-left, .about-right-content-up, .about-right-content-down, .kontakt-about-text {padding: 40px;}
 
-	.about-right-content-up {height: 69.2vh;}
+	.about-right-content-up {min-height: 69.2vh; height: 100%;}
 	.about-slider-wrapper div {height: 67.6vh;}
 
 
 	.strucni-tim-mobile {
 		height: 51.1vh;
-
 		display: block;
 
 		padding: 40px;
@@ -465,6 +600,10 @@ footer img {width: 5.05vw;}
 		justify-content: space-between;
 	}
 
+	.strucni-tim-mobile h1 {
+		margin-bottom: 40px;
+	}
+
 	.services-wrapper {height: 74%; padding: 40px;}
 	#services-accordion {padding-left: 0; padding: 40px 0;}
 
@@ -475,14 +614,15 @@ footer img {width: 5.05vw;}
 	.about-right-content-up img {width: 40px;}
 
 	.landing-content-left h1 {
-		max-width: 100%;
-		margin: 0 auto;
+		text-align: center;
 	}
 
 	footer {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+		text-align: center;
 	}
 
 	footer div:first-child {
@@ -491,7 +631,25 @@ footer img {width: 5.05vw;}
 
 	.prev, .next {display: none !important;}
 
-	#slick-slide11 {display: none;}
+	.kontakt-about h2:not(:first-child) {padding-top: 40px;}
+	.kontakt-about-img div {
+		position: absolute;
+		bottom: 40px;
+		left: 40px;
+	}
+
+
+	.kontakt-about-text {height: 64vh;}
+	.kontakt-about-img {height: 36vh;}
+}
+
+@media screen and (max-width: 414px) {
+	.landing-content-left {padding: 0 15px; width: 100%;}
+	.landing-content-left h1 {max-width: 100%;}
+	.about-right-content-up img {margin-bottom: 40px;}
+
+	.strucni-tim-mobile {height: 100%;}
+	.visual-pause {height: 100%;}
 }
 
 
