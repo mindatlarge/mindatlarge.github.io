@@ -562,13 +562,13 @@ footer img {width: 5.05vw;}
 		width: 40px;
 	}
 
-	.services-page-wrapper {flex-direction: column;}
+	.services-page-wrapper {flex-direction: column; margin-top: 80px;}
 	.services-page-wrapper .acc, .services-page-wrapper .slider, .kontakt-mapa, .kontakt-about {width: 100%;}
 	.services-page-wrapper .slider, .kontakt-mapa {height: 68vh;}
 	.services-page-wrapper #services-accordion {padding-left: 40px; padding-right: 40px;}
 
 
-	.kontakt-content {flex-direction: column;}
+	.kontakt-content {flex-direction: column; margin-top: 80px;}
 
 }
 
