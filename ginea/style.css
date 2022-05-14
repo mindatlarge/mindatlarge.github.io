@@ -151,7 +151,8 @@ header img {
 
 
 .landing-content {
-	height: 81.88vh;
+	min-height: 81.88vh;
+	height: auto;
 
 	display: flex;
 	justify-content: space-between;
@@ -375,6 +376,7 @@ header img {
 
 footer {
 	min-height: 25vh;
+	height: auto;
 	padding: 4.37vw;
 
 	display: flex;
@@ -443,6 +445,7 @@ footer img {width: 5.05vw;}
 
 .kontakt-content {
 	min-height: 100vh;
+	height: auto;
 
 	display: flex;
 	justify-content: space-between;
@@ -459,7 +462,8 @@ footer img {width: 5.05vw;}
 }
 
 .kontakt-about-text, .kontakt-about-img {
-	height: 50vh;
+	min-height: 50vh;
+	height: auto;
 }
 
 .kontakt-about-text {padding: 4.37vw;}
@@ -534,7 +538,9 @@ footer img {width: 5.05vw;}
 	.landing-content div {width: 100%;}
 
 	.landing-content-left {
-		height: 40%;
+		min-height: 40%;
+		height: auto;
+
 		text-align: center;
 		padding: 6vw;
 		justify-content: space-around;
@@ -546,7 +552,9 @@ footer img {width: 5.05vw;}
 	}
 
 	.landing-content-right {
-		height: 60%;
+		min-height: 60%;
+		height: auto;
+
 		background-position: bottom; 
 		align-self: flex-end;
 	}
@@ -639,8 +647,8 @@ footer img {width: 5.05vw;}
 	}
 
 
-	.kontakt-about-text {height: 64vh;}
-	.kontakt-about-img {height: 36vh;}
+	.kontakt-about-text {min-height: 64vh; height: auto;}
+	.kontakt-about-img {min-height: 36vh; height: auto;}
 }
 
 @media screen and (max-width: 414px) {
