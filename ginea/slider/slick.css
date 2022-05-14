@@ -176,7 +176,7 @@ button {
 }
 
 @media screen and (max-width: 700px) {
-    .about-slider-wrapper .slick-dots li {
+    .about-slider-wrapper .slick-dots li, .slider .slick-dots li {
         max-width: 10px;
         width: 10px;
         height: 10px;
