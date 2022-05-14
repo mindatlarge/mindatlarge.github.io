@@ -8,6 +8,10 @@
 	src: url(mat/fonts/Inter-Regular.ttf);
 }
 
+::selection {
+  background: #cfb0eb;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -181,7 +185,7 @@ header img {
 	width: 100%;
 }
 
-.about {min-height: 100vh;}
+.about {min-height: 100vh; height: auto;}
 
 .about-wrapper {
 	display: flex;
