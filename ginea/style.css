@@ -501,13 +501,16 @@ footer img {width: 5.05vw;}
 	a, p, li {font-size: 18px;}
 
 	.about-right-content-up img {width: 68px;}
-	.about-right-content-up, .about-right-content-down {padding: 74px;}
+	.about-right-content-up, .about-right-content-down, .employees-info {padding: 74px;}
 	.dropdown-header img {width: 214px;}
 }
 
 @media screen and (max-width: 1400px) {
 	a, p, h2, li {font-size: 14px;}
 	.acc li {margin-left: 16px;}
+	.employees-info {
+		padding: 4.37vw;
+	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -591,7 +594,7 @@ footer img {width: 5.05vw;}
 	.visual-pause div {width: 100%;}
 	.pause-illustration {height: 33.8vh;}
 
-	.landing-content-left, .about-right-content-up, .about-right-content-down, .kontakt-about-text {padding: 40px;}
+	.landing-content-left, .about-right-content-up, .about-right-content-down, .kontakt-about-text, .employees-info {padding: 40px;}
 
 	.about-right-content-up {min-height: 69.2vh; height: 100%;}
 	.about-slider-wrapper div {height: 67.6vh;}
@@ -603,6 +606,7 @@ footer img {width: 5.05vw;}
 
 		padding: 40px;
 	}
+
 
 	.strucni-tim-mobile div {
 		height: 100%;
