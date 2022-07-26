@@ -22,6 +22,8 @@ p, a, ul, ol {
 	color: black;
 }
 
+p {text-align: justify;}
+
 ol, ul {margin-left: 40px;}
 
 .landing {
@@ -150,6 +152,7 @@ nav a {
 }
 
 .landing-wrapper {
+	background: #f15a29;
 	opacity: 0;
 }
 
