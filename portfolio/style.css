@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'authentic';
-	src: url('AUTHENTICSans-90.otf');
+	src: url(AUTHENTICSans-90.otf);
 }
 
 * {
@@ -10,242 +10,107 @@
 	box-sizing: border-box;
 }
 
-*::selection {
-	background-color: darkgray;
+body {
 }
 
-body {
-	background-color: lightgray;
-	overflow-x: hidden;
+a, p {
+	font-family: 'authentic';
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
 }
+
+p {
+	line-height: 1.35;
+}
+
+.main {
+	max-width: 1500px;
+}
+
+header a {display: inline-block;}
+
+span {background: yellow;}
 
 header {
-	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
 
-	padding: 30px 30px 0 30px;
+	height: 27px;
+	width: 100%;
 
+	background: white;
+}
+
+nav {
 	display: flex;
-	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.active {
+	background: yellow;
+}
+
+.left-nav, .right-nav {
+	padding-top: 5px;
+}
+
+.left-nav {margin-left: 10px; margin-right: 2px;}
+.right-nav {margin-left: 10px}
+
+.left-nav:hover , .right-nav:hover {background: yellow;}
+
+.about {
+	margin: 50px 10px;
+}
+
+.project {
+	margin-top: 50px;
+}
+
+.project .name {padding-left: 10px;}
+.project .info-content {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+
+.project-content-wrapper {
+	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
+
+	padding: 50px 10px 0 10px;
 }
 
-a, h1, p {
-	font-family: 'authentic';
-	font-size: 21px;
-	font-weight: normal;
+.project-content-wrapper img {
+	max-width: 50%;
 
-	line-height: 1.3;
-
-	text-decoration: none;
-
-	color: black;
+	padding: 2px;
 }
 
-nav a {
-	display: block;
+.col-100 {
+	max-width: 100% !important;
 }
 
-a:hover {
-	transform: translateX(-2px);
+footer {
+	height: calc(100vh - 25px);
+	background: white;
+
+	margin: 0 10px;
 }
 
-
-#legenda, .nazad {
-	position: relative;
-
-	bottom: 30px;
-	left: 30px;
-}
-
-#legenda {
-	position: absolute;
-}
-
-.info, #legenda {
-	font-size: 14px;
-}
-
-
-/*DJURDJIC*/
-
-
-.landing {
-	width: 100vw;
-	height: 100vh;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-
-	margin-top: 25px;
-}
-
-.landing img {
-	width: 45vw;
-}
-
-.design_pc_wrapper, .design_responsive_wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-
-	width: 95vw;
-
-	margin: 0 auto;
-}
-
-.design_responsive_wrapper {
-	margin-top: 100px;
-}
-
-.design_product, .design, .responsive_djurdjic {
-	width: 50%;
-}
-
-		.width img {width: 100%;}
-
-
-.design_product {
-	align-self: flex-end;
-}
-
-.spusti {
-	margin-bottom: 50px;
-}
-
-
-
-/*JELENA*/
-
-.content_jelena {
-	width: 100vw;
-	height: 100vh;
-
-	margin-top: 100px;
-	margin-bottom: 100px;
-}
-
-.cell {
-	width: 80%;
-
-	display: block;
-	margin-left: 50vw;
-	transform: translateX(-50%);
-}
-
-.drugi {
-	margin-top: 200px;
-}
-
-
-.cell_dz {
-	width: 65vw;
-
-	display: block;
-
-	margin-top: 130px;
-	margin-left: 50vw;
-	transform: translateX(-50%);
-}
-
-.cell_dz:last-child {
-	margin-bottom: 150px;
-}
-
-
-
-
-@media screen and (max-width: 1440px) {
-	.landing img {
-		width: 55vw;
-	}
-
-	.cell_dz {
-		width: 75vw;
-	}
-}
-
-@media screen and (max-width: 1300px) {
-	.landing {
-		margin-top: 0;
-	}
-
-	.landing img {
-		width: 45vw;
-	}
-
-	a, h1, p {
-		font-size: 19px;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	.landing img {
-		width: 55vw;
+@media screen and (max-width: 600px) {
+	.project-content-wrapper img {
+		max-width: 100% !important;
 	}
 }
 
 
-@media screen and (max-width: 768px) {
-	.landing img {
-		width: 80vw;
-	}
-
-	.design_product, .design, .responsive_djurdjic {
-		width: 100%;
-	}
-
-	.design_pc_wrapper, .design_responsive_wrapper {
-		flex-wrap: wrap;
-	}
-
-	.design_pc_wrapper div, .design_responsive_wrapper div {
-		margin-top: 80px;
-	}
-
-	.design_responsive_wrapper {
-		margin-top: 0;
-	}
-
-	.cell, .cell_dz {
-		width: calc(100% - 30px);
-	}
-
-	header {
-		padding: 30px 15px 0 15px;
-	}
-
-	#legenda, .nazad {
-		left: 15px;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	a, h1, p {
-		font-size: 15px;
-	}
-
-	.cell_dz {
-		margin-top: 50px;
-	}
-
-	#header_mob {
-		display: block;
-	}
-
-	#nav_mob {
-		margin-top: 30px;
-	}
-}
 
 
-@media screen and (max-width: 320px) {
-	a, h1, p {
-		font-size: 13px;
-	}
-
-}
 
 
 
