@@ -25,7 +25,7 @@ p {
 }
 
 .main {
-	max-width: 1500px;
+	/*max-width: 1500px;*/
 }
 
 header a {display: inline-block;}
@@ -93,6 +93,10 @@ nav {
 
 .col-100 {
 	max-width: 100% !important;
+}
+
+.col-25 {
+	max-width: 25% !important;
 }
 
 footer {
