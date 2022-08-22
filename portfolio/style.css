@@ -14,9 +14,11 @@
 	justify-content: flex-start;
 	align-items: flex-end;
 	flex-wrap: wrap;
+
+	padding-bottom: 10px;
 }
 
-.project-row img {
-	padding: 5px;
+.project-row img, .project-row video {
+	padding: 10px 0 0 10px;
 	max-width: 100%;
 }
