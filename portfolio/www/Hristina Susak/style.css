@@ -1,0 +1,372 @@
+@font-face {
+	font-family: 'circular';
+	src: url('CircularStd-Book.otf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+
+	cursor: default;
+}
+
+*::selection {
+	background: rgb(35, 31, 32);
+}
+
+body {
+	font-size: 100%;
+	background: rgb(35, 31, 32);
+
+	overflow-x: hidden;
+}
+
+h1, a, p {
+	font-family: 'circular';
+
+	font-size: 1.4em;
+
+	font-weight: lighter;
+	color: rgb(230, 231, 232);
+
+	text-decoration: none;
+
+	line-height: 1.2;
+}
+
+footer a {
+	float: right;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	height: 50px;
+}
+
+header h1 {
+	display: inline-block;
+}
+
+.container {
+	width: 100vw;
+	height: 100%;
+
+	padding: 45px;
+}
+
+.notni_sistem {
+	margin-top: 10px;
+}
+
+.linija {
+	width: 100%;
+	height: 2px;
+
+	background: rgb(230, 231, 232);
+}
+
+.linija:not(:last-child) {
+	margin-bottom: 45px;
+}
+
+.lista:not(:first-child) {
+	margin-top: 150px;
+}
+
+
+/* MENI */
+
+
+.meni {
+	height: calc(100vh - 210px);
+	width: 100%;
+
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.linija_m {
+	height: calc((100vh - 210px) / 4);
+	width: 100%;
+
+	border-top: 2px solid rgb(230, 231, 232);
+
+	padding-top: 10px;
+}
+
+.linija_m:last-child {
+	border-bottom: 2px solid rgb(230, 231, 232);
+}
+
+.container_meni {
+	width: 100vw;
+	height: 100vh;
+
+	padding: 45px;
+
+	background: rgb(35, 31, 32);
+}
+
+
+.linija_m a {
+	height: 100%;
+}
+
+
+/*  MODULI  */
+
+.linija_uni {
+	height: calc((100vh - 210px) / 4);
+	width: 100%;
+
+	border-top: 2px solid rgb(230, 231, 232);
+
+	padding-top: 10px;
+}
+
+.linija_kraj {
+	height: 105px;
+	width: 100%;
+
+	margin-top: 105px;
+	padding-top: 10px;
+
+	border-top: 2px solid rgb(230, 231, 232);
+}
+
+
+/*  HOVER BOJE  */
+
+
+.meni a {
+	display: block;
+}
+
+.link1_color {
+	background: rgb(42, 31, 39);
+	transition: .3s;
+}
+
+.link2_color {
+	background: rgb(38, 36, 32);
+	transition: .3s;
+}
+
+.link3_color {
+	background: rgb(47, 31, 32);
+	transition: .3s;
+}
+
+.link4_color {
+	background: rgb(41, 35, 36);
+	transition: .3s;
+}
+
+.normal {
+	background: rgb(35, 31, 32);
+	transition: .3s;
+}
+
+
+ /* IMG */
+
+
+ .rad_vert {
+ 	width: 100%;
+ 	display: block;
+ }
+
+ .rad_hor {
+ 	width: 100%;
+ 	display: block;
+ }
+
+.bio_img {
+	width: 100%;
+	display: block;
+
+	margin-top: 35px;
+}
+
+
+
+
+/*  PRESS  */
+
+.content_press {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+
+}
+
+.content_press img {
+	width: 150px;
+}
+
+
+
+
+/*  RESPONSIVE  */
+
+
+@media screen and (max-width: 1920px) {
+	body {
+		font-size: 95%;
+	}
+
+	/*.rad_hor, .rad_vert {*/
+		/*width: 35vw;*/
+	/*}*/
+}
+
+@media screen and (max-width: 1440px) {
+	body {
+		font-size: 87%;
+	}
+
+	.linija {
+		height: 2px;
+	}
+
+	.linija_kraj, .linija_uni, .linija_m {
+		border-top: 2px solid rgb(230, 231, 232);
+	}
+
+	.linija_m:last-child {
+		border-bottom: 2px solid rgb(230, 231, 232);
+	}
+
+	.lista:not(:first-child) {
+		margin-top: 115px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	body {
+		font-size: 80%;
+	}
+
+	.lista:not(:first-child) {
+		margin-top: 160px;
+	}
+
+	/*.rad_hor, .rad_vert {*/
+		/*width: 30vw;*/
+	/*}*/
+
+}
+
+@media screen and (max-width: 1024px) {
+	/*.rad_vert {*/
+	 	/*width: 45vw;*/
+	 	/*display: block;*/
+	 /*}*/
+
+ 	/*.rad_hor {*/
+	 	/*width: 45vw;*/
+	 	/*display: block;*/
+	 /*}*/
+}
+
+@media screen and (max-width: 768px) {
+	 /*.rad_vert {*/
+	 	/*width: 50vw;*/
+	 	/*display: block;*/
+ 	/*}*/
+
+ 	/*.rad_hor {*/
+	 	/*width: 50vw;*/
+	 	/*display: block;*/
+ 	/*}*/
+/*}*/
+
+
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 70%;
+	}
+
+	.container, .container_meni {
+		padding: 25px;
+	}
+
+	.linija_kraj {
+		margin-top: 60px;
+
+		height: 65px;
+	}
+
+	.lista:not(:first-child) {
+		margin-top: 90px;
+	}
+
+	.linija:not(:last-child) {
+		margin-bottom: 25px;
+	}
+
+	/*.rad_hor {*/
+		/*width: 100%;*/
+	/*}*/
+
+	/*.rad_vert {*/
+		/*width: 100%;*/
+	/*}*/
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+	body {
+		font-size: 70%;
+	}
+
+	.container, .container_meni {
+		padding: 0px 10px 10px 10px;
+	}
+
+	.linija_kraj {
+		margin-top: 60px;
+
+		height: 65px;
+	}
+
+	.lista:not(:first-child) {
+		margin-top: 90px;
+	}
+
+	.linija:not(:last-child) {
+		margin-bottom: 25px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
