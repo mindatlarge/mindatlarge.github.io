@@ -47,13 +47,14 @@ a, p {
 	flex-direction: column;
 
 	margin-bottom: 45px;
+	padding-top: 20px;
 
 }
 
 .img_wrapper img {
 	max-width: 550px;
 
-	margin-top: 45px;
+	margin-top: 25px;
 }
 
 a:hover {
