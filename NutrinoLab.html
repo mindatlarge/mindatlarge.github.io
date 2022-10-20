@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>NK</title>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dist/magnific-popup.css">
+<link rel="stylesheet" href="style.css">
+
+
+<body>
+
+
+
+<div class="main">
+
+	<div class="menu">
+		<p><b>Nutrino Lab</b>
+			<br/>
+			Baby food factory
+			<br/><br/>
+			Task: Brand identity, naming, packaging, website, socials, communication
+			<br/>
+			Agency: Peter Gregson Studio
+			<br/>
+			Role: Designer
+			<br/>
+			Photography: Nikola Knezevic
+			<br/>
+			Year: 2020
+
+
+		</p>
+		<br/><br/>
+
+		<!-- <a href="http://petroprojekt.com/" target="_blank">Website link</a> -->
+
+
+
+		<div class="nav">
+			<br/>
+			<a href="Cubismo.html">Next Project (4/5)</a>
+			<a href="index.html">Close</a>
+		</div>
+
+
+	</div>
+
+	<div class="img_wrapper">
+		<a href="src/NL/NL_1.jpg"><img src="src/NL/NL_1_LR.jpg"></a>
+		<a href="src/NL/NL_2.jpg"><img src="src/NL/NL_2_LR.jpg"></a>
+		<a href="src/NL/NL_3.jpg"><img src="src/NL/NL_3_LR.jpg"></a>
+		<a href="src/NL/NL_4.jpg"><img src="src/NL/NL_4.jpg"></a>
+		<a href="src/NL/NL_5.jpg"><img src="src/NL/NL_5.jpg"></a>
+		<a href="src/NL/NL_6.jpg"><img src="src/NL/NL_6.jpg"></a>
+		<a href="src/NL/NL_7.jpg"><img src="src/NL/NL_7.jpg"></a>
+		<a href="src/NL/NL_12.jpg"><img src="src/NL/NL_12.jpg"></a>
+		<a href="src/NL/NL_13.jpg"><img src="src/NL/NL_13.jpg"></a>
+		<a href="src/NL/NL_10.jpg"><img src="src/NL/NL_10.jpg"></a>
+		<a href="src/NL/NL_11.jpg"><img src="src/NL/NL_11.jpg"></a>
+		<a href="src/NL/NL_8.jpg"><img src="src/NL/NL_8.jpg"></a>
+		<a href="src/NL/NL_9.jpg"><img src="src/NL/NL_9.jpg"></a>
+		<a href="src/NL/NL_15.jpg"><img src="src/NL/NL_15.jpg"></a>
+		<a href="src/NL/NL_14.jpg"><img src="src/NL/NL_14.jpg"></a>
+	</div>
+
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="dist/jquery.magnific-popup.js"></script>
+
+<script>
+
+$('.img_wrapper').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image',
+  gallery:{enabled:true},
+  // other options
+  callbacks: {
+    open: function() {
+        var mfp = $.magnificPopup.instance;
+        var proto = $.magnificPopup.proto;
+
+        // extend function that moves to next item
+        mfp.next = function() {
+
+            // if index is not last, call parent method
+            if(mfp.index < mfp.items.length - 1) {
+                proto.next.call(mfp);
+            } else {
+               // otherwise do whatever you want, e.g. hide "next" arrow
+            }
+        };
+
+        // same with prev method
+        mfp.prev = function() {
+            if(mfp.index > 0) {
+                proto.prev.call(mfp);
+            }
+        };
+
+    }
+}
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
