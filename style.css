@@ -19,8 +19,8 @@ a, p {
 	font-family: arial;
 	color: black;
 
-	font-size: 15px;
-	line-height: 1.4;
+	font-size: 13px;
+	line-height: 1.5;
 
 	text-decoration: none;
 }
@@ -55,6 +55,11 @@ a, p {
 	max-width: 550px;
 
 	margin-top: 25px;
+}
+
+.img_wrapper:hover .menu {
+	visibility: hidden !important;
+
 }
 
 a:hover {
