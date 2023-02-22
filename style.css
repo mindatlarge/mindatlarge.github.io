@@ -81,9 +81,13 @@ a:hover {
 
 	.menu {
 		width: 550px;
+
+		padding-right: 0;
 	}
 
 	.nav {margin-right: 0px;}
+
+
 }
 
 @media screen and (max-width: 660px) {
