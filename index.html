@@ -34,7 +34,7 @@
 
 		<div class="nav">
 			<br/>
-			<a href="tunnel.html">Club Tunnel Season VIII <span>/ Events / 2023</span></a>
+			<a href="tunnel.html">Club Tunnel Season VIII <span>/ Visuals / 2023</span></a>
 			<a href="Cubismo.html">Cubismo <span>/ Packaging / 2022</span></a>
 			<a href="CLH.html">Culture le Hic <span>/ Identity / 2020</span></a>
 			<a href="HS.html">Hristina Susak <span>/ Website / 2020</span></a>
@@ -45,8 +45,29 @@
 
 	</div>
 
-	<div class="img_wrapper" >
-		<a href="src/HS/HS_1.jpg" style="visibility: hidden;"><img src="src/CLH/ClH_2.jpg"></a>
+	<div class="img_wrapper reel">
+		<img src="src/REEL/kedu1.jpg">
+		<img src="src/REEL/kedu2.jpg">
+		<img src="src/REEL/nom0.jpg">
+		<img src="src/REEL/nom2.jpg">
+		<img src="src/REEL/nom3.jpg">
+		<img src="src/REEL/ecorein1.jpg">
+		<img src="src/REEL/ecorein2.jpg">
+		<img src="src/REEL/decode.jpg">
+		<img src="src/REEL/decode2.jpg">
+		<img src="src/REEL/decode.jpg">
+		<img src="src/REEL/balkanbee0.jpg">
+		<img src="src/REEL/balkanbee.jpg">
+		<img src="src/REEL/balkanbee2.jpg">
+		<img src="src/REEL/loccomotion.jpg">
+		<img src="src/REEL/ekonomik-komerc.jpg">
+		<img src="src/REEL/pgb.jpg">
+		<img src="src/REEL/nl.jpg">
+		<img src="src/REEL/karadag.jpg">
+		<img src="src/REEL/cmok_vinyl.jpg">
+		<img src="src/REEL/club_tunnel_V.jpg">
+		<img src="src/REEL/kojekude.jpg">
+		<img src="src/REEL/djurdjic.jpg">
 	</div>
 
 </div>
@@ -57,6 +78,27 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+
+<script>
+	$(document).ready(function(){
+
+	function Divs() {
+		var divs = $('.reel img'),
+			now = divs.filter(':visible'),
+			next = now.next().length ? now.next() : divs.first(),
+			speed = 800;
+
+
+			now.hide();
+			next.show();
+	}
+
+
+	$(function() {
+		setInterval(Divs, 800);
+	});
+
+});
 </script>
 
 </body>

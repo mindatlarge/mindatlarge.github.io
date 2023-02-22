@@ -26,7 +26,7 @@ a, p {
 }
 
 .menu {
-	width: 400px;
+	width: 500px;
 
 	margin-top: 45px;
 	padding-right: 45px;
@@ -48,6 +48,7 @@ a, p {
 
 	margin-bottom: 45px;
 	padding-top: 20px;
+	width: 550px;
 
 }
 
@@ -64,6 +65,10 @@ a, p {
 
 a:hover {
 	color: gray;
+}
+
+.reel img:not(first-child) {
+	display: none;
 }
 
 
