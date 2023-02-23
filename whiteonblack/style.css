@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+*::selection {
+	background: gray;
+	color: white;
+}
+
+.main {
+}
+
+a, p {
+	font-family: arial;
+	color: black;
+
+	font-size: 14px;
+	line-height: 1.5;
+
+	text-decoration: none;
+}
+
+.img_wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap
+
+}
+
+.img_wrapper a {
+	padding: 30px;
+}
+
+.img_wrapper img {
+	height: 250px;
+
+	max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+	.img_wrapper {
+		margin: 15px 0;
+	}
+
+	.img_wrapper a {
+	padding: 15px ;
+}
+	.img_wrapper img {
+		height: auto;
+
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
