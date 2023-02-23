@@ -40,7 +40,7 @@ a, p {
 	max-width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
 
 	.img_wrapper {
 		margin: 15px 0;
