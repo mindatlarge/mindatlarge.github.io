@@ -1,3 +1,8 @@
+@font-face {
+	font-family: theinhardt;
+	src: url(Theinhardt-Regular.otf);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -14,7 +19,7 @@
 }
 
 a, p {
-	font-family: arial;
+	font-family: theinhardt;
 	color: black;
 
 	font-size: 14px;
@@ -23,11 +28,14 @@ a, p {
 	text-decoration: none;
 }
 
+.info {
+	padding: 30px 30px 0 30px;
+}
+
 .img_wrapper {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap
-
 }
 
 .img_wrapper a {
@@ -40,7 +48,19 @@ a, p {
 	max-width: 100%;
 }
 
+.more {
+	visibility: hidden;
+}
+
+.img_wrapper a:hover p {
+	visibility: visible;
+}
+
 @media screen and (max-width: 630px) {
+
+	.info {
+		padding: 30px 15px 0 15px;
+	}
 
 	.img_wrapper {
 		margin: 15px 0;
