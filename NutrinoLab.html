@@ -7,108 +7,61 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="dist/magnific-popup.css">
-<link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="dist/slick.css">
+<link rel="stylesheet" href="style.css">
 
 <body>
 
 
-
 <div class="main">
 
-	<div class="menu">
-		<p><b>Nutrino Lab</b>
-			<br/>
-			Baby food factory
-			<br/><br/>
-			Task: Brand identity, naming, packaging, website, socials, communication
-			<br/>
-			Agency: Peter Gregson Studio
-			<br/>
-			Role: Designer
-			<br/>
-			Photography: Nemanja Knezevic
-			<br/>
-			Year: 2020
+<header>
+	<p style="display: inline-block;">NutrinoLab /</p> <a href="#" id="more-info">Info</a> <a href="index.html">/ Close</a>
+</header>
 
-
-		</p>
-		<br/>
-
-		<!-- <a href="http://petroprojekt.com/" target="_blank">Website link</a> -->
-
-
-
-		<div class="nav">
-			<br/>
-			<a href="Petroprojekt.html">Next: Petroprojekt</a>
-			<a href="HS.html">Back: Hristina Susak</a>
-			<a href="index.html">Index</a>
-		</div>
-
-
+	<div class="info">
+		<p>Baby Food Factory<br><br>
+		Task: Brand identity, naming, packaging, website, socials, communication<br>
+		Role: Design<br>
+		Agency: Peter Gregson Studio<br>
+		Photography: Nemanja Knezevic<br>
+		Year: 2020</p>
 	</div>
 
-	<div class="img_wrapper">
-		<a href="src/NL/NL_1.jpg"><img src="src/NL/NL_1_LR.jpg"></a>
-		<a href="src/NL/NL_2.jpg"><img src="src/NL/NL_2_LR.jpg"></a>
-		<a href="src/NL/NL_3.jpg"><img src="src/NL/NL_3_LR.jpg"></a>
-		<a href="src/NL/NL_4.jpg"><img src="src/NL/NL_4.jpg"></a>
-		<a href="src/NL/NL_5.jpg"><img src="src/NL/NL_5.jpg"></a>
-		<a href="src/NL/NL_6.jpg"><img src="src/NL/NL_6.jpg"></a>
-		<a href="src/NL/NL_7.jpg"><img src="src/NL/NL_7.jpg"></a>
-		<a href="src/NL/NL_12.jpg"><img src="src/NL/NL_12.jpg"></a>
-		<a href="src/NL/NL_13.jpg"><img src="src/NL/NL_13.jpg"></a>
-		<a href="src/NL/NL_10.jpg"><img src="src/NL/NL_10.jpg"></a>
-		<a href="src/NL/NL_11.jpg"><img src="src/NL/NL_11.jpg"></a>
-		<a href="src/NL/NL_8.jpg"><img src="src/NL/NL_8.jpg"></a>
-		<a href="src/NL/NL_9.jpg"><img src="src/NL/NL_9.jpg"></a>
-		<a href="src/NL/NL_15.jpg"><img src="src/NL/NL_15.jpg"></a>
-		<a href="src/NL/NL_14.jpg"><img src="src/NL/NL_14.jpg"></a>
-	</div>
+
+<!-- <a href="index.html" id="close-project">close</a> -->
+
+<div class="gallery">
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_1.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_2.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_3.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_4.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_5.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_6.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_7.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_8.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_9.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_10.jpg"></div>
+	<div class="slide"><img src="src/NutrinoLab/Nutrinolab_11.jpg"></div>
 
 </div>
 
 
 
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="dist/jquery.magnific-popup.js"></script>
+<script src="dist/slick.js"></script>
+<script src="dist/Slick-intitialise.js"></script>
+
 
 <script>
 
-$('.img_wrapper').magnificPopup({
-  delegate: 'a', // child items selector, by clicking on it popup will open
-  type: 'image',
-  gallery:{enabled:true},
-  // other options
-  callbacks: {
-    open: function() {
-        var mfp = $.magnificPopup.instance;
-        var proto = $.magnificPopup.proto;
-
-        // extend function that moves to next item
-        mfp.next = function() {
-
-            // if index is not last, call parent method
-            if(mfp.index < mfp.items.length - 1) {
-                proto.next.call(mfp);
-            } else {
-               // otherwise do whatever you want, e.g. hide "next" arrow
-            }
-        };
-
-        // same with prev method
-        mfp.prev = function() {
-            if(mfp.index > 0) {
-                proto.prev.call(mfp);
-            }
-        };
-
-    }
-}
+$(function(){
+  $('.info').hide();// hide it initially
+  $('#more-info').on('click', function(){
+     $('.gallery, .info').toggle();
+  });
 });
 
 </script>

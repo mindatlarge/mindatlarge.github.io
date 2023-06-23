@@ -7,94 +7,53 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="dist/magnific-popup.css">
-<link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="dist/slick.css">
+<link rel="stylesheet" href="style.css">
 
 <body>
 
 
-
 <div class="main">
 
-	<div class="menu">
-		<p><b>Tony Carter</b>
-			<br/>
-			Art
-			<br/><br/>
-			Task: Website
-			<br/>
-			Role: Design, front end
-			<br/>
-			Year: 2021
+<header>
+	<p style="display: inline-block;">Tony Carter /</p> <a href="#" id="more-info">Info</a> <a href="index.html">/ Close</a>
+</header>
 
-
-		</p>
-		<br/>
-
-		<!-- <a href="http://petroprojekt.com/" target="_blank">Website link</a> -->
-
-
-
-		<div class="nav">
-			<br/>
-			<a href="CLH.html">Next: Culture le Hic</a>
-			<a href="Cubismo.html">Back: Cubismo</a>
-			<a href="index.html">Index</a>
-		</div>
-
-
+	<div class="info">
+		<p>Artist and professor<br><br>
+		Task: Website<br>
+		Role: Design, Development<br>
+		Year: 2021</p>
 	</div>
 
-	<div class="img_wrapper">
-		<a href="src/TonyCarter/TC_1.jpg"><img src="src/TonyCarter/TC_1.jpg"></a>
-		<a href="src/TonyCarter/TC_2.jpg"><img src="src/TonyCarter/TC_2.jpg"></a>
-		<a href="src/TonyCarter/TC_2B.jpg"><img src="src/TonyCarter/TC_2B.jpg"></a>
-		<a href="src/TonyCarter/TC_3.jpg"><img src="src/TonyCarter/TC_3.jpg"></a>
-		<a href="src/TonyCarter/TC_4.jpg"><img src="src/TonyCarter/TC_4.jpg"></a>
-	</div>
+
+<!-- <a href="index.html" id="close-project">close</a> -->
+
+<div class="gallery">
+	<div class="slide"><img src="src/TonyCarter/TC_1.jpg"></div>
+	<div class="slide"><img src="src/TonyCarter/TC_2.jpg"></div>
+	<div class="slide"><img src="src/TonyCarter/TC_2B.jpg"></div>
+	<div class="slide"><img src="src/TonyCarter/TC_3.jpg"></div>
+	<div class="slide"><img src="src/TonyCarter/TC_4.jpg"></div>
 
 </div>
 
 
 
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="dist/jquery.magnific-popup.js"></script>
+<script src="dist/slick.js"></script>
+<script src="dist/Slick-intitialise.js"></script>
+
 
 <script>
 
-$('.img_wrapper').magnificPopup({
-  delegate: 'a', // child items selector, by clicking on it popup will open
-  type: 'image',
-  gallery:{enabled:true},
-  // other options
-  callbacks: {
-    open: function() {
-        var mfp = $.magnificPopup.instance;
-        var proto = $.magnificPopup.proto;
-
-        // extend function that moves to next item
-        mfp.next = function() {
-
-            // if index is not last, call parent method
-            if(mfp.index < mfp.items.length - 1) {
-                proto.next.call(mfp);
-            } else {
-               // otherwise do whatever you want, e.g. hide "next" arrow
-            }
-        };
-
-        // same with prev method
-        mfp.prev = function() {
-            if(mfp.index > 0) {
-                proto.prev.call(mfp);
-            }
-        };
-
-    }
-}
+$(function(){
+  $('.info').hide();// hide it initially
+  $('#more-info').on('click', function(){
+     $('.gallery, .info').toggle();
+  });
 });
 
 </script>

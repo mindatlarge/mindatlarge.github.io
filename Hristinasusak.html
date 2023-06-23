@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>NK</title>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="dist/slick.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+
+<div class="main">
+
+<header>
+	<p style="display: inline-block;">Hristina Susak /</p> <a href="#" id="more-info">Info</a> <a href="index.html">/ Close</a>
+</header>
+
+	<div class="info">
+		<p>Composer and performace artist<br><br>
+		Task: Website<br>
+		Role: Design, Development<br>
+		Agency: Peter Gregson Studio<br>
+		Year: 2020</p>
+	</div>
+
+
+<!-- <a href="index.html" id="close-project">close</a> -->
+
+<div class="gallery">
+	<div class="slide"><video autoplay loop nocontrols muted playsinline>
+					<source src="src/HristinaSusak/HS_1.mp4" type="video/mp4">
+				</video></div>
+
+	<div class="slide"><img src="src/HristinaSusak/HS_2.jpg"></div>
+	<div class="slide"><img src="src/HristinaSusak/HS_3.jpg"></div>
+	<div class="slide"><img src="src/HristinaSusak/HS_4.gif"></div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="dist/slick.js"></script>
+<script src="dist/Slick-intitialise.js"></script>
+
+
+<script>
+
+$(function(){
+  $('.info').hide();// hide it initially
+  $('#more-info').on('click', function(){
+     $('.gallery, .info').toggle();
+  });
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+

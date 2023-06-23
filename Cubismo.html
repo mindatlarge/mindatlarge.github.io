@@ -7,97 +7,54 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="dist/magnific-popup.css">
-<link rel="stylesheet" href="style.css">
 
+<link rel="stylesheet" href="dist/slick.css">
+<link rel="stylesheet" href="style.css">
 
 <body>
 
 
-
 <div class="main">
 
-	<div class="menu">
-		<p><b>Cubismo</b>
-			<br/>
-			Disposable vape
-			<br/><br/>
-			Task: Brand identity, packaging, display box, transport box and promo material
-			<br/>
-			Role: Art direction and design
-			<br/>
-			Year: 2022
+<header>
+	<p style="display: inline-block;">Cubismo Vape /</p> <a href="#" id="more-info">Info</a> <a href="index.html">/ Close</a>
+</header>
 
-
-		</p>
-		<br/>
-
-	<!-- 	<a href="https://nemanjakarisic.com/portfolio/www/Hristina%20Susak/HristinaSusak.html" target="_blank">Website link</a>
-
-
-		<br/><br/> -->
-
-		<div class="nav">
-			<br/>
-			<a href="TonyCarter.html">Next: Tony Carter</a>
-
-			<a href="index.html">Index</a>
-		</div>
-
-
+	<div class="info">
+		<p>Disposable vape with different flavours<br><br>
+		Task: Brand identity, packaging, display box, transport box and promo material<br>
+		Role: Art direction and design<br>
+		Year: 2022</p>
 	</div>
 
-	<div class="img_wrapper">
-		<a href="src/CBSM/CBSM_1.jpg"><img src="src/CBSM/CBSM_1.jpg"></a>
-		<a href="src/CBSM/CBSM_2.jpg"><img src="src/CBSM/CBSM_2.jpg"></a>
-		<a href="src/CBSM/CBSM_3.jpg"><img src="src/CBSM/CBSM_3.jpg"></a>
-		<a href="src/CBSM/CBSM_4.jpg"><img src="src/CBSM/CBSM_4.jpg"></a>
-		<a href="src/CBSM/CBSM_6.jpg"><img src="src/CBSM/CBSM_6.jpg"></a>
-		<a href="src/CBSM/CBSM_7.jpg"><img src="src/CBSM/CBSM_7.jpg"></a>
-		<!-- <a href="src/CBSM/CBSM_8A.jpg"><img src="src/CBSM/CBSM_8A.jpg"></a> -->
-	</div>
+
+<!-- <a href="index.html" id="close-project">close</a> -->
+
+<div class="gallery">
+	<div class="slide"><img src="src/CBSM/CBSM_1.jpg"></div>
+	<div class="slide"><img src="src/CBSM/CBSM_2.jpg"></div>
+	<div class="slide"><img src="src/CBSM/CBSM_3.jpg"></div>
+	<div class="slide"><img src="src/CBSM/CBSM_4.jpg"></div>
+	<div class="slide"><img src="src/CBSM/CBSM_6.jpg"></div>
+	<div class="slide"><img src="src/CBSM/CBSM_7.jpg"></div>
 
 </div>
 
 
 
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="dist/jquery.magnific-popup.js"></script>
+<script src="dist/slick.js"></script>
+<script src="dist/Slick-intitialise.js"></script>
+
 
 <script>
 
-$('.img_wrapper').magnificPopup({
-  delegate: 'a', // child items selector, by clicking on it popup will open
-  type: 'image',
-  gallery:{enabled:true},
-  // other options
-  callbacks: {
-    open: function() {
-        var mfp = $.magnificPopup.instance;
-        var proto = $.magnificPopup.proto;
-
-        // extend function that moves to next item
-        mfp.next = function() {
-
-            // if index is not last, call parent method
-            if(mfp.index < mfp.items.length - 1) {
-                proto.next.call(mfp);
-            } else {
-               // otherwise do whatever you want, e.g. hide "next" arrow
-            }
-        };
-
-        // same with prev method
-        mfp.prev = function() {
-            if(mfp.index > 0) {
-                proto.prev.call(mfp);
-            }
-        };
-
-    }
-}
+$(function(){
+  $('.info').hide();// hide it initially
+  $('#more-info').on('click', function(){
+     $('.gallery, .info').toggle();
+  });
 });
 
 </script>

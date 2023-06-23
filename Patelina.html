@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>NK</title>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="dist/slick.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+
+<div class="main">
+
+<header>
+	<p style="display: inline-block;">Patelina /</p> <a href="#" id="more-info">Info</a> <a href="index.html">/ Close</a>
+</header>
+
+	<div class="info">
+		<p>Pate brand from Novi Sad, Serbia<br><br>
+		Task: Packaging Redesign<br>
+		Role: Design<br>
+		Agency: Peter Gregson Studio<br>
+		Year: 2021</p>
+	</div>
+
+
+<!-- <a href="index.html" id="close-project">close</a> -->
+
+<div class="gallery">
+	<div class="slide"><img src="src/Patelina/Patelina_1.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_2.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_3.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_4.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_5.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_6.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_7.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_8.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_9.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_10.jpg"></div>
+	<div class="slide"><img src="src/Patelina/Patelina_11.jpg"></div>
+
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="dist/slick.js"></script>
+<script src="dist/Slick-intitialise.js"></script>
+
+
+<script>
+
+$(function(){
+  $('.info').hide();// hide it initially
+  $('#more-info').on('click', function(){
+     $('.gallery, .info').toggle();
+  });
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
