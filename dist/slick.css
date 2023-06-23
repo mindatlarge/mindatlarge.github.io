@@ -16,8 +16,6 @@
     -ms-touch-action: pan-y;
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
-
-    touch-action: auto;
 }
 
 .slick-list
@@ -57,7 +55,7 @@
     left: 0;
 
       display: flex;
-      height: calc(100vh - 100px);
+      height: calc(100vh - 80px);
 
     align-items: center;
 
@@ -106,7 +104,7 @@
 .slick-slide img, .slick-slide video
 {
     display: block;
-    max-height: calc(100vh - 150px);
+    max-height: calc(100vh - 100px);
     max-width: 100%;
     height: auto;
     margin: 0 auto;
