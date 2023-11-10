@@ -93,7 +93,7 @@ nav {
 .content-thumbnail div:hover p {visibility: visible !important;}
 
 
-/*.gallery {
+.gallery {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -104,9 +104,9 @@ nav {
 	margin: 6px;
 }
 
-.gallery .slide img {
+.gallery .slide img, .gallery .slide video {
 	width: 100%;
-}*/
+}
 
 .pagingInfo {
 	position: absolute;
@@ -139,7 +139,7 @@ nav {
 	}
 }*/
 @media screen and (max-width: 1243px) {
-	.content-thumbnail div, .content-list div, header div {
+	.content-thumbnail div, .content-list div, header div, .gallery .slide {
 		width: 47%;
 	}
 }
@@ -152,6 +152,10 @@ nav {
 
 	header div:last-child {display: flex; justify-content: flex-end;}
 	.content-list .list {margin-top: 60px;}
+
+	.gallery .slide {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 560px) {
