@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>Zorica House</title>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+
+<div class="border-up"></div>
+<div class="border-left"></div>
+<div class="border-right"></div>
+
+
+<div class="main">
+
+	<div class="about">
+		<h1>ZORICA HOUSE</h1>
+
+		<p>Rustic Pannonian<br/>
+Guest House
+<br/><br/>
+Kompletno opremljena kuća sa 3 spavaće sobe, dnevnom sobom, kuhinjom i terasom. Kod nas možete da boravite u prijatnom ambijentu rustične panonske kuće. Za duži boravak nudimo vešeraj sa mašinama za pranje i sušenje. U našem objektu ćete uživati u kolekciji gramofonskih ploča koje će vam boravak učiniti posebnim.</p>
+	</div>
+
+
+
+	<div class="gallery">
+			<div class="item"><img src="src/Gallery/1.jpg"></div>
+			<div class="item"><img src="src/Gallery/2.jpg"></div>
+			<div class="item"><img src="src/Gallery/3.jpg"></div>
+			<div class="item"><img src="src/Gallery/4.jpg"></div>
+			<div class="item"><img src="src/Gallery/5.jpeg"></div>
+			<div class="item"><img src="src/Gallery/6.jpeg"></div>
+			<div class="item"><img src="src/Gallery/7.jpg"></div>
+			<div class="item"><img src="src/Gallery/8.jpg"></div>
+			<div class="item"><img src="src/Gallery/9.jpg"></div>
+			<div class="item"><img src="src/Gallery/10.jpg"></div>
+			<div class="item"><img src="src/Gallery/13.jpg"></div>
+			<div class="item"><img src="src/Gallery/14.jpg"></div>
+			<div class="item"><img src="src/Gallery/15.jpg"></div>
+			<div class="item"><img src="src/Gallery/16.jpg"></div>
+	</div>
+
+
+
+	<div class="content">
+		<div class="content-item">
+			<img src="src/Simboli/Klima.svg">
+			<p>Klima</p>
+		</div>
+
+		<div class="content-item">
+			<img src="src/Simboli/Parking.svg">
+			<p>Parking</p>
+		</div>
+
+		<div class="content-item">
+			<img src="src/Simboli/Wifi.svg">
+			<p>Wi-Fi</p>
+		</div>
+		<div class="content-item">
+			<img src="src/Simboli/Vinyl.svg">
+			<p>Kolekcija ploča i gramofon</p>
+		</div>
+		<div class="content-item">
+			<img src="src/Simboli/TV.svg">
+			<p>TV</p>
+		</div>
+		<div class="content-item">
+			<img src="src/Simboli/E75.svg">
+			<p>Blizu autoputa</p>
+		</div>
+
+	</div>
+
+
+
+
+	<div class="contact">
+		<div class="contact-info">
+			<div><h1>ZORICA HOUSE</h1></div>
+			<div>
+				<a href="https://www.booking.com/hotel/rs/zorica-house-vrbas.sr.html" target="_Blank">Booking</a>
+				<a href="https://www.instagram.com/zorica_house_vrbas/?igsh=M3FkcGxkM2huMXNn" target="_Blank">Instagram</a>
+				<a href="#!">+381.64.8172.032</a>
+				<a href="#!">Vuka Karadžića 44, Vrbas</a>
+			</div>
+
+
+		</div>
+
+
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.067197499825!2d19.66435987627975!3d45.56908727107594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b455e649dde29%3A0x2220bd2658b3f103!2zVnVrYSBLYXJhZMW-acSHYSA0NCwgVnJiYXM!5e0!3m2!1ssr!2srs!4v1720468972509!5m2!1ssr!2srs" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+	</div>
+
+
+
+<div class="border-down"></div>
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="slick-1.8.1/slick/slick.js"></script>
+
+<script>
+
+
+$(document).ready(function(){
+		var $gallery = $(".gallery").slick({
+	  infinite: true,
+	  slidesToShow: 2,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  dots: true,
+	   responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+      	slidesToShow:1,
+      }
+  }]
+	});
+
+	$gallery.find(".slick-slide").on("click", function(){
+   $gallery.slick("slickNext");
+});
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
