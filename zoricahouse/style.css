@@ -234,13 +234,14 @@ iframe {
 .gallery .item {
 	padding: 0 8px;
 
-	height: auto;
-	width: 100%;
+	max-height: auto;
+	max-width: 100%;
 
 }
 
 .gallery .item img {
-	height: 550px;
+	height: auto;
+	width: calc(100vw - 200px);
 }
 
 
@@ -287,8 +288,23 @@ iframe {
 	.gallery {padding: 0 45px;}
 	.content {width: calc(100% - 90px);}
 	.contact {padding: 30px 45px 80px 45px;}
-	.gallery .item img {
-	height: 430px;
+.gallery .item {
+	padding: 0 8px;}
+
+	.gallery .item {
+	padding: 0 8px;
+
+	max-height: 50vh;
+	max-width: 100%;
+}
+
+.gallery .item img {
+	height: auto;
+	width: calc(100vw - 100px);
+}
+
+.slick-dots li {
+	margin-left: 6px;
 }
 
 }
