@@ -26,7 +26,7 @@
 		<p>Rustic Pannonian<br/>
 Guest House
 <br/><br/>
-Kompletno opremljena kuća sa 3 spavaće sobe, dnevnom sobom, kuhinjom i terasom. Kod nas možete da boravite u prijatnom ambijentu rustične panonske kuće. Za duži boravak nudimo vešeraj sa mašinama za pranje i sušenje. U našem objektu ćete uživati u kolekciji gramofonskih ploča koje će vam boravak učiniti posebnim.</p>
+Kompletno opremljena kuća sa 3 spavaće sobe, dnevnom sobom, kuhinjom i zastakljenom terasom. Kod nas možete da boravite u prijatnom ambijentu rustične panonske kuće. Za duži boravak nudimo vešeraj sa mašinama za pranje i sušenje. U našem objektu ćete uživati u kolekciji gramofonskih ploča koje će vam boravak učiniti posebnim.</p>
 	</div>
 
 
@@ -36,16 +36,22 @@ Kompletno opremljena kuća sa 3 spavaće sobe, dnevnom sobom, kuhinjom i terasom
 			<div class="item"><img src="src/Gallery/2.jpg"></div>
 			<div class="item"><img src="src/Gallery/3.jpg"></div>
 			<div class="item"><img src="src/Gallery/4.jpg"></div>
-			<div class="item"><img src="src/Gallery/5.jpeg"></div>
-			<div class="item"><img src="src/Gallery/6.jpeg"></div>
+			<div class="item"><img src="src/Gallery/6.jpg"></div>
 			<div class="item"><img src="src/Gallery/7.jpg"></div>
 			<div class="item"><img src="src/Gallery/8.jpg"></div>
 			<div class="item"><img src="src/Gallery/9.jpg"></div>
 			<div class="item"><img src="src/Gallery/10.jpg"></div>
+			<div class="item"><img src="src/Gallery/11.jpg"></div>
+			<div class="item"><img src="src/Gallery/12.jpg"></div>
 			<div class="item"><img src="src/Gallery/13.jpg"></div>
 			<div class="item"><img src="src/Gallery/14.jpg"></div>
 			<div class="item"><img src="src/Gallery/15.jpg"></div>
 			<div class="item"><img src="src/Gallery/16.jpg"></div>
+			<div class="item"><img src="src/Gallery/17.jpg"></div>
+			<div class="item"><img src="src/Gallery/18.jpg"></div>
+			<div class="item"><img src="src/Gallery/19.jpg"></div>
+			<div class="item"><img src="src/Gallery/20.jpg"></div>
+
 	</div>
 
 
@@ -77,6 +83,18 @@ Kompletno opremljena kuća sa 3 spavaće sobe, dnevnom sobom, kuhinjom i terasom
 			<img src="src/Simboli/E75.svg">
 			<p>Blizu autoputa</p>
 		</div>
+		<div class="content-item">
+			<img src="src/Simboli/Pegla.svg">
+			<p>Pegla</p>
+		</div>
+		<div class="content-item">
+			<img src="src/Simboli/Fen.svg">
+			<p>Fen</p>
+		</div>
+		<div class="content-item">
+			<img src="src/Simboli/Sef.svg">
+			<p>Sef</p>
+		</div>
 
 	</div>
 
@@ -89,7 +107,9 @@ Kompletno opremljena kuća sa 3 spavaće sobe, dnevnom sobom, kuhinjom i terasom
 			<div>
 				<a href="https://www.booking.com/hotel/rs/zorica-house-vrbas.sr.html" target="_Blank">Booking</a>
 				<a href="https://www.instagram.com/zorica_house_vrbas/?igsh=M3FkcGxkM2huMXNn" target="_Blank">Instagram</a>
-				<a href="#!">+381.64.8172.032</a>
+				<a href="https://www.facebook.com/zorica.house.vrbas?mibextid=JRoKGi" target="_Blank">Facebook</a>
+				<a href="mailto:milica_021@yahoo.com" target="_Blank">EMail</a>
+				<a href="#!">+381.64.23.27.414</a>
 				<a href="#!">Vuka Karadžića 44, Vrbas</a>
 			</div>
 
@@ -119,17 +139,12 @@ Kompletno opremljena kuća sa 3 spavaće sobe, dnevnom sobom, kuhinjom i terasom
 $(document).ready(function(){
 		var $gallery = $(".gallery").slick({
 	  infinite: true,
-	  slidesToShow: 2,
-	  slidesToScroll: 1,
 	  arrows: false,
 	  dots: true,
-	   responsive: [
-    {
-      breakpoint: 600,
-      settings: {
-      	slidesToShow:1,
-      }
-  }]
+	  variableWidth: true,
+	  slidesToShow: 1,
+	  centerMode: true,
+	  adaptiveHeight: true
 	});
 
 	$gallery.find(".slick-slide").on("click", function(){
