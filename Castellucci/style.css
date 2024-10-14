@@ -62,7 +62,6 @@ p {
 	width: 300px;
 
 	margin-top: 80px;
-	padding-right: 10px;
 }
 
 .gallery {
@@ -70,7 +69,6 @@ p {
 	margin-top: 80px;
 
 	max-width: 100%;
-	padding-right: 10px;
 }
 
 .gallery img {
