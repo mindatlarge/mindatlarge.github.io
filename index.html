@@ -7,99 +7,89 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="dist/magnific-popup.css">
 <link rel="stylesheet" href="style.css">
+
+<style type="text/css">
+	
+	* {
+		margin: 0;
+		padding: 0;
+
+		box-sizing: border-box;
+	}
+
+
+	.cell {
+		width: 230px;
+
+		margin: 35px;
+	}
+
+	.work img, .work video {
+		width: 100%;
+	}
+
+	.work {
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+
+		}
+
+		p {visibility: hidden; font-family: 'helvetica'; font-weight: 600; font-size: 12px; line-height: 1.4;}
+		.cell:hover p {visibility: visible;}
+		.cell p {text-align: center; padding-top: 35px;}
+
+		@media screen and (max-width: 600px) {
+			.cell {
+				width: 160px;
+			}
+		}
+
+</style>
 
 <body>
 
 
 <div class="main">
 
-<header>
-	<div><p>Nemanja Karisic</p></div>
-	<div><p><a href="#" id="show-option">More Info</a></p></div>
-</header>
 
+<div class="work">
 
-<div class="content-thumbnail" id="thumbnails">
-	<div><a href="ZlatnaBobica.html"><img src="src/Thumbnails/ZB.jpg"><p>Zlatna Bobica / Packaging</p></a></div>
-	<div><a href="ZdravaNavika.html"><img src="src/Thumbnails/ZN.jpg"><p>Zdrava Navika / Packaging</p></a></div>
-	<div><a href="Tunnel_S8.html"><img src="src/Thumbnails/club_tunnel_VIII.jpg"><p>Club Tunnel</p></a></div>
-	<div><a href="Sova.html"><img src="src/Thumbnails/PivaraSova.jpg"><p>Sova Brewery / Packaging</p></a></div>
-<div><a href="PizzaEmma.html"><img src="src/Thumbnails/EmmaPizza.jpg"><p>Emma Pizza / Menu</p></a></div>
-<div><a href="Cubismo.html"><img src="src/Thumbnails/Cubismo.jpg"><p>Cubismo Vape / Packaging</p></a></div>
-<!-- <div><a href="EkonomikKomerc.html"><img src="src/Thumbnails/ekonomik-komerc.jpg"><p>Ekonomik-Komerc / Identity / Website</p></a></div> -->
-<div><a href="Kedue.html"><img src="src/Thumbnails/kedu.jpg"><p>Kedue / Identity</p></a></div>
-<div><a href="Loccomotion.html"><img src="src/Thumbnails/loccomotion.jpg"><p>Loccomotion / Website</p></a></div>
-<div><a href="Decode.html"><img src="src/Thumbnails/decodeA.jpg"><p>Decode Studio / Identity</p></a></div>
-<div><a href="Karadag.html"><img src="src/Thumbnails/karadag.jpg"><p>Karadag Kafa / Packaging</p></a></div>
-<div><a href="TonyCarter.html"><img src="src/Thumbnails/TonyCarter.jpg"><p>Tony Carter / Website</p></a></div>
-<div><a href="Hristinasusak.html"><img src="src/Thumbnails/HristinaSusak.jpg"><p>Hristina Susak / Website</p></a></div>
-<div><a href="CLH.html"><img src="src/Thumbnails/CultureleHic.jpg"><p>Culture le Hic / Website</p></a></div>
-<div><a href="CMOKV002.html"><img src="src/Thumbnails/cmok_vinyl.jpg"><p>CMOKV002 / Vinyl</p></a></div>
-<div><a href="Dekametar.html"><img src="src/Thumbnails/Dekametar.jpg"><p>Dekametar / Identity</p></a></div>
-<div><a href="Petroprojekt.html"><img src="src/Thumbnails/Petroprojekt.jpg"><p>Petroprojekt / Catalogue, website, stationery</p></a></div>
-<div><a href="Djurdjic.html"><img src="src/Thumbnails/djurdjic.jpg"><p>Djurdjic Winery / Website</p></a></div>
-<div><a href="Tunnel_S5.html"><img src="src/Thumbnails/club_tunnel_V.jpg"><p>Club Tunnel</p></a></div>
-
-
-
-</div>
-
-
-<div class="content-list" id="list">
-	<div class="about">
-		<p>Twenty nine years old designer and art director. Experienced in visual communication, works with both digital and print media. Understands creative and production processes. Spent the past four years working at the Peter Gregson Studio.
-		<br><br>For more information please contact me through <a href="mailto:nkarisic@yahoo.com"><i>mail.</i></a>
-
-	</div>
-
-
-	<div class="list">
-	<p>Projects</p>
-	<a href="ZlatnaBobica.html">Zlatna Bobica / Packaging / 2023</a>
-	<a href="ZdravaNavika.html">Zdrava Navika / Packaging / 2023</a>
-	<a href="Tunnel_S8.html">Club Tunnel / Season VIII / 2022-2023</a>
-	<a href="Sova.html">Sova Brewery / Packaging / 2023</a>
-	<a href="PizzaEmma.html">Emma Pizza / Menu / 2023</a>
-	<a href="Cubismo.html">Cubismo / Brand Identity, Packaging / 2022</a>
-	<!-- <a href="EkonomikKomerc.html">Ekonomik-Komerc / Identity / Website / 2022</a> -->
-	<a href="Kedue.html">Kedue / Identity / 2022</a>
-	<a href="Loccomotion.html">Loccomotion / Website / 2022</a>
-	<a href="Decode.html">Decode Studio / Identity / 2022</a>
-	<a href="Karadag.html">Karadag Kafa / Packaging / 2021</a>
-	<a href="TonyCarter.html">Tony Carter / Website / 2021</a>
-	<a href="Hristinasusak.html">Hristina Susak / Website / 2020</a>
-	<a href="CLH.html">Culture le Hic / Website / 2020</a>
-	<a href="CMOKV002.html">CMOK / Vinyl / 2020</a>
-	<a href="Dekametar.html">Dekametar / Identity / 2019</a>
-	<a href="Petroprojekt.html">Petroprojekt / Catalogue, Website, Stationery / 2019</a>
-	<a href="Djurdjic.html">Djurdjic Winery / Website / 2019</a>
-	<a href="Tunnel_S5.html">Club Tunnel / Season V / 2019</a>
+	<div class="cell"><img src="src/JB_MSUB.jpg"><p>Museum of Contemporary Art Belgrade Catalogue</p></div>
+	<div class="cell"><img src="src/lk.jpg"><p>Audio/Video Performace Flipbook</p></div>
+	<!-- <div class="cell"><img src="src/HighPedigree.jpg"></div> -->
+	<div class="cell"><img src="src/ZdravaNavika.jpg"><p>Zdrava Navika Honey Packaging</p></div>
+	<div class="cell"><img src="src/ZB.jpg"><p>Zlatna Bobica Packaging <i>proposal</i></p></div>
+	<div class="cell"><img src="src/tnl.gif"><p>Club Tunnel Digital Design</p></div>
+	<div class="cell"><img src="src/trasys.jpg"><p>Trasys Identity</p></div>
+	<div class="cell"><img src="src/PivaraSova.jpg"><p>Sova Brewery Packaging</p></div>
+	<div class="cell"><img src="src/KeramikaLjubica.jpg"><p>Pottery Stamp</p></div>
+	<div class="cell"><img src="src/emma.jpg"><p>Menu, Cocktail Card for Restaurant</p></div>
+	<div class="cell"><img src="src/Cubismo.jpg"><p>Cubismo Vape Brand Identity</p></div>
+	<div class="cell"><img src="src/Kedue.jpg"><p>Kedue Apparel Brand Identity</p></div>
+	<div class="cell"><img src="src/Decode_1.gif"><p>Decode Architectural Studio Identity</p></div>
+<!-- 	<div class="cell"><video autoplay loop nocontrols muted playsinline>
+					<source src="src/HS_1.mp4" type="video/mp4">
+				</video></div> -->
+				<div class="cell"><img src="src/HS.jpg"><p>Hristina Susak Artist Website</p></div>
+	<div class="cell"><img src="src/CMOK.jpg"><p>CMOK Vinyl</p></div>
+	<div class="cell"><img src="src/Petroprojekt.jpg"><p>Petroprojekt Catalogue, Website & Stationery</p></div>
+	<div class="cell"><img src="src/Karadag.jpg"><p>Karadag Coffee Packaging</p></div>
 </div>
 
 
 
 </div>
-
-</div>
-
-
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 <script>
-
-$(function(){
-  $('.content-list').hide();// hide it initially
-  $('#show-option').on('click', function(){
-     $('.content-thumbnail, .content-list').toggle();
-  });
-});
-
 
 </script>
 
