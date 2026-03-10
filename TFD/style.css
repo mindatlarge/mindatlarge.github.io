@@ -7,11 +7,11 @@
 
 
 a, p, h1 {
-	font-family: arial;
+	font-family: courier;
 	color: black;
 	text-decoration: none;
 
-	font-size: 14px;
+	font-size: 13px;
 }
 
 .main {
@@ -31,7 +31,7 @@ nav.desk {
 	align-items: center;
 	justify-content: space-between;
 
-	width: 250px;
+	width: 300px;
 }
 
 
@@ -68,7 +68,7 @@ nav.mob {
 		align-items: center;
 		justify-content: space-between;
 
-		width: 250px;}
+		width: 300px;}
 
 
 	nav.desk {display: none;}
