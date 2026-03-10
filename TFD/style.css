@@ -75,7 +75,7 @@ nav.mob {
     #delete {display: none;}
 
     .about {
-    	padding: 0 40px;
+    	padding: 0 20px;
     	transform: translateY(-30px);
     }
 }
