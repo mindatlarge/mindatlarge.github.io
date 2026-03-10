@@ -68,7 +68,7 @@ nav.mob {
 		align-items: center;
 		justify-content: space-between;
 
-		width: 300px;}
+		width: 200px;}
 
 
 	nav.desk {display: none;}
@@ -76,6 +76,7 @@ nav.mob {
 
     .about {
     	padding: 0 40px;
+    	transform: translateY(-30px);
     }
 }
 
