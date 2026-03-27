@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>NK</title>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+
+<div class="main">
+
+<div class="work">
+	<div class="cell" data-target="themove"><img src="src/TheMove.jpg"><p>The Move Reformer Pilates Studio</p></div>
+	<div class="cell" data-target="pedigree"><img src="src/HighPedigree.jpg"><p>High Pedigree <i>proposal</i></p></div>
+	<div class="cell"><img src="src/JB_MSUB.jpg"><p>Museum of Contemporary Art Belgrade Exhibition Catalogue</p></div>
+	<div class="cell"><img src="src/LK.jpg"><p>Audio/Video Performace Flipbook</p></div>
+	<div class="cell"><img src="src/ZdravaNavika.jpg"><p>Zdrava Navika Honey</p></div>
+	<div class="cell"><img src="src/ZB.jpg"><p>Zlatna Bobica <i>proposal</i></p></div>
+	<div class="cell"><img src="src/TNL.gif" class="gazi"><p>Club Tunnel Digital Design</p></div>
+	<div class="cell"><img src="src/Trasys.jpg"><p>Trasys DOO</p></div>
+	<div class="cell"><img src="src/PivaraSova.jpg"><p>Sova Brewery Beer</p></div>
+	<div class="cell"><img src="src/Emma.jpg"><p>Pizza Emma, menu & coctail card <i>proposal</i></p></div>
+	<div class="cell"><img src="src/Cubismo.jpg"><p>Cubismo Electronic Vapes</p></div>
+	<div class="cell"><img src="src/Kedue.jpg"><p>Kedue Apparel</p></div>
+	<div class="cell"><img src="src/Decode_1.gif" class="gazi"><p>Decode Architectural Studio</p></div>
+<!-- 	<div class="cell"><video autoplay loop nocontrols muted playsinline>
+					<source src="src/HS_1.mp4" type="video/mp4">
+				</video></div> -->
+				<div class="cell"><img src="src/HS.jpg"><p>Hristina Susak Artist Website</p></div>
+	<div class="cell"><img src="src/CMOK.jpg"><p>CMOK Vinyl</p></div>
+	<div class="cell"><img src="src/Petroprojekt.jpg"><p>Petroprojekt Catalogue, Website & Stationery</p></div>
+
+
+<div id="storage">
+
+  <div id="themove" class="project-content">
+  	<div class="project-wrapper">
+  	  	<img src="src/TheMove/TM-1.jpeg">
+  	<p class="project-about"> The Move / Reformer Pilates Studio / Logo & Signage / 2025.</p>
+  </div>
+  </div>
+
+  <div id="pedigree" class="project-content">
+  	<div class="project-wrapper">
+  	<img src="src/HP/HP-1.jpg">
+  	<img src="src/HP/HP-2.jpg">
+  	<img src="src/HP/HP-3.png">
+  	<img src="src/HP/HP-4.png">
+  	<img src="src/HP/HP-5.jpg">
+
+
+  	<p class="project-about"><span>(PROPOSAL)</span> High Pedigree / Marketing Agency / Brand Identity / 2025.</p>
+	</div>
+  </div>
+
+</div>
+
+
+<!-- OVERLAY -->
+<div id="overlay" class="overlay">
+  <div class="overlay-scroll">
+    <div id="overlay-content"></div>
+  </div>
+</div>
+
+
+</div>
+
+
+
+<div class="about">
+	<p>Quisque id mattis mi. Etiam tellus ipsum, dictum id laoreet eget, suscipit sed elit. Sed commodo lobortis bibendum. Pellentesque id risus metus. Sed mauris ipsum, condimentum eu lectus sed, feugiat viverra sem. Cras eleifend felis tincidunt lacus varius, vitae interdum ligula lacinia. Sed a odio magna. Morbi at condimentum odio. Aliquam sollicitudin vitae nibh at ultricies. Maecenas fermentum nisl et ante vulputate, et feugiat ante tempus. Vivamus non iaculis nisi. Nunc vulputate, dolor id aliquam eleifend, risus nunc maximus nibh, a cursus lacus velit nec diam. Morbi neque sapien, euismod vel quam non, porttitor fringilla lorem. Integer et commodo turpis, id ullamcorper lorem. Cras quis justo a tortor pellentesque elementum ut eu arcu.</p>
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<script>
+
+const overlay = document.getElementById("overlay");
+const overlayContent = document.getElementById("overlay-content");
+const storage = document.getElementById("storage");
+
+const thumbs = document.querySelectorAll(".cell");
+
+let scrollPosition = 0;
+
+thumbs.forEach(thumb => {
+  thumb.addEventListener("click", () => {
+    const targetId = thumb.dataset.target;
+    const project = document.getElementById(targetId);
+
+    scrollPosition = window.scrollY;
+
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.width = "100%";
+
+    overlayContent.appendChild(project);
+    project.style.display = "block";
+
+    overlay.classList.add("active");
+
+    // 🔥 CENTER AFTER PAINT
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+
+        const scrollContainer = overlay.querySelector(".overlay-scroll");
+        const firstImg = overlayContent.querySelector("img");
+
+        if (!scrollContainer || !firstImg) return;
+
+        const containerRect = scrollContainer.getBoundingClientRect();
+        const imgRect = firstImg.getBoundingClientRect();
+
+        const containerCenter = containerRect.height / 2;
+        const imgCenter = imgRect.top - containerRect.top + (imgRect.height / 2);
+
+        const offset = scrollContainer.scrollTop + (imgCenter - containerCenter);
+
+        scrollContainer.scrollTo({
+          top: offset,
+          behavior: "auto"
+        });
+      });
+    });
+  });
+});
+
+function closeOverlay() {
+  const project = overlayContent.firstElementChild;
+
+  if (project) {
+    project.style.display = "none";
+    storage.appendChild(project);
+  }
+
+  overlay.classList.remove("active");
+
+  document.body.style.position = "";
+  document.body.style.top = "";
+  document.body.style.width = "";
+
+  window.scrollTo(0, scrollPosition);
+}
+
+overlay.addEventListener("click", closeOverlay);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeOverlay();
+});
+</script>
+
+</body>
+</html>
+
+
+
+

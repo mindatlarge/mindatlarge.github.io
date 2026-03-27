@@ -1,0 +1,147 @@
+	* {
+		margin: 0;
+		padding: 0;
+
+		box-sizing: border-box;
+	}
+
+	body {
+		background: rgb(242, 242, 242);
+	}
+
+
+	.cell {
+		width: 230px;
+
+		margin: 17px 50px;
+	}
+
+	.work img, .work video {
+		width: 100%;
+	}
+
+	.gazi {
+		mix-blend-mode: multiply !important;
+	}
+
+	.work {
+		width: 100%;
+
+		margin: 30px 0;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		}
+
+
+		.about {
+			max-width: 900px;
+			margin: 400px auto;
+			text-align: center;
+		}
+
+
+		.cell p, .about p {font-family: 'helvetica'; font-weight: 600; font-size: 12px; line-height: 1.4;}
+		.cell p {text-align: center; padding-top: 15px; visibility: hidden;}
+		.cell:hover p {visibility: visible;}
+		.cell:hover {cursor: pointer;}
+
+		span {color: red;}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+
+  cursor: pointer;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.overlay-scroll {
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0;
+  color: white;
+}
+
+.close-btn {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* PROJECT CONTENT */
+.project-content {
+  display: none;
+  max-width: 100vw;
+  margin: 10px auto;
+
+}
+
+.project-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 100vh;
+}
+
+.project-content img {
+	max-width: 900px;
+	margin-bottom: 30px;
+}
+
+
+
+.project-about {
+	font-family: 'helvetica'; font-weight: 600;
+	font-size: 12px;
+	color: black;
+
+	margin-bottom: 15px;
+
+}
+
+
+
+
+
+	@media screen and (max-width: 660px) {
+			.cell {
+				width: 30%;
+				margin: 17px 35px;
+			}
+
+			.about {
+				width: 80vw;
+			}
+		}
+
+		@media screen and (max-width: 1000px) {
+			.cell {
+				margin: 17px 30px;
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
