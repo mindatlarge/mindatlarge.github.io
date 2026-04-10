@@ -15,6 +15,7 @@
 <div class="main">
 
 <div class="work">
+  <div class="cell"><img src="src/kupinovo.jpg"><p>Museum of Contemporary Art Belgrade Exhibition Catalogue</p></div>
 	<div class="cell" data-target="themove"><img src="src/TheMove.jpg"><p>The Move Reformer Pilates Studio</p></div>
 	<div class="cell" data-target="pedigree"><img src="src/HighPedigree.jpg"><p>High Pedigree <i>proposal</i></p></div>
 	<div class="cell"><img src="src/JB_MSUB.jpg"><p>Museum of Contemporary Art Belgrade Exhibition Catalogue</p></div>
@@ -40,7 +41,9 @@
 
   <div id="themove" class="project-content">
   	<div class="project-wrapper">
+      <img src="src/TheMove/TM-2.jpg">
   	  	<img src="src/TheMove/TM-1.jpeg">
+
   	<p class="project-about"> The Move / Reformer Pilates Studio / Logo & Signage / 2025.</p>
   </div>
   </div>
@@ -50,7 +53,7 @@
   	<img src="src/HP/HP-1.jpg">
   	<img src="src/HP/HP-2.jpg">
   	<img src="src/HP/HP-3.png">
-  	<img src="src/HP/HP-4.png">
+    <img src="src/HP/HP-4.png">
   	<img src="src/HP/HP-5.jpg">
 
 
@@ -83,7 +86,6 @@
 
 
 <script>
-
 const overlay = document.getElementById("overlay");
 const overlayContent = document.getElementById("overlay-content");
 const storage = document.getElementById("storage");
@@ -92,6 +94,7 @@ const thumbs = document.querySelectorAll(".cell");
 
 let scrollPosition = 0;
 
+// OPEN
 thumbs.forEach(thumb => {
   thumb.addEventListener("click", () => {
     const targetId = thumb.dataset.target;
@@ -108,32 +111,29 @@ thumbs.forEach(thumb => {
 
     overlay.classList.add("active");
 
-    // 🔥 CENTER AFTER PAINT
     requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
+      const wrapper = project.querySelector(".project-wrapper");
+      const firstImg = project.querySelector("img");
 
-        const scrollContainer = overlay.querySelector(".overlay-scroll");
-        const firstImg = overlayContent.querySelector("img");
+      if (!wrapper || !firstImg) return;
 
-        if (!scrollContainer || !firstImg) return;
+      function adjust() {
+        const imgHeight = firstImg.offsetHeight;
 
-        const containerRect = scrollContainer.getBoundingClientRect();
-        const imgRect = firstImg.getBoundingClientRect();
+        // move wrapper UP by half image height
+        wrapper.style.transform = `translateY(calc(50vh - ${imgHeight / 2}px))`;
+      }
 
-        const containerCenter = containerRect.height / 2;
-        const imgCenter = imgRect.top - containerRect.top + (imgRect.height / 2);
-
-        const offset = scrollContainer.scrollTop + (imgCenter - containerCenter);
-
-        scrollContainer.scrollTo({
-          top: offset,
-          behavior: "auto"
-        });
-      });
+      if (firstImg.complete) {
+        adjust();
+      } else {
+        firstImg.onload = adjust;
+      }
     });
   });
 });
 
+// CLOSE
 function closeOverlay() {
   const project = overlayContent.firstElementChild;
 
