@@ -1,3 +1,9 @@
+	@font-face {
+		font-family: 'theinhardt';
+		src: url('Theinhardt-Regular.otf');
+		font-weight: normal;
+	}
+
 	* {
 		margin: 0;
 		padding: 0;
@@ -280,7 +286,7 @@ a {
 			}
 
 			.project img {
-				width: 150px;
+				width: 140px;
 			}
 
 			.about-text {
