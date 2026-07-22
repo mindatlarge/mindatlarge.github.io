@@ -64,7 +64,7 @@ a {
     /* menjaš samo ove vrednosti */
 
     --column-gap: 30px;
-    --row-gap: 100px;
+    --row-gap: 85px;
 
     --page-padding: 80px;
 
@@ -224,7 +224,13 @@ a {
 }
 
 
+@media screen and (min-width: 1920px) {
+	.project-wrapper {grid-template-columns:repeat(8,minmax(0,1fr));}
+}
 
+@media screen and (min-width: 2400px) {
+	.project-wrapper {grid-template-columns:repeat(10,minmax(0,1fr));}
+}
 
 
 @media screen and (max-width: 1440px){
