@@ -1,127 +1,480 @@
-const overlay = document.getElementById("overlay");
-const overlayContent = document.getElementById("overlay-content");
-const storage = document.getElementById("storage");
+// ==================================================
+// ELEMENTS
+// ==================================================
 
-const thumbs = document.querySelectorAll(".project[data-target]");
+const overlay =
+    document.getElementById("overlay");
+
+const overlayContent =
+    document.getElementById("overlay-content");
+
+const storage =
+    document.getElementById("storage");
+
+const thumbs =
+    document.querySelectorAll(".project");
+
 
 let scrollPosition = 0;
+
+
+// ==================================================
+// LOAD PROJECT IMAGES AND VIDEOS
+// ==================================================
+
+function loadProjectMedia(project) {
+
+    // ==============================================
+    // IMAGES
+    // ==============================================
+
+    const images =
+        project.querySelectorAll(
+            "img[data-src]"
+        );
+
+
+    const imagePromises =
+        [...images].map(img => {
+
+            return new Promise(resolve => {
+
+                const src =
+                    img.dataset.src;
+
+
+                // Load image
+
+                img.onload = () => {
+
+                    resolve();
+
+                };
+
+
+                // If image fails,
+                // don't block the gallery
+
+                img.onerror = () => {
+
+                    resolve();
+
+                };
+
+
+                // Start loading
+
+                img.src =
+                    src;
+
+            });
+
+        });
+
+
+    // ==============================================
+    // VIDEOS
+    // ==============================================
+
+    const videoSources =
+        project.querySelectorAll(
+            "video source[data-src]"
+        );
+
+
+    const videoPromises =
+        [...videoSources].map(source => {
+
+            return new Promise(resolve => {
+
+                const src =
+                    source.dataset.src;
+
+
+                const video =
+                    source.parentElement;
+
+
+                // Set video source
+
+                source.src =
+                    src;
+
+
+                // Start loading video
+
+                video.load();
+
+
+                // Video is ready
+
+                video.addEventListener(
+                    "canplaythrough",
+                    () => {
+
+                        resolve();
+
+                    },
+                    {
+                        once: true
+                    }
+                );
+
+
+                // If video cannot load,
+                // don't block the gallery
+
+                video.addEventListener(
+                    "error",
+                    () => {
+
+                        resolve();
+
+                    },
+                    {
+                        once: true
+                    }
+                );
+
+
+                // Fallback:
+                // don't wait forever
+
+                setTimeout(
+                    resolve,
+                    10000
+                );
+
+            });
+
+        });
+
+
+    // ==============================================
+    // WAIT FOR ALL MEDIA
+    // ==============================================
+
+    return Promise.all([
+
+        ...imagePromises,
+
+        ...videoPromises
+
+    ]);
+
+}
+
+
+// ==================================================
+// GET FIRST MEDIA ELEMENT
+// ==================================================
+
+function getFirstMedia(project) {
+
+    const firstImage =
+        project.querySelector(
+            ".project-galerija img"
+        );
+
+
+    const firstVideo =
+        project.querySelector(
+            ".project-galerija video"
+        );
+
+
+    // Find which one appears first
+    // in the HTML
+
+    const media = [
+
+        firstImage,
+
+        firstVideo
+
+    ].filter(Boolean);
+
+
+    if (!media.length) {
+
+        return null;
+
+    }
+
+
+    media.sort(
+        (a, b) => {
+
+            const position =
+                a.compareDocumentPosition(b);
+
+
+            if (
+                position &
+                Node.DOCUMENT_POSITION_FOLLOWING
+            ) {
+
+                return -1;
+
+            }
+
+
+            return 1;
+
+        }
+    );
+
+
+    return media[0];
+
+}
+
+
+
+// ==================================================
+// POSITION FIRST MEDIA
+// ==================================================
+
+function positionProject(
+    project
+) {
+
+    const wrapper =
+        project.querySelector(
+            ".project-galerija"
+        );
+
+
+    const firstMedia =
+        getFirstMedia(project);
+
+
+    if (
+        !wrapper ||
+        !firstMedia
+    ) {
+
+        return;
+
+    }
+
+
+    // ==============================================
+    // MOBILE
+    // ==============================================
+
+    if (
+        window.innerWidth <= 600
+    ) {
+
+        wrapper.style.transform =
+            "none";
+
+        return;
+
+    }
+
+
+    // ==============================================
+    // DESKTOP
+    // ==============================================
+
+    function position() {
+
+        const mediaHeight =
+            firstMedia.getBoundingClientRect()
+                .height;
+
+
+        if (
+            mediaHeight > 0
+        ) {
+
+            wrapper.style.transform =
+                `translateY(
+                    calc(
+                        50vh -
+                        ${mediaHeight / 2}px
+                    )
+                )`;
+
+        }
+
+    }
+
+
+    // Image
+
+    if (
+        firstMedia.tagName ===
+        "IMG"
+    ) {
+
+        if (
+            firstMedia.complete
+        ) {
+
+            position();
+
+        } else {
+
+            firstMedia.onload =
+                position;
+
+        }
+
+    }
+
+
+    // Video
+
+    else if (
+        firstMedia.tagName ===
+        "VIDEO"
+    ) {
+
+        if (
+            firstMedia.readyState >= 2
+        ) {
+
+            position();
+
+        } else {
+
+            firstMedia.addEventListener(
+                "loadeddata",
+                position,
+                {
+                    once: true
+                }
+            );
+
+        }
+
+    }
+
+}
 
 
 // ==================================================
 // OPEN PROJECT
 // ==================================================
 
-thumbs.forEach(thumb => {
+async function openProject(
+    project
+) {
 
-    thumb.addEventListener("click", (event) => {
+    // ==============================================
+    // SAVE SCROLL POSITION
+    // ==============================================
 
-        event.preventDefault();
-
-        const targetId = thumb.dataset.target;
-        const project = document.getElementById(targetId);
-
-        if (!project) {
-
-            console.error("Project not found:", targetId);
-
-            return;
-
-        }
+    scrollPosition =
+        window.scrollY;
 
 
-        // Save current scroll position
+    // ==============================================
+    // LOCK BACKGROUND PAGE
+    // ==============================================
 
-        scrollPosition = window.scrollY;
+    document.body.style.position =
+        "fixed";
 
+    document.body.style.top =
+        `-${scrollPosition}px`;
 
-        // Lock body scroll
-
-        document.body.style.position = "fixed";
-        document.body.style.top = `-${scrollPosition}px`;
-        document.body.style.width = "100%";
-
-
-        // Move project into overlay
-
-        overlayContent.appendChild(project);
-
-        project.style.display = "block";
+    document.body.style.width =
+        "100%";
 
 
-        // Open overlay
+    // ==============================================
+    // MOVE PROJECT INTO OVERLAY
+    // ==============================================
 
-        overlay.classList.add("active");
+    overlayContent.appendChild(
+        project
+    );
 
-        updateProjectAboutWidth(project);
+
+    // Show project
+
+    project.style.display =
+        "block";
 
 
-        // ==================================================
-        // CENTER FIRST IMAGE - DESKTOP ONLY
-        // ==================================================
+    // ==============================================
+    // KEEP OVERLAY HIDDEN
+    // WHILE MEDIA LOADS
+    // ==============================================
+
+    overlay.classList.remove(
+        "active"
+    );
+
+
+    // ==============================================
+    // LOAD ALL IMAGES AND VIDEOS
+    // ==============================================
+
+    await loadProjectMedia(
+        project
+    );
+
+
+    // ==============================================
+    // UPDATE PROJECT ABOUT WIDTH
+    // ==============================================
+
+    updateProjectAboutWidth(
+        project
+    );
+
+
+    // ==============================================
+    // POSITION FIRST IMAGE / VIDEO
+    // ==============================================
+
+    positionProject(
+        project
+    );
+
+
+    // ==============================================
+    // SHOW OVERLAY
+    // ==============================================
+
+    requestAnimationFrame(() => {
 
         requestAnimationFrame(() => {
 
-            const gallery =
-                project.querySelector(".project-galerija");
-
-            const firstImg =
-                gallery?.querySelector("img");
-
-
-            if (!gallery || !firstImg) return;
-
-
-            function centerFirstImage() {
-
-                // Mobile: start from top
-
-                if (window.innerWidth <= 600) {
-
-                    gallery.style.paddingTop = "0px";
-
-                    return;
-
-                }
-
-
-                // Desktop: center first image vertically
-
-                const imgHeight =
-                    firstImg.getBoundingClientRect().height;
-
-
-                const paddingTop =
-                    (window.innerHeight - imgHeight) / 2;
-
-
-                gallery.style.paddingTop =
-                    `${Math.max(paddingTop, 0)}px`;
-
-            }
-
-
-            if (firstImg.complete) {
-
-                centerFirstImage();
-
-            } else {
-
-                firstImg.onload = centerFirstImage;
-
-            }
+            overlay.classList.add(
+                "active"
+            );
 
         });
 
     });
 
-});
+}
 
 
 // ==================================================
-// CLOSE PROJECT
+// CLOSE OVERLAY
 // ==================================================
 
 function closeOverlay() {
+
+    // Don't close if already closed
+
+    if (
+        !overlay.classList.contains(
+            "active"
+        )
+    ) {
+
+        return;
+
+    }
+
 
     const project =
         overlayContent.firstElementChild;
@@ -129,105 +482,230 @@ function closeOverlay() {
 
     if (project) {
 
-        // Reset first image positioning
+        // ==========================================
+        // RESET GALLERY POSITION
+        // ==========================================
 
-        const gallery =
-            project.querySelector(".project-galerija");
+        const wrapper =
+            project.querySelector(
+                ".project-galerija"
+            );
 
 
-        if (gallery) {
+        if (wrapper) {
 
-            gallery.style.paddingTop = "";
+            wrapper.style.transform =
+                "";
 
         }
 
 
-        // Hide project
+        // ==========================================
+        // HIDE PROJECT
+        // ==========================================
 
-        project.style.display = "none";
+        project.style.display =
+            "none";
 
 
-        // Move project back to storage
+        // ==========================================
+        // RETURN PROJECT TO STORAGE
+        // ==========================================
 
-        storage.appendChild(project);
+        storage.appendChild(
+            project
+        );
 
     }
 
 
-    // Close overlay
+    // ==============================================
+    // CLOSE OVERLAY
+    // ==============================================
 
-    overlay.classList.remove("active");
-
-
-    // Unlock body scroll
-
-    document.body.style.position = "";
-    document.body.style.top = "";
-    document.body.style.width = "";
+    overlay.classList.remove(
+        "active"
+    );
 
 
-    // Restore previous position
+    // ==============================================
+    // UNLOCK BACKGROUND
+    // ==============================================
 
-    window.scrollTo(0, scrollPosition);
+    document.body.style.position =
+        "";
+
+    document.body.style.top =
+        "";
+
+    document.body.style.width =
+        "";
+
+
+    // ==============================================
+    // RESTORE SCROLL POSITION
+    // ==============================================
+
+    window.scrollTo(
+        0,
+        scrollPosition
+    );
+
+
+    // ==============================================
+    // REMOVE FOCUS FROM THUMBNAIL
+    // ==============================================
+
+    if (
+        document.activeElement
+    ) {
+
+        document.activeElement.blur();
+
+    }
 
 }
 
 
 // ==================================================
-// CLOSE ON TAP
+// PROJECT THUMBNAIL CLICK
 // ==================================================
 
-let pointerStartX = 0;
-let pointerStartY = 0;
+thumbs.forEach(
+    thumb => {
+
+        thumb.addEventListener(
+            "click",
+            event => {
+
+                event.preventDefault();
 
 
-// Remember where touch starts
-
-overlay.addEventListener("pointerdown", (event) => {
-
-    pointerStartX = event.clientX;
-    pointerStartY = event.clientY;
-
-});
+                const targetId =
+                    thumb.dataset.target;
 
 
-// Close only if pointer didn't move
+                // No data-target
 
-overlay.addEventListener("pointerup", (event) => {
+                if (
+                    !targetId
+                ) {
 
-    const moveX =
-        Math.abs(event.clientX - pointerStartX);
+                    return;
 
-    const moveY =
-        Math.abs(event.clientY - pointerStartY);
+                }
 
 
-    // If user moved finger, it's a scroll/swipe
+                const project =
+                    document.getElementById(
+                        targetId
+                    );
 
-    if (moveX > 10 || moveY > 10) {
 
-        return;
+                // Project not found
+
+                if (
+                    !project
+                ) {
+
+                    return;
+
+                }
+
+
+                // Open project
+
+                openProject(
+                    project
+                );
+
+            }
+        );
 
     }
-
-
-    // User tapped
-
-    closeOverlay();
-
-});
+);
 
 
 // ==================================================
-// CLOSE WITH ESC
+// CLICK ANYWHERE TO CLOSE
 // ==================================================
 
-document.addEventListener("keydown", (event) => {
+overlay.addEventListener(
+    "click",
+    closeOverlay
+);
 
-    if (event.key === "Escape") {
 
-        closeOverlay();
+// ==================================================
+// ESCAPE TO CLOSE
+// ==================================================
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (
+            event.key === "Escape"
+            &&
+            overlay.classList.contains(
+                "active"
+            )
+        ) {
+
+            closeOverlay();
+
+        }
 
     }
+);
 
-});
+
+// ==================================================
+// RESPONSIVE UPDATE
+// ==================================================
+
+window.addEventListener(
+    "resize",
+    () => {
+
+        // Do nothing if overlay closed
+
+        if (
+            !overlay.classList.contains(
+                "active"
+            )
+        ) {
+
+            return;
+
+        }
+
+
+        const project =
+            overlayContent.firstElementChild;
+
+
+        if (
+            !project
+        ) {
+
+            return;
+
+        }
+
+
+        // Reposition first media
+
+        positionProject(
+            project
+        );
+
+
+        // Update about width
+
+        updateProjectAboutWidth(
+            project
+        );
+
+    }
+);

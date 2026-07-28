@@ -191,7 +191,7 @@ a {
 	position: relative;
 }
 
-.project-content img {
+.project-content img, .project-content video {
 	width: auto;
 	height: auto;
 	max-width: 80vw;
@@ -314,6 +314,10 @@ a {
 
 		.project:hover .project-info {
 			visibility: hidden;
+		}
+
+		.project-content {
+			padding-top: 80px;
 		}
 
 }
