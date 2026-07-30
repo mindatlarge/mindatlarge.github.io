@@ -22,6 +22,8 @@ a {
 	color: black;
 }
 
+span {font-size: 12px ;font-style: italic; opacity: .6;}
+
 .project-info p, .about-text p  {
 	font-family: 'theinhardt';
 	font-size: 16px;
@@ -196,7 +198,7 @@ a {
 	height: auto;
 	max-width: 80vw;
 	max-height: 80vh;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 
@@ -285,7 +287,7 @@ a {
 @media screen and (max-width: 650px){
 		:root{
 				--page-padding: 20px;
-				--column-gap: 10px;
+				--column-gap: 0px;
 				--row-gap: 20px;
 		}
 
@@ -294,7 +296,7 @@ a {
 			}
 
 			.project img {
-				width: 150px;
+				width: 130px;
 			}
 
 			.about-text {
@@ -317,7 +319,7 @@ a {
 		}
 
 		.project-content {
-			padding-top: 80px;
+			padding-top: 20px;
 		}
 
 }
