@@ -264,7 +264,7 @@ function positionProject(
     // ==============================================
 
     if (
-        window.innerWidth <= 600
+        window.innerWidth <= 650
     ) {
 
         wrapper.style.transform =

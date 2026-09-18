@@ -22,8 +22,6 @@ a {
 	color: black;
 }
 
-span {font-size: 12px ;font-style: italic; opacity: .6;}
-
 .project-info p, .about-text p  {
 	font-family: 'theinhardt';
 	font-size: 16px;
@@ -229,6 +227,11 @@ span {font-size: 12px ;font-style: italic; opacity: .6;}
 }
 
 
+
+span {
+	display: none;
+}
+
 @media screen and (min-width: 1920px) {
 	.project-wrapper {grid-template-columns:repeat(8,minmax(0,1fr));}
 }
@@ -247,6 +250,14 @@ span {font-size: 12px ;font-style: italic; opacity: .6;}
 			.project-wrapper {
 				grid-template-columns:repeat(5,minmax(0,1fr));
 			}
+
+			.project-content img, .project-content video {
+						width: auto;
+						height: auto;
+						max-width: 90vw;
+						max-height: 90vh;
+					}
+
 }
 
 
@@ -264,6 +275,8 @@ span {font-size: 12px ;font-style: italic; opacity: .6;}
 			.project-wrapper {
 				grid-template-columns:repeat(4,minmax(0,1fr));
 			}
+
+			span {display: block;}
 }
 
 
