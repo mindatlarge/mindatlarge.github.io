@@ -253,6 +253,7 @@ span {
 @media screen and (max-width: 1440px){
 		:root{
 				--page-padding: 50px;
+				--row-gap: 40px;
 		}
 
 
@@ -292,6 +293,7 @@ span {
 @media screen and (max-width: 880px){
 	:root{
 			--page-padding: 25px;
+			--row-gap: 15px;
 	}
 
 .about-text div:first-child {
