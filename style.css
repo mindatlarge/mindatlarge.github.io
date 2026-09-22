@@ -44,6 +44,15 @@ a {
 }
 
 
+.project,
+.project:visited,
+.project:hover,
+.project:active,
+.project:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
 .about-text {
     width: calc(100% - 180px);
     padding: 0 2%;
