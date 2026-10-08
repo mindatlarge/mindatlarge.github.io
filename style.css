@@ -81,7 +81,9 @@ header {
 	font-size: 12px;
 }
 
-
+.info {
+	margin-top: -15px;
+}
 
 .blink {
   animation: blink 1.35s infinite;
