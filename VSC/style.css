@@ -16,7 +16,7 @@
 p {
   font-family: 'theinhardt';
 
-  font-size: 30px;
+  font-size: 24px;
 
 }
 
@@ -35,21 +35,19 @@ p {
 }
 
 .cell video {
-  width: 400px;
-  max-width: 100%;
+  width: 350px;
+  max-width: 85vw;
   max-height: 95vh;
 }
 
 .uvod {
-  height: 100vh;
+  height: 30vh;
   width: 100vw;
-
-  background: #cacaca;
-
-  padding: 70px;
 }
 
-p {text-align: left !important}
+.uvod p {
+  transform: translateY(10vh);
+}
 
 
 
